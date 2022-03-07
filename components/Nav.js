@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className={styles.nav}>
             <div className={styles.nav__logo}>
-               <h1>HJ Hitex Diagnostic Hopital</h1> 
+               <h1>HITEX CONSORTIUM</h1> 
             </div>
             <div className={styles.nav__items}>
                 <ul>

@@ -13,15 +13,15 @@ const Banner = () => {
       <div className={styles.banner__column}>
         <div>
           <GrLocation />
-          <h3>Bweyogerere</h3>
+          <h3 style={{fontSize: '15px'}}>Bweyogerere</h3>
         </div>
         <div>
           <FiPhoneCall />
-          <h3>hey</h3>
+          <h3 style={{fontSize: '15px'}}>0701844459/0772844459</h3>
         </div>
         <div>
           <HiOutlineMail />
-          <h3>test@mail.com</h3>
+          <h3 style={{fontSize: '15px'}}>Hitexconsortium@mail.com</h3>
         </div>
       </div>
       <div className={styles.banner__icons}>

@@ -10,21 +10,21 @@ const Banner1 = () => {
       <div className={styles.Banner1__wrapper}>
         <BiFirstAid style={{fontSize: '35px'}}/>
         <div className={styles.Banner1__item}>
-          <h2>24 Hours Emergency</h2>
+          <h2 style={{fontWeight:"300"}}>24 Hours Emergency</h2>
           <p>Open around the clock for convince, quick</p>
         </div>
       </div>
       <div className={styles.Banner1__wrapper}>
         <ImLab style={{fontSize: '35px'}}/>
         <div className={styles.Banner1__item}>
-          <h2>Complete Lab Services</h2>
+          <h2 style={{fontWeight:"300"}}>Complete Lab Services</h2>
           <p>Open around the clock for convince, quick</p>
         </div>
       </div>
       <div className={styles.Banner1__wrapper}>
         <GiNurseMale style={{fontSize: '35px'}}/>
         <div className={styles.Banner1__item}>
-          <h2>Medical Proffessionals</h2>
+          <h2 style={{fontWeight:"300"}}>Medical Proffessionals</h2>
           <p>Open around the clock for convince, quick</p>
         </div>
       </div>

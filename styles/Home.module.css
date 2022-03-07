@@ -25,11 +25,14 @@
   flex-direction: column;
   background: white;
   color: #000;
+  padding-bottom: 30px;
 }
 
 .nav .nav__logo h1 {
   text-align: center;
   margin-bottom: 1rem;
+  margin-top:1rem;
+  color: teal;
 }
 
 .nav .nav__items ul {
@@ -38,6 +41,12 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  cursor: pointer;
+}
+  
+.nav .nav__items ul li:hover{
+  color: blue;
+  border-bottom: 1px solid #000;
 }
 
 .banner__icons {
@@ -54,6 +63,7 @@
 
 .each__fade > .image__container {
   min-height: 100vh;
+  width: 100%;
 }
 
 .each__fade > .image__container img {
@@ -62,13 +72,15 @@
   object-fit: cover;
 }
 
-.each__fade > h2 {
-  position: absolute;
-  width: 100%;
+.each__fade > .ahh {
+  font-size: 2rem;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 500px;
   top: 300px;
-  left: 50%;
-  right: 50%;
-  z-index: 1;
 }
 
 /* Banner1 styles */
@@ -84,6 +96,88 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  min-height: 80vh;
+}
+
+.about__item {
+  max-width: 600px;
+  line-height:3em;
+}
+.about__item> h2{
+  font-size: 40px;
+}
+
+/* Department Section Here */
+
+.depart__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  min-height: 40vh;
+}
+
+.depart__items {
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.depart__item {
+  border: none;
+  padding: 30px;
+  background-color: rgb(241, 235, 235);
+  text-align: center;
+}
+
+/* Services Section Here */
+
+.service__container {
+  background-color: whitesmoke;
+}
+
+.service__container > h2{
+  text-align: center;
+  color: rgb(19, 179, 179);
+  font-size: 2rem;
+  padding: 1.5rem;
+
+}
+
+.service__container .service__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service__container .service__items .service__item {
+  max-width: 300px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  line-height: 40px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+
+.service__container .service__items .service__item:hover {
+  border: 5px solid rgb(28, 28, 143);
+  box-shadow: 1px 2px 3px 4px rgb(178, 186, 250);
+}
+
+.service__container .service__items .service__item ul {
+  list-style: none;
 }
 
 @media screen and (max-width: 650px) {

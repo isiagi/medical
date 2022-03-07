@@ -1,20 +1,20 @@
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 const fadeImages = [
   {
     url: '/assets/slide-01.jpg',
-    caption: 'Quality Health Care',
+    caption: 'Quality human Health Care',
   },
   {
-    url: '/assets/slide-02.jpg',
-    caption: 'Second Slide',
+    url: '/assets/doc.jpg',
+    caption: 'animal health',
   },
   {
-    url: '/assets/slide-03.jpg',
-    caption: 'Third Slide',
+    url: '/assets/2.jpeg',
+    caption: 'plant health',
   },
 ];
 
@@ -27,7 +27,10 @@ const Hero1 = () => {
             <div className={styles.image__container}>
               <img src={fadeImage.url} />
             </div>
-            <h2>{fadeImage.caption}</h2>
+            <div className={styles.ahh}>
+              <h2 style={{color: '#fff', textTransform:'uppercase'}}>{fadeImage.caption}</h2>
+              <button style={{padding: '12px', color: '#fff',background: 'blue', borderRadius: '20px', border: 'none', fontSize: '15px'}}>Explore Our Services</button>
+            </div>
           </div>
         ))}
       </Fade>

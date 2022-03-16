@@ -1,12 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import About from '../components/About';
-import Banner from '../components/Banner';
-import Banner1 from '../components/Banner1';
+import About from '../components/Ab';
+import Banner1 from '../components/Ban';
+import Contact from '../components/Contact';
 import Depart from '../components/Depart';
+import Faq from '../components/Faq';
+import Footer from '../components/Footer';
 import Hero1 from '../components/Hero1';
 import NavBar from '../components/Nav';
 import Services from '../components/Services';
+import Top from '../components/Top';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -18,16 +21,15 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      {/* lwangasamson10@gmail.com */}
-
       <main className={styles.main}>
-        <Banner />
-        <NavBar />
+      <Top />
         <Hero1 />
         <Banner1 />
         <About />
-        <Depart />
+        {/* <Depart /> */}
         <Services />
+        <Contact />
+        <Faq />
       </main>
     </div>
   );

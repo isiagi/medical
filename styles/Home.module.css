@@ -96,11 +96,11 @@
   width: 100%;
 }
 
-.each__fade > .image__container img {
+/* .each__fade > .image__container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .each__fade > .ahh {
   font-size: 2rem;

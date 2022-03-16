@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -29,7 +30,7 @@ const Fader = () => {
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
             <div className={styles.image__container}>
-              <img src={fadeImage.url} />
+              <Image src={fadeImage.url} layout="fill" objectFit="cover" />
             </div>
             <div className={styles.ahh}>
               <h2 style={{ color: '#fff', textTransform: 'uppercase' }}>

@@ -19,7 +19,7 @@ const NavBar = () => {
             </div>
             <div className={styles.nav__items}>
                 <ul>
-                    <li ><Link href='/'><a>HOME</a></Link></li>
+                    <li ><Link href='/'>HOME</Link></li>
                     <li><Link href='/#about'>ABOUT US</Link></li>
                     <li><Link href='/#services'>SERVICES</Link></li>
                     <li>TESTIMONIALS</li>

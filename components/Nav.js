@@ -1,11 +1,19 @@
 import Link from 'next/link'
+import React from 'react';
 import {IoLogoWhatsapp} from 'react-icons/io'
 import styles from '../styles/Home.module.css'
 
 
 const NavBar = () => {
+    const [offSet, setOffset] = React.useState(0);
+
+    React.useEffect(() => {
+      window.onscroll = () => {
+        setOffset(window.pageYOffset);
+      };
+    }, []);
     return (
-        <nav className={styles.nav}>
+        <nav className={offSet > 40 ? styles.nav1 : styles.nav}>
             <div className={styles.nav__logo}>
                <h1>LOGO</h1> 
             </div>

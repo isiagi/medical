@@ -22,7 +22,6 @@
 
 .nav {
   display: flex;
-  background: white;
   color: #000;
   /* padding-bottom: 30px; */
   justify-content: space-around;
@@ -33,11 +32,12 @@
   z-index: 10;
   width: 100%;
   background: transparent;
+  opacity: 1;
 }
 
 .nav1 {
   display: flex;
-  background: white;
+  background:rgba(255,255,255, 0.9);;
   color: #000;
   /* padding-bottom: 30px; */
   justify-content: space-around;
@@ -47,7 +47,6 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  background: white;
 }
 
 .nav__logo h1 {

@@ -70,12 +70,12 @@
  .nav__items ul li {
   flex-wrap: wrap;
   font-weight: 600;
+  padding: .7rem;
 }
 
 .nav__items ul li:hover {
   background-color: whitesmoke;
   /* color: black; */
-  padding: .7rem;
   border-radius: 10px;
 }
 

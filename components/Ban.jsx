@@ -9,10 +9,11 @@ const Ban = () => {
         padding: '0 2rem',
         lineHeight: '30px',
         margin: '15px 0',
+        fontSize: '1.2em'
       }}
     >
       <p>
-        <span style={{color: 'rgb(28, 28, 143)'}}><b>Hitex consortium</b></span> is a company limited by shares and by URSB
+        <span style={{color: 'rgb(28, 28, 143)'}}><b>Hitex consortium Limited</b></span> is a company limited by shares and by URSB
         legally registered established in 2021 in Uganda by a team of highly
         skilled technical experts in human health, animal health, plant health,
         economic planning and Monitoring Evaluation and Learning (MEL) of

@@ -8,20 +8,27 @@ const Bio = () => {
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '0 2rem', lineHeight: '40px'
+        padding: '0 2rem',
+        lineHeight: '40px',
       }}
     >
       <div>
-        <h2 style={{ margin: '2rem 0', textAlign: 'center' }}>
+        <h2
+          style={{
+            marginTop: '5rem',
+            marginBottom: '2rem',
+            textAlign: 'center',
+            backgroundColor: 'rgb(28, 28, 143)',
+            padding: '2.5rem 0',
+            color: 'whitesmoke'
+          }}
+        >
           Biorisk management (Biosafety Biosecurity) Consultancy services
         </h2>
-        <Image
-          src={'/assets/nn.jpg'}
-          alt="bio"
-          width="1000px"
-          height="400px"
-        />
-        <p style={{textAlign: 'center', color: 'grey'}}>our team supporting the facility to conduct risk assessment </p>
+        <Image src={'/assets/nn.jpg'} alt="bio" width="1000px" height="400px" />
+        <p style={{ textAlign: 'center', color: 'grey' }}>
+          our team supporting the facility to conduct risk assessment{' '}
+        </p>
       </div>
       <div>
         <p>

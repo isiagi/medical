@@ -45,7 +45,7 @@ const Ab = () => {
       <div className={styles.about__container}>
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
-            Hitex consortium is a company limited by shares and by URSB legally
+            Hitex consortium Limited is a company limited by shares and by URSB legally
             registered established in 2021 in Uganda by a team of highly skilled
             technical experts in human health, animal health, plant health,
             economic planning and Monitoring Evaluation and Learning (MEL) of
@@ -68,8 +68,8 @@ const Ab = () => {
         </div>
         <div>
         <div className={styles.about__item1}>
-        <h3 style={{ textAlign: 'center', fontSize: '1.5em',margin: '1rem 0' }}>Mission / Vision</h3>
-          <Tabs>
+        <h3 style={{ textAlign: 'center', fontSize: '1.8em',margin: '1rem 0' }}>Mission / Vision</h3>
+          <Tabs style={{ fontSize: '18px' }}>
             <TabList>
               <Tab>Our Vision</Tab>
               <Tab>MISSION</Tab>
@@ -92,7 +92,7 @@ const Ab = () => {
             </TabPanel>
           </Tabs>
         </div>
-          <h3 style={{ textAlign: 'center', fontSize: '1.5em',margin: '1rem 0' }}>Our Values</h3>
+          <h3 style={{ textAlign: 'center', fontSize: '1.8em',margin: '1rem 0' }}>Our Values</h3>
           <Splide options={{ perPage: 3, arrows: true, gap: '1rem' }}>
             {data.map((item) => (
               <SplideSlide key={item.id}>

@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css';
 const Footer = () => {
   return (
     <div className={styles.footer__wrapper}>
-      <h3>HITEX CONSORTIUM</h3>
+      <h3 style={{color: 'rgb(28, 28, 143)'}}>HITEX CONSORTIUM LIMITED</h3>
       <div className={styles.footer__container}>
         <div className={styles.footer__links}>
           <ul>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.footer__form}>
-          <h3>Get the freshest Hitex news</h3>
+          <h3 style={{color: 'rgb(28, 28, 143)'}}>Get the freshest Hitex news</h3>
           <form>
             <input type="text" placeholder="Your email here" />
             <button>Subscribe</button>

@@ -9,7 +9,7 @@ const Ban = () => {
         padding: '0 2rem',
         lineHeight: '30px',
         margin: '15px 0',
-        fontSize: '1.2em'
+        // fontSize: '17px'
       }}
     >
       <p>

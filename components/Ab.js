@@ -66,7 +66,7 @@ const Ab = () => {
             at all times irrespective of the circumstances.{' '}
           </p>
         </div>
-        <div>
+        <div style={{ marginBottom: '1rem'}}>
           <div className={styles.about__item1}>
             <h3
               style={{

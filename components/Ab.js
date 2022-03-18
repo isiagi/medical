@@ -45,11 +45,11 @@ const Ab = () => {
       <div className={styles.about__container}>
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
-            Hitex consortium is a company limited by shares and by URSB legally
-            registered established in 2021 in Uganda by a team of highly skilled
-            technical experts in human health, animal health, plant health,
-            economic planning and Monitoring Evaluation and Learning (MEL) of
-            programs.
+            Hitex consortium Limited is a company limited by shares and by URSB
+            legally registered established in 2021 in Uganda by a team of highly
+            skilled technical experts in human health, animal health, plant
+            health, economic planning and Monitoring Evaluation and Learning
+            (MEL) of programs.
           </p>
           <br />
           <p style={{ fontSize: '18px' }}>
@@ -66,34 +66,61 @@ const Ab = () => {
             at all times irrespective of the circumstances.{' '}
           </p>
         </div>
-        <div>
-        <div className={styles.about__item1}>
-        <h3 style={{ textAlign: 'center', fontSize: '1.5em',margin: '1rem 0' }}>Mission / Vision</h3>
-          <Tabs>
-            <TabList>
-              <Tab>Our Vision</Tab>
-              <Tab>MISSION</Tab>
-            </TabList>
+        <div style={{ marginBottom: '1rem'}}>
+          <div className={styles.about__item1}>
+            <h3
+              style={{
+                textAlign: 'center',
+                fontSize: '1.8em',
+                margin: '1rem 0',
+              }}
+            >
+              Mission / Vision
+            </h3>
+            <Tabs style={{ fontSize: '18px' }}>
+              <TabList>
+                <Tab>Our Vision</Tab>
+                <Tab>MISSION</Tab>
+              </TabList>
 
-            <TabPanel>
-              <p>
-                To provide high quality life impacting services to the customers
-                we serve and earn a reputation of the most appreciated, valued,
-                referred and respected Consultancy Company.
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <p>
-                To be a competitive and reliable partner helping people feel
-                confident & delivering on their success aspirations by rendering
-                excellent services with honesty, ethics and unparalleled
-                quality.
-              </p>
-            </TabPanel>
-          </Tabs>
-        </div>
-          <h3 style={{ textAlign: 'center', fontSize: '1.5em',margin: '1rem 0' }}>Our Values</h3>
-          <Splide options={{ perPage: 3, arrows: true, gap: '1rem' }}>
+              <TabPanel>
+                <p>
+                  To provide high quality life impacting services to the
+                  customers we serve and earn a reputation of the most
+                  appreciated, valued, referred and respected Consultancy
+                  Company.
+                </p>
+              </TabPanel>
+              <TabPanel>
+                <p>
+                  To be a competitive and reliable partner helping people feel
+                  confident & delivering on their success aspirations by
+                  rendering excellent services with honesty, ethics and
+                  unparalleled quality.
+                </p>
+              </TabPanel>
+            </Tabs>
+          </div>
+          <h3
+            style={{ textAlign: 'center', fontSize: '1.8em', margin: '1rem 0' }}
+          >
+            Our Values
+          </h3>
+          <Splide
+            options={{
+              rewind: true,
+              width: '100%',
+              perPage: 3,
+              focus: "center",
+              arrows: true,
+              gap: '1rem',
+              breakpoints: {
+                640: {
+                  destroy: true,
+                },
+              },
+            }}
+          >
             {data.map((item) => (
               <SplideSlide key={item.id}>
                 <div className={styles.helo}>

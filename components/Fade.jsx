@@ -33,24 +33,42 @@ const Fader = () => {
               <Image src={fadeImage.url} layout="fill" objectFit="cover" />
             </div>
             <div className={styles.ahh}>
-              <h2 style={{ color: '#fff', textTransform: 'uppercase' }}>
-                {fadeImage.caption}
-              </h2>
-              <button
+              <div
                 style={{
-                  padding: '12px',
-                  color: '#fff',
-                  background: 'rgb(28, 28, 143)',
-                  borderRadius: '20px',
-                  border: 'none',
-                  fontSize: '18px',
-                  marginBlock: '.6rem',
+                  background: 'rgba(255, 255, 255, 0.9)',
+                  width: 'fit-content',
+                  margin: '0 auto',
+                  padding: '1rem',
+                  borderRadius: '10px',
                 }}
               >
-                <Link href={fadeImage.href}>
-                  <a>Explore This Service</a>
-                </Link>
-              </button>
+                <h2
+                  style={{
+                    color: 'rgb(28, 28, 143)',
+                    textTransform: 'uppercase',
+                    fontSize: '30px'
+                  }}
+                >
+                  {fadeImage.caption}
+                </h2>
+                <button
+                  style={{
+                    padding: '12px',
+                    color: 'whitesmoke',
+                    background: 'rgb(28, 28, 143)',
+                    borderRadius: '20px',
+                    border: 'none',
+                    fontSize: '18px',
+                    marginBlock: '.6rem',
+                    width: '70%',
+                    margin: '0 auto',
+                  }}
+                >
+                  <Link href={fadeImage.href}>
+                    <a>Explore This Service</a>
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         ))}

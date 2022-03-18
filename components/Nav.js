@@ -5,6 +5,7 @@ import { MdTableRows } from 'react-icons/md';
 import { GiCancel } from 'react-icons/gi';
 
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
 
 const NavBar = () => {
   const [offSet, setOffset] = React.useState(0);
@@ -20,7 +21,7 @@ const NavBar = () => {
     <div className={styles.nav__wrapper}>
       <nav className={offSet > 40 ? styles.nav1 : styles.nav}>
         <div className={styles.nav__logo}>
-          <h1>LOGO</h1>
+        <Image src={'/assets/logo.png'} alt="logo" width="50" height="40" />
         </div>
         <div className={styles.nav__cancel}>
           {open ? (

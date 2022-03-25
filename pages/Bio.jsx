@@ -10,6 +10,9 @@ const Bio = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
+        background: "url('/assets/4.jpeg')",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       <div>
@@ -18,20 +21,16 @@ const Bio = () => {
             marginTop: '5rem',
             marginBottom: '2rem',
             textAlign: 'center',
-            backgroundColor: 'rgb(28, 28, 143)',
+            // backgroundColor: 'rgb(28, 28, 143)',
             padding: '2.5rem 0',
-            color: 'whitesmoke'
+            color: 'rgb(28, 28, 143)',
           }}
         >
           Biorisk management (Biosafety Biosecurity) Consultancy services
         </h2>
-        <Image src={'/assets/nn.jpg'} alt="bio" width="1000px" height="400px" />
-        <p style={{ textAlign: 'center', color: 'grey' }}>
-          our team supporting the facility to conduct risk assessment{' '}
-        </p>
       </div>
-      <div>
-        <p>
+      <div style={{ display: 'flex' }}>
+        <p style={{ width: '40rem', fontSize: '18px' }}>
           Biosafety Biosecurity is our niche; Through our highly skilled
           experts, we provide high quality Biorisk management consultancy
           services to individuals and institutions on the best approaches to
@@ -52,6 +51,38 @@ const Bio = () => {
           national BRM mentorship and assessment framework and tools, national
           policy and guidelines for healthcare waste management and currently
           working on the national framework for BRM certification among others.{' '}
+        </p>
+
+        <Image
+          src={'/assets/safety.jpg'}
+          alt="bio"
+          width="500px"
+          height="300px"
+        />
+      </div>
+      <div>
+        {/* <h3>Biosecurity </h3> */}
+        <p>
+          As much as biological agents and their toxins can be used in research
+          for the advancement of science, there is a great potential for their
+          mis-use as well to pose a threat to public health and safety,
+          agriculture or the environment. Global events in the recent past have
+          highlighted the need to protect laboratories / containment facilities
+          and the materials they contain from being intentionally compromised in
+          ways that may harm people, livestock, agriculture or the environment.
+          At Hitex consortium we recognize the dual use nature of these
+          biological agents. Through our highly skilled team, we conduct
+          Biosecurity risk assessment for our customers to help them identify
+          the potential threats with their systems and help them build strong
+          mitigations measures that prevent theft, mis‐use or intentional
+          release of these organisms and their toxins.{' '}
+        </p>
+        <p>
+          Our teams work with our customers specifically to build well embedded
+          biosecurity systems right from ensuring the integrity of the staff
+          working with this biological agents to ensuring systems are set up for
+          proper accountability of these agents as well setting up systems to
+          detect and deter any biosecurity threats.
         </p>
       </div>
     </div>

@@ -21,6 +21,11 @@ const fadeImages = [
     caption: 'Total Quality management (TQM)',
     href: '/Total',
   },
+  {
+    url: '/assets/gf.jpg',
+    caption: 'Waste management & supply of incinerators',
+    href: '/Waste',
+  },
 ];
 
 const Fader = () => {

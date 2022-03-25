@@ -21,7 +21,11 @@ const NavBar = () => {
     <div className={styles.nav__wrapper}>
       <nav className={offSet > 40 ? styles.nav1 : styles.nav}>
         <div className={styles.nav__logo}>
-        <Image src={'/assets/logo.png'} alt="logo" width="50" height="40" />
+          <Image src={'/assets/logo.png'} alt="logo" width="60" height="50" />
+          <h3>
+            <span style={{ color: 'rgb(28, 28, 143)' }}>HITEX</span>{' '}
+            <span style={{ color: 'red' }}>CONSORTIUM LIMITED</span>
+          </h3>
         </div>
         <div className={styles.nav__cancel}>
           {open ? (
@@ -38,7 +42,7 @@ const NavBar = () => {
         </div>
         <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
           <ul>
-            <li onClick={() => setOpen(false)}>
+            <li onClick={() => setOpen(false)} >
               <Link href="/">HOME</Link>
             </li>
             <li onClick={() => setOpen(false)}>

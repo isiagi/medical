@@ -142,6 +142,7 @@ const Ab = () => {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
                 }}
+                key={item.id}
               >
                 <h3
                   style={{ color: 'whitesmoke' }}

@@ -15,7 +15,7 @@ const Services = () => {
         <div className={styles.service__item}>
           <div className={styles.service__item__one}>
             <FaBiohazard className={styles.service__item__icon} />
-            <h3>Biorisk management</h3>
+            <h3>Biosecurity</h3>
           </div>
           <p>
             Through our highly skilled experts, we provide high quality Biorisk

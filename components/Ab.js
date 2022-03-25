@@ -6,6 +6,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const data = [
   {
@@ -43,30 +44,56 @@ const Ab = () => {
     <div className={styles.about__wrapper} id="about">
       <h4>ABOUT US</h4>
       <div className={styles.about__container}>
+        <p style={{ fontSize: '18px' }}>
+          Our experts are certified by the International Federation of Biosafety
+          Associations (IFBA) and the African society for Laboratory medicine
+          (ASLM) for Biorisk management and auditing of Laboratory quality
+          management systems respectively.
+        </p>
+
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
-            Hitex consortium Limited is a company limited by shares and by URSB
-            legally registered established in 2021 in Uganda by a team of highly
-            skilled technical experts in human health, animal health, plant
-            health, economic planning and Monitoring Evaluation and Learning
-            (MEL) of programs.
+            We work with government and non-government agencies, industry,
+            legally registered companies, highly skilled individual consultants
+            and academic institutions to accomplish our missions in the
+            following strategic areas
           </p>
-          <br />
-          <p style={{ fontSize: '18px' }}>
-            Through our highly skilled experts, we aim at building strong
-            Biorisk management systems (Biosafety Biosecurity) across all
-            organizations (Health Facilities-Laboratories, research
-            institutions, animal holding facilities, academia, plant health,
-            water and environment laboratories) that interact with
-            microorganisms specifically those flagged ‘high importance’.
-          </p>
-          <br />
+
           <p style={{ fontSize: '18px' }}>
             Our philosophy is to deliver high quality services to our customers
             at all times irrespective of the circumstances.{' '}
           </p>
+
+          <ul>
+            <li
+              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
+            >
+              <Link href="/Bio">
+                Biosafety Biosecurity (Biorisk management)
+              </Link>
+            </li>
+            <li
+              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
+            >
+              <Link href="/BioRisk">
+                <a>Biological Risk Assessments & Management </a>
+              </Link>
+            </li>
+            <li
+              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
+            >
+              <Link href="/Waste">
+                <a>Waste management & supply of incinerators </a>
+              </Link>
+            </li>
+            <li
+              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
+            >
+              <Link href="/Total">Total Quality management (TQM)</Link>
+            </li>
+          </ul>
         </div>
-        <div style={{ marginBottom: '1rem'}}>
+        <div style={{ marginBottom: '1rem' }}>
           <div className={styles.about__item1}>
             <h3
               style={{
@@ -106,14 +133,32 @@ const Ab = () => {
           >
             Our Values
           </h3>
-          <Splide
+          <div className={styles.about__wra}>
+            {data.map((item) => (
+              <div
+                className={styles.about__wrap}
+                style={{
+                  background: `linear-gradient(rgba(3, 17, 144, 0.8), rgba(3, 17, 144, 0.8)),url(${item.img})`,
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h3
+                  style={{ color: 'whitesmoke' }}
+                >{`${item.id}. ${item.title}`}</h3>
+                <p style={{ color: 'whitesmoke' }}>{item.content}</p>
+              </div>
+            ))}
+          </div>
+          {/* <Splide
             options={{
               rewind: true,
               width: '100%',
               perPage: 3,
-              focus: "center",
+              focus: 'center',
               arrows: true,
               gap: '1rem',
+              autoplay: true,
               breakpoints: {
                 640: {
                   destroy: true,
@@ -123,14 +168,14 @@ const Ab = () => {
           >
             {data.map((item) => (
               <SplideSlide key={item.id}>
-                <div className={styles.helo}>
+                <div className={styles.helo} data-splide-interval="1000">
                   <Image src={item.img} alt="" width="300" height="200" />
                   <h3>{item.title}</h3>
                   <p>{item.content}</p>
                 </div>
               </SplideSlide>
             ))}
-          </Splide>
+          </Splide> */}
         </div>
       </div>
     </div>

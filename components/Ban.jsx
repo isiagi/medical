@@ -5,21 +5,29 @@ const Ban = () => {
   return (
     <div
       style={{
-        display: 'flex',
+        // display: 'flex',
         padding: '0 2rem',
-        lineHeight: '30px',
+        lineHeight: '28px',
         margin: '15px 0',
         // fontSize: '17px'
       }}
     >
-      <p>
+      <p style={{ fontSize: '18px' }}>
         <span style={{color: 'rgb(28, 28, 143)'}}><b>Hitex consortium Limited</b></span> is a company limited by shares and by URSB
         legally registered established in 2021 in Uganda by a team of highly
         skilled technical experts in human health, animal health, plant health,
         economic planning and Monitoring Evaluation and Learning (MEL) of
         programs
       </p>
-      <div
+      <p style={{ fontSize: '18px' }}>
+            Through our highly skilled experts, we aim at building strong
+            Biorisk management systems (Biosafety Biosecurity) across all
+            organizations (Health Facilities-Laboratories, research
+            institutions, animal holding facilities, academia, plant health,
+            water and environment laboratories) that interact with
+            microorganisms specifically those flagged ‘high importance’.
+          </p>
+      {/* <div
         style={{
           borderTop: '3px solid rgb(18, 18, 124)',
           backgroundColor: 'whitesmoke',
@@ -49,7 +57,7 @@ const Ban = () => {
             <Link href="/Total">Total Quality management (TQM)</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

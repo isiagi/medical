@@ -42,26 +42,34 @@ const data = [
 const Ab = () => {
   return (
     <div className={styles.about__wrapper} id="about">
-      <h4>ABOUT US</h4>
-      <div className={styles.about__container}>
-        <p style={{ fontSize: '18px' }}>
+      <div className={styles.about__head}>
+        <h4>ABOUT Us</h4>
+        <p>
           Our experts are certified by the International Federation of Biosafety
           Associations (IFBA) and the African society for Laboratory medicine
           (ASLM) for Biorisk management and auditing of Laboratory quality
           management systems respectively.
         </p>
+      </div>
+      <div className={styles.about__container}>
+        {/* <p style={{ fontSize: '18px' }}>
+          Our experts are certified by the International Federation of Biosafety
+          Associations (IFBA) and the African society for Laboratory medicine
+          (ASLM) for Biorisk management and auditing of Laboratory quality
+          management systems respectively.
+        </p> */}
 
         <div className={styles.about__item}>
+          <p style={{ fontSize: '18px' }}>
+            Our philosophy is to deliver high quality services to our customers
+            at all times irrespective of the circumstances.{' '}
+          </p>
+
           <p style={{ fontSize: '18px' }}>
             We work with government and non-government agencies, industry,
             legally registered companies, highly skilled individual consultants
             and academic institutions to accomplish our missions in the
             following strategic areas
-          </p>
-
-          <p style={{ fontSize: '18px' }}>
-            Our philosophy is to deliver high quality services to our customers
-            at all times irrespective of the circumstances.{' '}
           </p>
 
           <ul>

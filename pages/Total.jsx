@@ -10,6 +10,7 @@ const Total = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
+        backgroundColor: 'whitesmoke'
       }}
     >
       <div>

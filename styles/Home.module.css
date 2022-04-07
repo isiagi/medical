@@ -158,6 +158,7 @@
   min-height: 100vh;
   width: 100%;
   line-height: 35px;
+  background-color: whitesmoke;
 }
 
 .about__wra {
@@ -186,16 +187,26 @@ height: 350px;
   overflow: hidden;
 }
 
-.about__wrapper h4 {
-  /* padding-top: 6rem;
-  padding-bottom: 3rem; */
+.about__head {
+  /* background: url('../public/assets/lo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  padding-top:3rem;
+}
+
+.about__wrapper h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2em;
   color: rgb(28, 28, 143);
-  background: whitesmoke;
+  text-decoration: underline; 
 }
 
 .about__container {
@@ -340,7 +351,7 @@ height: 350px;
 
 /* Footer Section Here */
 
-.footer__wrapper {
+/* .footer__wrapper {
   min-height: 30vh;
   background: rgb(28, 28, 143) ;
   padding: 0 2rem;
@@ -402,6 +413,60 @@ height: 350px;
   gap: 0.7rem;
   font-size: 1.5rem;
   color: whitesmoke;
+} */
+
+.footer__container {
+  min-height: 43vh;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 1.6rem;
+  background: rgb(28, 28, 143) ;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.footer__info {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer__contain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.lastFooter__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6vh;
+  align-items: center;
+  border-top: 1px solid whitesmoke;
+  background: rgb(28, 28, 143) ;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.lastFooter__wrapper1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__links div > ul li {
+  color: whitesmoke;
+}
+
+.footer__links div > ul li:hover {
+  color: red;
+}
+
+.footer__as div > ul li:hover {
+  color: red;
 }
 
 /* Contact Section Here */

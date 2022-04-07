@@ -10,7 +10,7 @@ const BioRisk = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
-        backgroundColor: '#fff'
+        backgroundColor: 'whitesmoke'
       }}
     >
       <div>

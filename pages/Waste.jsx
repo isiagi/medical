@@ -10,6 +10,7 @@ const Total = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
+        backgroundColor: 'whitesmoke',
       }}
     >
       <div>
@@ -18,14 +19,14 @@ const Total = () => {
             marginTop: '5rem',
             marginBottom: '2rem',
             textAlign: 'center',
-            backgroundColor: 'rgb(28, 28, 143)',
+            // backgroundColor: 'rgb(28, 28, 143)',
             padding: '2.5rem 0',
-            color: 'whitesmoke',
+            color: 'rgb(28, 28, 143)',
           }}
         >
           Waste management & supply of incinerators
         </h2>
-        <Image src={'/assets/nn.jpg'} alt="bio" width="1000px" height="400px" />
+        <Image src={'/assets/gvf.jpg'} alt="bio" width="1000px" height="400px" />
       </div>
       <div>
         <p>
@@ -50,6 +51,10 @@ const Total = () => {
           curriculum. We also supply incinerators and provide after installation
           services to our customers based on their need
         </p>
+      </div>
+      <div style={{ display: 'flex', gap: '20px', paddingBlock: '50px'}}>
+      <Image src={'/assets/p.jpg'} alt="bio" width="500px" height="400px" />
+      <Image src={'/assets/lo.jpg'} alt="bio" width="500px" height="400px" />
       </div>
     </div>
   );

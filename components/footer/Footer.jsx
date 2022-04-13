@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <div className={styles.footer__as}>
           <div>
-            <h3 style={{color: 'red'}}>Services</h3>
+            <h3 style={{color: 'red'}}>Core Services</h3>
           </div>
           <div>
             <ul>

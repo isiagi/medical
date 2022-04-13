@@ -80,7 +80,8 @@ const Bio = () => {
             width: '100%',
             flexWrap: 'wrap',
             lineHeight: '27px',
-            marginBlock: '2rem'
+            marginBlock: '2rem',
+            paddingBottom: '4rem'
           }}
         >
           <Image

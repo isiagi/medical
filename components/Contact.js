@@ -40,7 +40,7 @@ const Contact = () => {
         </p>
         <br />
         <form ref={form} onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Your Name" value='name'/>
+          <input type="text" name="name" placeholder="Your Name" />
           <br />
           <br />
           <input

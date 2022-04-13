@@ -10,12 +10,12 @@ import styles from '../styles/Home.module.css';
 const Services = () => {
   return (
     <div className={styles.service__container} id="services">
-      <h2>Our Services</h2>
+      <h2 style={{color: 'red'}}>Our Services</h2>
       <div className={styles.service__items}>
         <div className={styles.service__item}>
           <div className={styles.service__item__one}>
             <FaBiohazard className={styles.service__item__icon} />
-            <h3>Biosecurity</h3>
+            <h3>Biosafety Biosecurity (Biorisk management)</h3>
           </div>
           <p>
             Through our highly skilled experts, we provide high quality Biorisk

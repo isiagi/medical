@@ -10,7 +10,7 @@ const Total = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
-        backgroundColor: 'whitesmoke'
+        backgroundColor: 'whitesmoke',
       }}
     >
       <div>
@@ -21,24 +21,27 @@ const Total = () => {
             textAlign: 'center',
             backgroundColor: 'rgb(28, 28, 143)',
             padding: '2.5rem 0',
-            color: 'whitesmoke'
+            color: 'whitesmoke',
           }}
         >
           Total Quality management (TQM)
         </h2>
         <Image src={'/assets/nn.jpg'} alt="bio" width="1000px" height="400px" />
       </div>
-      <div>
+      <div style={{paddingBottom: '4rem'}}>
         <p>
-          <b>At Hitex consortium Limited</b>, we focus on the customer to
-          nurture organizational growth and improve systems. Our approach
-          involves working with all members of an organization to participate in
-          improving processes, products, services, and the culture in which they
-          work. To create meaningful change, we focus our approach on the eight
-          principles of total quality management: Customer-focused, Total
-          employee involvement, Process-centered, Integrated system, Strategic
-          and systematic approach, Continual improvement, Fact-based decision
-          making and effective Communications strategies.{' '}
+          <span style={{ color: 'rgb(28, 28, 143)' }}>
+            <b>Hitex consortium Limited</b>
+          </span>{' '}
+          we focus on the customer to nurture organizational growth and improve
+          systems. Our approach involves working with all members of an
+          organization to participate in improving processes, products,
+          services, and the culture in which they work. To create meaningful
+          change, we focus our approach on the eight principles of total quality
+          management: Customer-focused, Total employee involvement,
+          Process-centered, Integrated system, Strategic and systematic
+          approach, Continual improvement, Fact-based decision making and
+          effective Communications strategies.{' '}
         </p>
         <p>
           We utilize these principles to support our customers improve their

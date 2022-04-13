@@ -43,7 +43,7 @@ const Ab = () => {
   return (
     <div className={styles.about__wrapper} id="about">
       <div className={styles.about__head}>
-        <h4>ABOUT Us</h4>
+        <h4>About Us</h4>
         <p>
           Our experts are certified by the International Federation of Biosafety
           Associations (IFBA) and the African society for Laboratory medicine
@@ -101,7 +101,7 @@ const Ab = () => {
             </li>
           </ul>
         </div>
-        <div style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '4rem' }}>
           <div className={styles.about__item1}>
             <h3
               style={{
@@ -110,7 +110,7 @@ const Ab = () => {
                 margin: '1rem 0',
               }}
             >
-              Mission / Vision
+              Mission / <span style={{color: 'red'}}>Vision</span>
             </h3>
             <Tabs style={{ fontSize: '18px' }}>
               <TabList>
@@ -137,7 +137,7 @@ const Ab = () => {
             </Tabs>
           </div>
           <h3
-            style={{ textAlign: 'center', fontSize: '1.8em', margin: '1rem 0' }}
+            style={{ textAlign: 'center', fontSize: '1.8em', margin: '1rem 0',paddingBlock: '2rem' }}
           >
             Our Values
           </h3>
@@ -153,7 +153,7 @@ const Ab = () => {
                 key={item.id}
               >
                 <h3
-                  style={{ color: 'whitesmoke' }}
+                  style={{ color: 'red' }}
                 >{`${item.id}. ${item.title}`}</h3>
                 <p style={{ color: 'whitesmoke' }}>{item.content}</p>
               </div>

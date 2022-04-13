@@ -24,7 +24,7 @@ const NavBar = () => {
           <Image src={'/assets/logo.png'} alt="logo" width="60" height="50" />
           <h3>
             <span style={{ color: 'rgb(28, 28, 143)' }}>HITEX</span>{' '}
-            <span style={{ color: 'red' }}>CONSORTIUM LIMITED</span>
+            <span style={{ color: 'red' }}>CONSORTIUM LTD</span>
           </h3>
         </div>
         <div className={styles.nav__cancel}>

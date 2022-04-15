@@ -13,16 +13,17 @@ const Footer = () => {
       <div className={styles.footer__contain}>
         <div className={styles.footer__wrapper}>
           <div>
-            <h3 style={{color: 'red'}}>Hitex consortium Limited</h3>
+            <h3 style={{ color: 'red' }}>Hitex consortium Limited</h3>
           </div>
           <div className={styles.footer__info}>
-            We a company limited by shares and by URSB legally registered
-            established in 2021 in Uganda by a team of highly skilled technical
-            experts in human health, animal health, plant health, economic
-            planning and Monitoring Evaluation and Learning (MEL) of programs.
+            We are company limited by shares and legally registered by URSB and
+            URA. Established in 2021 in Uganda by a team of highly skilled
+            technical experts in human health, animal health, plant and
+            environmental health, as well as Monitoring Evaluation and Learning
+            (MEL).
           </div>
           <div>
-            <BsFacebook style={{ fontSize: '1.5rem', color: 'whitesmoke' }} />
+              <BsFacebook style={{ fontSize: '1.5rem', color: 'whitesmoke' }} />
             <BsInstagram
               style={{
                 fontSize: '1.5rem',
@@ -41,7 +42,7 @@ const Footer = () => {
         </div>
         <div className={styles.footer__links}>
           <div>
-            <h3 style={{color: 'red'}}>Quick Link</h3>
+            <h3 style={{ color: 'red' }}>Quick Link</h3>
           </div>
           <div>
             <ul>
@@ -62,18 +63,27 @@ const Footer = () => {
         </div>
         <div className={styles.footer__as}>
           <div>
-            <h3 style={{color: 'red'}}>Core Services</h3>
+            <h3 style={{ color: 'red' }}>Core Services</h3>
           </div>
           <div>
             <ul>
               <li>
-                <Link href="/Bio">Biosafety Biosecurity (Biorisk management)</Link>
+                <Link href="/Bio">
+                Biosafety Biosecurity (Biorisk management) Consultancy 
+                </Link>
               </li>
               <li>
-                <Link href="/BioRisk">Biological Risk Assessments & Management</Link>
+                <Link href="/BioRisk">
+                Biological Risk Assessments & Management Consultancy 
+                </Link>
               </li>
               <li>
-                <Link href="/Waste">Waste management & supply of incinerators</Link>
+                <Link href="/Waste">
+                Establishment of Waste management systems & supply/repair of incinerators 
+                </Link>
+              </li>
+              <li>
+                <Link href="/Total">Biosafety Cabinet Certification</Link>
               </li>
               <li>
                 <Link href="/Total">Total Quality management (TQM)</Link>
@@ -83,6 +93,7 @@ const Footer = () => {
         </div>
         {/* <div className="footer__links">
           <div>
+          Biosafety Cabinet Certification 
             <h3>Resources</h3>
           </div>
           <div>

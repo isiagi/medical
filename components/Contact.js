@@ -17,7 +17,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log('sent', result.text);
         },
         (error) => {
           console.log(error.text);
@@ -32,11 +32,10 @@ const Contact = () => {
       <div className={styles.contact__container}>
         <h3 style={{ fontSize: '2rem' }}>
           Looking for a{' '}
-          <span style={{ color: 'rgb(28, 28, 143)' }}>Certified Doctor?</span>
+          <span style={{ color: 'rgb(28, 28, 143)' }}>Certified Experts?</span>
         </h3>
         <p>
-          We believe in providing the best possible care to all our existing
-          patients and welcome new patients to sample.
+          We believe in providing the best possible Biosafety and Biosecurity quality management systems for our customers.
         </p>
         <br />
         <form ref={form} onSubmit={handleSubmit}>
@@ -58,7 +57,7 @@ const Contact = () => {
           />
           <br />
           <br />
-          <textarea rows="6" cols="66" name="message" />
+          <textarea rows="6" cols="66" name="message" placeholder="Your message"/>
           <br />
           <button type="submit">send request</button>
         </form>

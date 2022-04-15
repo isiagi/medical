@@ -44,20 +44,10 @@ const Ab = () => {
     <div className={styles.about__wrapper} id="about">
       <div className={styles.about__head}>
         <h4>About Us</h4>
-        <p>
-          Our experts are certified by the International Federation of Biosafety
-          Associations (IFBA) and the African society for Laboratory medicine
-          (ASLM) for Biorisk management and auditing of Laboratory quality
-          management systems respectively.
-        </p>
+    
       </div>
       <div className={styles.about__container}>
-        {/* <p style={{ fontSize: '18px' }}>
-          Our experts are certified by the International Federation of Biosafety
-          Associations (IFBA) and the African society for Laboratory medicine
-          (ASLM) for Biorisk management and auditing of Laboratory quality
-          management systems respectively.
-        </p> */}
+    
 
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
@@ -65,41 +55,8 @@ const Ab = () => {
             at all times irrespective of the circumstances.{' '}
           </p>
 
-          <p style={{ fontSize: '18px' }}>
-            We work with government and non-government agencies, industry,
-            legally registered companies, highly skilled individual consultants
-            and academic institutions to accomplish our missions in the
-            following strategic areas
-          </p>
 
-          <ul>
-            <li
-              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-            >
-              <Link href="/Bio">
-                Biosafety Biosecurity (Biorisk management)
-              </Link>
-            </li>
-            <li
-              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-            >
-              <Link href="/BioRisk">
-                <a>Biological Risk Assessments & Management </a>
-              </Link>
-            </li>
-            <li
-              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-            >
-              <Link href="/Waste">
-                <a>Waste management & supply of incinerators </a>
-              </Link>
-            </li>
-            <li
-              style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-            >
-              <Link href="/Total">Total Quality management (TQM)</Link>
-            </li>
-          </ul>
+
         </div>
         <div style={{ marginBottom: '4rem' }}>
           <div className={styles.about__item1}>

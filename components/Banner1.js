@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css';
 const Banner1 = () => {
   return (
     <div style={{padding:'0 2rem'}}>
+    <hr></hr>
       <p style={{ fontSize: '22px' }}>
         Hitex consortium is a company limited by shares and by URSB legally
         registered established in 2021 in Uganda by a team of highly skilled

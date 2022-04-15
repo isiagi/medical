@@ -26,7 +26,8 @@
   user-select: none;
   z-index: 999;
   width: 100%;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.9);
+  color: #fff;
 }
 
 .nav {
@@ -296,26 +297,26 @@ height: 350px;
   color: rgb(28, 28, 143);
   font-size: 2em;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .service__container .service__items {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
 }
 
 .service__container .service__items .service__item {
-  max-width: 400px;
+  max-width: 500px;
   background-color: rgb(28, 28, 143);
   line-height: 40px;
   gap: 10px;
   border-radius: 10px;
   padding: 10px;
   color: #fff;
-  height: 420px;
+  height: 320px;
 }
 
 .service__item__one {
@@ -348,73 +349,6 @@ height: 350px;
 .service__container .service__items .service__item ul {
   list-style: none;
 }
-
-/* Footer Section Here */
-
-/* .footer__wrapper {
-  min-height: 30vh;
-  background: rgb(28, 28, 143) ;
-  padding: 0 2rem;
-}
-
-.footer__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  color: whitesmoke;
-}
-
-.footer__wrapper .footer__container .footer__links ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-.footer__wrapper .footer__container .footer__links ul li {
-  width: 7rem;
-  color: whitesmoke;
-}
-
-.footer__container .footer__form input {
-  padding: 0.4rem;
-  border: none;
-  outline: none;
-}
-
-.footer__container .footer__form button {
-  padding: 0.4rem;
-  border: none;
-  outline: none;
-  background-color: #fff;
-}
-
-.footer__last {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer__last .footer__last_terms {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  color: whitesmoke;
-}
-.footer__last .footer__last_icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  font-size: 1.5rem;
-  color: whitesmoke;
-} */
-
 .footer__container {
   min-height: 43vh;
   display: flex;

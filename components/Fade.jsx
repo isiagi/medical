@@ -8,12 +8,12 @@ import styles from '../styles/Home.module.css';
 const fadeImages = [
   {
     url: '/assets/nn.jpg',
-    caption: 'Biorisk management',
+    caption: 'Biosafety Biosecurity (Biorisk management) Consultancy',
     href: '/Bio',
   },
   {
     url: '/assets/gf.jpg',
-    caption: 'Biological Risk Assessments',
+    caption: 'Biological Risk Assessments & Management Consultancy ',
     href: '/BioRisk',
   },
   {
@@ -23,15 +23,20 @@ const fadeImages = [
   },
   {
     url: '/assets/gf.jpg',
-    caption: 'Waste management & supply of incinerators',
+    caption: 'Establishment of Waste management systems & supply/repair of incinerators ',
     href: '/Waste',
+  },
+  {
+    url: '/assets/gf.jpg',
+    caption: 'Biosafety Cabinet Certification  ',
+    href: '/Cabinet',
   },
 ];
 
 const Fader = () => {
   return (
     <div>
-      <Fade arrows={false} duration={2000}>
+      <Fade arrows={false} duration={4000}>
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
             <div className={styles.image__container}>
@@ -45,17 +50,20 @@ const Fader = () => {
                   margin: '0 auto',
                   padding: '1rem',
                   borderRadius: '10px',
+                  position: 'absolute',
+                  top: '170px',
+                  right: '0'
                 }}
               >
-                <h2
+                <p
                   style={{
                     color: 'rgb(28, 28, 143)',
                     textTransform: 'uppercase',
-                    fontSize: '30px'
+                    fontSize: '20px'
                   }}
                 >
                   {fadeImage.caption}
-                </h2>
+                </p>
                 <button
                   style={{
                     padding: '12px',
@@ -63,7 +71,7 @@ const Fader = () => {
                     background: 'rgb(28, 28, 143)',
                     borderRadius: '20px',
                     border: 'none',
-                    fontSize: '18px',
+                    fontSize: '13px',
                     marginBlock: '.6rem',
                     width: '70%',
                     margin: '0 auto',

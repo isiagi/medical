@@ -32,7 +32,7 @@ const Faq = () => {
               </p>
             </li>
 
-            <li>
+            {/* <li>
               <div
                 className={styles.faq__item}
                 onClick={() => setShow1(!show1)}
@@ -46,9 +46,9 @@ const Faq = () => {
                 recommended that children see their dentist at least once a
                 year.
               </p>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <div
                 className={styles.faq__item}
                 onClick={() => setShow2(!show1)}
@@ -61,7 +61,7 @@ const Faq = () => {
                 you may book your appointments online. Every effort will be made
                 to accommodate your preferred time and choice of practitioner.
               </p>
-            </li>
+            </li> */}
           </ol>
         </div>
         <div></div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Fader from './Fade';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero1 = () => {
   return (
@@ -9,21 +10,14 @@ const Hero1 = () => {
         width: '100%',
         justifyContent: 'space-between',
         alignItems: 'center',
-        flexWrap:'wrap',
+        flexWrap: 'wrap',
       }}
     >
-      {/* <div style={{ width: '25%' }}>
-        <h1>
-          <span style={{ color: 'rgb(28, 28, 143)' }}>HITEX</span>{' '}
-          <span style={{ color: 'red' }}>CONSORTIUM LTD</span>
-        </h1>
-      </div> */}
       <div style={{ width: '65%' }}>
         <Fader />
       </div>
       <div
         style={{
-          // borderTop: '3px solid rgb(18, 18, 124)',
           maxWidth: '400px',
           width: '35%',
           lineHeight: '25px',
@@ -31,9 +25,10 @@ const Hero1 = () => {
           color: 'black',
           padding: '0.2rem',
           borderRadius: '10px',
-          paddingLeft:'1rem',
+          paddingLeft: '1rem',
           marginRight: '40px',
           marginTop: '80px',
+          color: 'rgb(28, 28, 143)',
         }}
       >
         {' '}
@@ -44,30 +39,38 @@ const Hero1 = () => {
           strategic areas
         </p>
         <ul>
-          <li
-            style={{ color: 'blue', textDecoration: 'underline',}}
-          >
-            <Link href="/Bio">Biosafety Biosecurity (Biorisk management) Consultancy </Link>
+          <li style={{ color: 'blue',textAlign: 'center' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Bio">
+              <a>Biosafety Biosecurity (Biorisk management) Consultancy </a>
+            </Link>
           </li>
-          <li
-            style={{ color: 'blue', textDecoration: 'underline' }}
-          >
-            <Link href="/BioRisk">Biological Risk Assessments & Management Consultancy  </Link>
+          <li style={{ color: 'blue',textAlign: 'center'  }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/BioRisk">
+              <a>Biological Risk Assessments & Management Consultancy </a>
+            </Link>
           </li>
-          <li
-            style={{ color: 'blue', textDecoration: 'underline' }}
-          >
-            <Link href="/Total">Establishment of Waste management systems & supply/repair of incinerators </Link>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Waste">
+              <a>
+                Establishment of Waste management systems & supply/repair of
+                incinerators{' '}
+              </a>
+            </Link>
           </li>
-          <li
-            style={{ color: 'blue', textDecoration: 'underline' }}
-          >
-            <Link href="/BioRisk">Biosafety Cabinet Certification  </Link>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/BioRisk">
+              <a>Biosafety Cabinet Certification</a>
+            </Link>
           </li>
-          <li
-            style={{ color: 'blue', textDecoration: 'underline' }}
-          >
-            <Link href="/BioRisk">Total Quality management (TQM)  </Link>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Total">
+              <a>Total Quality management (TQM)</a>
+            </Link>
           </li>
         </ul>
       </div>

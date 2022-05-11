@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Services = () => {
   return (
     <div className={styles.service__container} id="services">
-      <h2 style={{ color: 'red' }}>Our Services</h2>
+      <h2 style={{ color: 'rgb(236, 75, 54)' }}>Our Services</h2>
       <p style={{textAlign: 'center',paddingBottom: '4rem' }}>
         We offer consultancy services in <Link href="#">Biosafety Biosercurity</Link>, <Link href="#">Biological Risk
         Assesement</Link> , <Link href="#">Waste Manangement</Link>, <Link href="#">Biosafety Cabinet Certification</Link> and

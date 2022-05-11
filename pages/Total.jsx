@@ -26,7 +26,7 @@ const Total = () => {
         >
           Total Quality management (TQM)
         </h2>
-        <Image src={'/assets/nn.jpg'} alt="bio" width="1000px" height="400px" />
+        <Image src={'/assets/total.jpg'} alt="bio" width="1000px" height="400px" />
       </div>
       <div style={{paddingBottom: '4rem'}}>
         <p>

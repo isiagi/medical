@@ -13,7 +13,9 @@ const Footer = () => {
       <div className={styles.footer__contain}>
         <div className={styles.footer__wrapper}>
           <div>
-            <h3 style={{ color: 'red' }}>Hitex consortium Limited</h3>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>
+              Hitex consortium Limited
+            </h3>
           </div>
           <div className={styles.footer__info}>
             We are company limited by shares and legally registered by URSB and
@@ -23,7 +25,7 @@ const Footer = () => {
             (MEL).
           </div>
           <div>
-              <BsFacebook style={{ fontSize: '1.5rem', color: 'whitesmoke' }} />
+            <BsFacebook style={{ fontSize: '1.5rem', color: 'whitesmoke' }} />
             <BsInstagram
               style={{
                 fontSize: '1.5rem',
@@ -40,9 +42,42 @@ const Footer = () => {
             />
           </div>
         </div>
+
+        <div className={styles.footer__as}>
+          <div>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>Core Services</h3>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <Link href="/Bio">
+                  Biosafety Biosecurity (Biorisk management) Consultancy
+                </Link>
+              </li>
+              <li>
+                <Link href="/BioRisk">
+                  Biological Risk Assessments & Management Consultancy
+                </Link>
+              </li>
+              <li>
+                <Link href="/Waste">
+                  Establishment of Waste management systems & supply/repair of
+                  incinerators
+                </Link>
+              </li>
+              <li>
+                <Link href="/Total">Biosafety Cabinet Certification</Link>
+              </li>
+              <li>
+                <Link href="/Total">Total Quality management (TQM)</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className={styles.footer__links}>
           <div>
-            <h3 style={{ color: 'red' }}>Quick Link</h3>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>Quick Link</h3>
           </div>
           <div>
             <ul>
@@ -61,47 +96,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.footer__as}>
-          <div>
-            <h3 style={{ color: 'red' }}>Core Services</h3>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <Link href="/Bio">
-                Biosafety Biosecurity (Biorisk management) Consultancy 
-                </Link>
-              </li>
-              <li>
-                <Link href="/BioRisk">
-                Biological Risk Assessments & Management Consultancy 
-                </Link>
-              </li>
-              <li>
-                <Link href="/Waste">
-                Establishment of Waste management systems & supply/repair of incinerators 
-                </Link>
-              </li>
-              <li>
-                <Link href="/Total">Biosafety Cabinet Certification</Link>
-              </li>
-              <li>
-                <Link href="/Total">Total Quality management (TQM)</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* <div className="footer__links">
-          <div>
-          Biosafety Cabinet Certification 
-            <h3>Resources</h3>
-          </div>
-          <div>
-            <ul>
-              <li>Support</li>
-            </ul>
-          </div>
-        </div> */}
       </div>
     </div>
   );

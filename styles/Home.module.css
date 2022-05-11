@@ -396,11 +396,11 @@ height: 350px;
 }
 
 .footer__links div > ul li:hover {
-  color: red;
+  color: rgb(236, 75, 54)
 }
 
 .footer__as div > ul li:hover {
-  color: red;
+  color: rgb(236, 75, 54);
 }
 
 /* Contact Section Here */

@@ -10,6 +10,7 @@ const Ban = () => {
         lineHeight: '28px',
         margin: '15px 0',
         paddingBottom: '3rem',
+        color: 'rgb(28, 28, 143)'
         // fontSize: '17px'
       }}
     >

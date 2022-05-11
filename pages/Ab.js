@@ -67,7 +67,7 @@ const Ab = () => {
                 margin: '1rem 0',
               }}
             >
-              Mission / <span style={{color: 'red'}}>Vision</span>
+              Mission / <span style={{color: 'rgb(236, 75, 54)'}}>Vision</span>
             </h3>
             <Tabs style={{ fontSize: '18px' }}>
               <TabList>
@@ -110,7 +110,7 @@ const Ab = () => {
                 key={item.id}
               >
                 <h3
-                  style={{ color: 'red' }}
+                  style={{ color: 'rgb(236, 75, 54)' }}
                 >{`${item.id}. ${item.title}`}</h3>
                 <p style={{ color: 'whitesmoke' }}>{item.content}</p>
               </div>

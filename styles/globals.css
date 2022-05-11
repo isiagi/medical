@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+  color: rgb(28, 28, 143)
 }
 
 a {

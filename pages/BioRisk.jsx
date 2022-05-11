@@ -31,7 +31,7 @@ const BioRisk = () => {
           our team supporting the facility to conduct risk assessment{' '}
         </p>
       </div>
-      <div>
+      <div style={{paddingBottom: '4rem'}}>
         <p>
           In the wake of global emerging and re-emerging diseases like Ebola,
           Marburg, and more recently SARS-CoV-2 among others, it’s imperative to

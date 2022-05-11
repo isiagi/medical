@@ -32,13 +32,13 @@ const Bio = () => {
         style={{
           display: 'flex',
           gap: '10px',
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
           width: '100%',
           flexWrap: 'wrap',
           lineHeight: '27px',
         }}
       >
-        <p style={{ width: '50rem' }}>
+        <p style={{ width: '40rem' }}>
           Biosafety Biosecurity is our niche; Through our highly skilled
           experts, we provide high quality Biorisk management consultancy
           services to individuals and institutions on the best approaches to
@@ -68,7 +68,7 @@ const Bio = () => {
           height="100%"
         />
       </div>
-      <div style={{ lineHeight: '27px', marginTop: '10px' }}>
+      <div style={{ lineHeight: '27px', marginTop: '40px' }}>
         <h2 style={{ textAlign: 'center', color: 'rgb(28, 28, 143)' }}>
           Biosecurity{' '}
         </h2>
@@ -80,7 +80,8 @@ const Bio = () => {
             width: '100%',
             flexWrap: 'wrap',
             lineHeight: '27px',
-            marginBlock: '2rem'
+            marginBlock: '2rem',
+            paddingBottom: '4rem'
           }}
         >
           <Image
@@ -89,7 +90,7 @@ const Bio = () => {
             width="400px"
             height="100%"
           />
-          <p style={{ width: '50rem' }}>
+          <p style={{ width: '40rem' }}>
             As much as biological agents and their toxins can be used in
             research for the advancement of science, there is a great potential
             for their mis-use as well to pose a threat to public health and

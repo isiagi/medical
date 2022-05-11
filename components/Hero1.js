@@ -1,10 +1,78 @@
+import Link from 'next/link';
 import Fader from './Fade';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero1 = () => {
   return (
-    <div style={{ display: 'flex', width: '100%', justifyContent:'space-around' }}>
-      <div style={{width: '100%',}}>
+    <div
+      style={{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+      }}
+    >
+      <div style={{ width: '65%' }}>
         <Fader />
+      </div>
+      <div
+        style={{
+          maxWidth: '400px',
+          width: '35%',
+          lineHeight: '25px',
+          backgroundColor: 'whitesmoke',
+          color: 'black',
+          padding: '0.2rem',
+          borderRadius: '10px',
+          paddingLeft: '1rem',
+          marginRight: '40px',
+          marginTop: '80px',
+          color: 'rgb(28, 28, 143)',
+        }}
+      >
+        {' '}
+        <p>
+          We work with government and non-government agencies, industry, legally
+          registered companies, highly skilled individual consultants and
+          academic institutions to accomplish our missions in the following
+          strategic areas
+        </p>
+        <ul>
+          <li style={{ color: 'blue',textAlign: 'center' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Bio">
+              <a>Biosafety Biosecurity (Biorisk management) Consultancy </a>
+            </Link>
+          </li>
+          <li style={{ color: 'blue',textAlign: 'center'  }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/BioRisk">
+              <a>Biological Risk Assessments & Management Consultancy </a>
+            </Link>
+          </li>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Waste">
+              <a>
+                Establishment of Waste management systems & supply/repair of
+                incinerators{' '}
+              </a>
+            </Link>
+          </li>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/BioRisk">
+              <a>Biosafety Cabinet Certification</a>
+            </Link>
+          </li>
+          <li style={{ color: 'blue' }}>
+            <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
+            <Link href="/Total">
+              <a>Total Quality management (TQM)</a>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

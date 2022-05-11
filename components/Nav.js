@@ -21,10 +21,10 @@ const NavBar = () => {
     <div className={styles.nav__wrapper}>
       <nav className={offSet > 40 ? styles.nav1 : styles.nav}>
         <div className={styles.nav__logo}>
-          <Image src={'/assets/logo.png'} alt="logo" width="60" height="50" />
+          <Image src={'/assets/logo.png'} alt="logo" width="75" height="65" />
           <h3>
             <span style={{ color: 'rgb(28, 28, 143)' }}>HITEX</span>{' '}
-            <span style={{ color: 'red' }}>CONSORTIUM LIMITED</span>
+            <span style={{ color: 'rgb(236, 75, 54)' }}>CONSORTIUM LTD</span>
           </h3>
         </div>
         <div className={styles.nav__cancel}>

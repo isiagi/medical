@@ -43,31 +43,26 @@ const Ab = () => {
   return (
     <div className={styles.about__wrapper} id="about">
       <div className={styles.about__head}>
-        <h4>About Us</h4>
-    
+        <h4 style={{ fontSize: '1.7rem' }}>About Us</h4>
       </div>
       <div className={styles.about__container}>
-    
-
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
             Our philosophy is to deliver high quality services to our customers
             at all times irrespective of the circumstances.{' '}
           </p>
-
-
-
         </div>
         <div style={{ marginBottom: '4rem' }}>
           <div className={styles.about__item1}>
             <h3
               style={{
                 textAlign: 'center',
-                fontSize: '1.8em',
+                fontSize: '1.5em',
                 margin: '1rem 0',
               }}
             >
-              Mission / <span style={{color: 'rgb(236, 75, 54)'}}>Vision</span>
+              Mission /{' '}
+              <span style={{ color: 'rgb(236, 75, 54)' }}>Vision</span>
             </h3>
             <Tabs style={{ fontSize: '18px' }}>
               <TabList>
@@ -94,11 +89,16 @@ const Ab = () => {
             </Tabs>
           </div>
           <h3
-            style={{ textAlign: 'center', fontSize: '1.8em', margin: '1rem 0',paddingBlock: '2rem' }}
+            style={{
+              textAlign: 'center',
+              fontSize: '1.5em',
+              margin: '1rem 0',
+              paddingBlock: '2rem',
+            }}
           >
             Our Values
           </h3>
-          <div className={styles.about__wra}>
+          {/* <div className={styles.about__wra}>
             {data.map((item) => (
               <div
                 className={styles.about__wrap}
@@ -115,8 +115,8 @@ const Ab = () => {
                 <p style={{ color: 'whitesmoke' }}>{item.content}</p>
               </div>
             ))}
-          </div>
-          {/* <Splide
+          </div> */}
+          <Splide
             options={{
               rewind: true,
               width: '100%',
@@ -135,13 +135,37 @@ const Ab = () => {
             {data.map((item) => (
               <SplideSlide key={item.id}>
                 <div className={styles.helo} data-splide-interval="1000">
-                  <Image src={item.img} alt="" width="300" height="200" />
-                  <h3>{item.title}</h3>
+                  <Image src={item.img} alt="" width="400px" height="200" />
+                  <h3 style={{ color: 'rgb(236, 75, 54)' }}>{item.title}</h3>
                   <p>{item.content}</p>
                 </div>
               </SplideSlide>
             ))}
-          </Splide> */}
+          </Splide>
+          <div>
+            <h3
+              style={{
+                textAlign: 'center',
+                fontSize: '1.5em',
+                margin: '1rem 0',
+                paddingBlock: '2rem',
+              }}
+            >
+              Certifications
+            </h3>
+            <div
+              style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}
+            >
+              <Image
+                src={'/assets/lov.jpg'}
+                alt=""
+                width="600px"
+                height="400"
+                style={{ objectFit: 'cover', overflow: 'hidden' }}
+              />
+              <Image src={'/assets/ho.jpg'} alt="" width="600px" height="600" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

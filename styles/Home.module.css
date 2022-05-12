@@ -26,7 +26,7 @@
   user-select: none;
   z-index: 999;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   color: #fff;
 }
 
@@ -234,7 +234,12 @@ height: 350px;
 }
 
 .helo { 
- /* font-size: 1.1em; */
+ max-width: 400px;
+}
+
+.helo > image {
+  object-fit: cover;
+  overflow: hidden;
 }
 
 /* Department Section Here */
@@ -350,13 +355,13 @@ height: 350px;
   list-style: none;
 }
 .footer__container {
-  min-height: 43vh;
+  min-height: 63vh;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  line-height: 1.6rem;
+  line-height: 2.5rem;
   background: rgb(28, 28, 143) ;
   padding: 0 2rem;
   color: #fff;

@@ -26,7 +26,7 @@ const Total = () => {
         >
           Waste management & supply of incinerators
         </h2>
-        <Image src={'/assets/was.jpg'} alt="bio" width="1000px" height="400px" />
+        <Image src={'/assets/image.png'} alt="bio" width="1000px" height="700px" style={{objectFit: 'cover'}}/>
       </div>
       <div>
         <p>

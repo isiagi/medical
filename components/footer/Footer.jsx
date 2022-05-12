@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={styles.footer__contain}>
         <div className={styles.footer__wrapper}>
           <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>
               Hitex consortium Limited
             </h3>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className={styles.footer__as}>
           <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>Core Services</h3>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>Core Services</h3>
           </div>
           <div>
             <ul>
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className={styles.footer__links}>
           <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px' }}>Quick Link</h3>
+            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>Quick Link</h3>
           </div>
           <div>
             <ul>

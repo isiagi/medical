@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css';
 
 const fadeImages = [
   {
-    url: '/assets/gif.jpg',
+    url: '/assets/nn.jpg',
     caption: 'Biosafety Biosecurity (Biorisk management) Consultancy',
     href: '/Bio',
   },
@@ -27,7 +27,7 @@ const fadeImages = [
     href: '/Waste',
   },
   {
-    url: '/assets/gf.jpg',
+    url: '/assets/nn.jpg',
     caption: 'Biosafety Cabinet Certification  ',
     href: '/Cabinet',
   },

@@ -22,7 +22,7 @@ export default function Home() {
           name="google-site-verification"
           content="NZOf3dXTf97AlYUpgr_SRvp5_IkWZrroB9oYGmBlPuo"
         />
-        <meta name="robots" content="noindex,nofollow" />
+        {/* <meta name="robots" content="noindex,nofollow" /> */}
       </Head>
 
       <main className={styles.main}>

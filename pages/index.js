@@ -22,7 +22,7 @@ export default function Home() {
           name="google-site-verification"
           content="NZOf3dXTf97AlYUpgr_SRvp5_IkWZrroB9oYGmBlPuo"
         />
-        {/* <meta name="robots" content="noindex,nofollow" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main className={styles.main}>
@@ -38,6 +38,5 @@ export default function Home() {
     </div>
   );
 }
-
 
 //namecheaptxt=v=spf1 include:spf.efwd.registrar-servers.com ~all

@@ -27,22 +27,10 @@ const NavBar = () => {
             <span style={{ color: 'rgb(236, 75, 54)' }}>CONSORTIUM LTD</span>
           </h3>
         </div>
-        <div className={styles.nav__cancel}>
-          {open ? (
-            <GiCancel
-              className={styles.nav__cancel__icon}
-              onClick={() => setOpen(false)}
-            />
-          ) : (
-            <MdTableRows
-              className={styles.nav__cancel__icon}
-              onClick={() => setOpen(true)}
-            />
-          )}
-        </div>
+
         <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
           <ul>
-            <li onClick={() => setOpen(false)} >
+            <li onClick={() => setOpen(false)}>
               <Link href="/">HOME</Link>
             </li>
             <li onClick={() => setOpen(false)}>
@@ -66,6 +54,19 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
+        </div>
+        <div className={styles.nav__cancel}>
+          {open ? (
+            <GiCancel
+              className={styles.nav__cancel__icon}
+              onClick={() => setOpen(false)}
+            />
+          ) : (
+            <MdTableRows
+              className={styles.nav__cancel__icon}
+              onClick={() => setOpen(true)}
+            />
+          )}
         </div>
       </nav>
     </div>

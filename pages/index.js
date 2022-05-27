@@ -38,3 +38,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+//namecheaptxt=v=spf1 include:spf.efwd.registrar-servers.com ~all

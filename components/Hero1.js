@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Fader from './Fade';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
+import styles from '../styles/Home.module.css';
+
 const Hero1 = () => {
   return (
     <div
@@ -13,24 +15,10 @@ const Hero1 = () => {
         flexWrap: 'wrap',
       }}
     >
-      <div style={{ width: '65%' }}>
+      <div className={styles.hero1__fader}>
         <Fader />
       </div>
-      <div
-        style={{
-          maxWidth: '400px',
-          width: '35%',
-          lineHeight: '25px',
-          backgroundColor: 'whitesmoke',
-          color: 'black',
-          padding: '0.2rem',
-          borderRadius: '10px',
-          paddingLeft: '1rem',
-          marginRight: '40px',
-          marginTop: '80px',
-          color: 'rgb(28, 28, 143)',
-        }}
-      >
+      <div className={styles.hero1__content}>
         {' '}
         <p>
           We work with government and non-government agencies, industry, legally
@@ -39,13 +27,13 @@ const Hero1 = () => {
           strategic areas
         </p>
         <ul>
-          <li style={{ color: 'blue',textAlign: 'center' }}>
+          <li style={{ color: 'blue', textAlign: 'center' }}>
             <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
             <Link href="/Bio">
               <a>Biosafety Biosecurity (Biorisk management) Consultancy </a>
             </Link>
           </li>
-          <li style={{ color: 'blue',textAlign: 'center'  }}>
+          <li style={{ color: 'blue', textAlign: 'center' }}>
             <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
             <Link href="/BioRisk">
               <a>Biological Risk Assessments & Management Consultancy </a>

@@ -17,7 +17,11 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Hitex Diagnostic Limited</title>
-        <meta name="description" content="Hitex wastemanagemet" />
+        <meta name="description" content="Hitex Consortium" />
+        <meta
+          name="keyword"
+          content="Hitex Consortium, Bio Safety, Bio Waste Management, Bio Security, Hitex, Consortium, Bio Consultancy,Biosafety Cabinet Certification, Total Quality management"
+        />
         <meta
           name="google-site-verification"
           content="NZOf3dXTf97AlYUpgr_SRvp5_IkWZrroB9oYGmBlPuo"

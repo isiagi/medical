@@ -21,7 +21,10 @@ function MyApp({ Component, pageProps }) {
     <div>
     <Head>
         <meta charset="UTF-8" />
-        <meta name="keywords" content="hitex, consortium, hitexconsortium" />
+        <meta
+          name="keyword"
+          content="Hitex Consortium, Bio Safety, Bio Waste Management, Bio Security, Hitex, Consortium, Bio Consultancy,Biosafety Cabinet Certification, Total Quality management"
+        />
         <meta name="author" content="Paul" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

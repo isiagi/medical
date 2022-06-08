@@ -27,16 +27,16 @@ const Hero1 = () => {
           strategic areas
         </p>
         <ul>
-          <li style={{ color: 'blue', textAlign: 'center' }}>
+          <li style={{ color: 'blue' }}>
             <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
             <Link href="/Bio">
               <a>Biosafety Biosecurity (Biorisk management) Consultancy </a>
             </Link>
           </li>
-          <li style={{ color: 'blue', textAlign: 'center' }}>
+          <li style={{ color: 'blue' }}>
             <AiOutlineArrowRight style={{ color: 'rgb(236, 75, 54)' }} />
             <Link href="/BioRisk">
-              <a>Biological Risk Assessments & Management Consultancy </a>
+              <a>Biological Risk Assessments / Management Consultancy </a>
             </Link>
           </li>
           <li style={{ color: 'blue' }}>

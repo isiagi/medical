@@ -21,7 +21,7 @@ const Ban = () => {
         is a company limited by shares and legally registered by URSB and URA.
         Established in 2021 in Uganda by a team of highly skilled technical
         experts in human health, animal health, plant and environmental health,
-        as well as Monitoring Evaluation and Learning (MEL) of programs.
+        as well as Monitoring Evaluation and Learning (MEL).
       </p>
 
       <p style={{ fontSize: '17px', paddingTop: '5px' }}>

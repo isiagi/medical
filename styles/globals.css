@@ -5,7 +5,8 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-  color: rgb(28, 28, 143)
+  color: rgb(65, 65, 70);
+  color: rgb(27, 27, 29);
 }
 
 a {
@@ -24,4 +25,8 @@ a {
 
 ul {
   list-style: none;
+}
+
+image {
+  max-width: 100%;
 }

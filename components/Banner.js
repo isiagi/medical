@@ -5,7 +5,7 @@ import { BsFacebook } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { BsInstagram } from 'react-icons/bs';
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Banner.module.css'
 
 const Banner = () => {
   return (

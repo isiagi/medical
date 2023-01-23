@@ -1,0 +1,59 @@
+.footer__container {
+  min-height: 80vh;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 2.2rem;
+  background: linear-gradient(rgba(17, 25, 67, 0.9), rgb(17, 25, 67, 0.9)),
+    url('../public/assets/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2rem;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.footer__info {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer__contain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.lastFooter__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 7vh;
+  align-items: center;
+  border-top: 1px solid whitesmoke;
+  background: rgb(17, 25, 67);
+  opacity: 0.9;
+  padding: 0 2rem;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.lastFooter__wrapper1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__links div > ul li {
+  color: whitesmoke;
+}
+
+.footer__links div > ul li:hover {
+  color: rgb(236, 75, 54);
+}
+
+.footer__as div > ul li:hover {
+  color: rgb(236, 75, 54);
+}

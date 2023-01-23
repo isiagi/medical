@@ -1,0 +1,19 @@
+.Banner1__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  min-height: 20vh;
+}
+
+.Banner1__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .Banner1__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

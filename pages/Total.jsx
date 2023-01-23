@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Services from '../components/Services';
 
 const Total = () => {
   return (
@@ -10,7 +11,6 @@ const Total = () => {
         alignItems: 'center',
         padding: '0 2rem',
         lineHeight: '40px',
-        backgroundColor: 'whitesmoke',
       }}
     >
       <div>
@@ -52,6 +52,7 @@ const Total = () => {
           9000 certification frameworks.
         </p>
       </div>
+      <Services />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -44,14 +44,15 @@ const Ab = () => {
     <div className={styles.about__wrapper} id="about">
       <div className={styles.about__head}>
         <h4 style={{ fontSize: '1.7rem' }}>About Us</h4>
-      </div>
-      <div className={styles.about__container}>
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
             Our philosophy is to deliver high quality services to our customers
             at all times irrespective of the circumstances.{' '}
           </p>
         </div>
+      </div>
+      <div className={styles.about__container}>
+        
         <div style={{ marginBottom: '4rem' }}>
           <div className={styles.about__item1}>
             <h3
@@ -88,6 +89,7 @@ const Ab = () => {
               </TabPanel>
             </Tabs>
           </div>
+          <div style={{background: '#fff', padding: '16px 32px', width: '100%'}}>
           <h3
             style={{
               textAlign: 'center',
@@ -142,6 +144,7 @@ const Ab = () => {
               </SplideSlide>
             ))}
           </Splide>
+          </div>
           <div>
             <h3
               style={{

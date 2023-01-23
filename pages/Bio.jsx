@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import styles from '../styles/Home.module.css';
+
 const Bio = () => {
   return (
     <div
@@ -11,22 +13,25 @@ const Bio = () => {
         padding: '0 2rem',
         // lineHeight: '40px',
         backgroundColor: 'whitesmoke',
-        minHeight: '100vh'
+        minHeight: '100vh',
       }}
     >
-      <div>
-        <h2
+      <div className={styles.bio}>
+      <h2
           style={{
             marginTop: '5rem',
             marginBottom: '2rem',
             textAlign: 'center',
             // backgroundColor: 'rgb(28, 28, 143)',
             padding: '2.5rem 0',
-            color: 'rgb(28, 28, 143)',
+            color: '#fff',
           }}
         >
           Biorisk management (Biosafety Biosecurity) Consultancy
         </h2>
+      </div>
+      <div>
+        
       </div>
       <div
         style={{
@@ -36,9 +41,11 @@ const Bio = () => {
           width: '100%',
           flexWrap: 'wrap',
           lineHeight: '27px',
+          backgroundColor: '#fff',
+          paddingBlock:'3rem'
         }}
       >
-        <p style={{ width: '40rem' }}>
+        <p style={{ width: '100%' }}>
           Biosafety Biosecurity is our niche; Through our highly skilled
           experts, we provide high quality Biorisk management consultancy
           services to individuals and institutions on the best approaches to
@@ -65,23 +72,24 @@ const Bio = () => {
           src={'/assets/safety.jpg'}
           alt="bio"
           width="400px"
-          height="100%"
+          height="500px"
+          style={{objectFit: "cover"}}
         />
       </div>
       <div style={{ lineHeight: '27px', marginTop: '40px' }}>
-        <h2 style={{ textAlign: 'center', color: 'rgb(28, 28, 143)' }}>
-          Biosecurity{' '}
-        </h2>
+        
         <div
+        className={styles.bi}
           style={{
-            display: 'flex',
-            gap: '20px',
-            justifyContent: 'flex-start',
+            display: 'grid',
+            // gap: '20px',
+            // justifyContent: 'flex-start',
+            gridTemplateColumn: 'repeat(auto-fix, minmax(600px, 1fr))',
             width: '100%',
             flexWrap: 'wrap',
             lineHeight: '27px',
             marginBlock: '2rem',
-            paddingBottom: '4rem'
+            paddingBottom: '4rem',
           }}
         >
           <Image
@@ -90,7 +98,7 @@ const Bio = () => {
             width="400px"
             height="100%"
           />
-          <p style={{ width: '40rem' }}>
+          <p>
             As much as biological agents and their toxins can be used in
             research for the advancement of science, there is a great potential
             for their mis-use as well to pose a threat to public health and

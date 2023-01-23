@@ -5,18 +5,37 @@ import { FaBiohazard } from 'react-icons/fa';
 import { AiOutlineAudit } from 'react-icons/ai';
 import { FaClipboardList, FaUsers } from 'react-icons/fa';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Services.module.css';
 import Link from 'next/link';
 
 const Services = () => {
   return (
     <div className={styles.service__container} id="services">
-      <h2 style={{ color: 'rgb(236, 75, 54)' }}>Our Services</h2>
-      <p style={{textAlign: 'center',paddingBottom: '4rem' }}>
-        We offer consultancy services in <Link href="#">Biosafety Biosercurity</Link>, <Link href="#">Biological Risk
-        Assesement</Link> , <Link href="#">Waste Manangement</Link>, <Link href="#">Biosafety Cabinet Certification</Link> and
-        <Link href="#">Total Quality management</Link>, and we utilise the training, mentorship and audit approaches to improve our programming as described below.
-      </p>
+      <div style={{display: 'flex', paddingTop:'48px', justifyContent: 'space-between'}}>
+        <h2 style={{ color: '#9121FD', marginBottom: '16px' }}>
+          Utility Programs
+        </h2>
+        <p
+          style={{
+            textAlign: 'center',
+            paddingBottom: '4rem',
+            maxWidth: '800px',
+            margin: '0 auto',
+            color: 'rgb(65, 65, 70)',
+          }}
+        >
+          We offer consultancy services in{' '}
+          <Link href="#" style={{ textDecoration: 'underline' }}>
+            Biosafety Biosercurity
+          </Link>
+          , <Link href="#">Biological Risk Assesement</Link> ,{' '}
+          <Link href="#">Waste Manangement</Link>,{' '}
+          <Link href="#">Biosafety Cabinet Certification</Link> and
+          <Link href="#">Total Quality management</Link>, and we utilise the
+          training, mentorship and audit approaches to improve our programming
+          as described below.
+        </p>
+      </div>
       <div className={styles.service__items}>
         <div className={styles.service__item}>
           <div className={styles.service__item__one}>

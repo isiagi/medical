@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdTableRows } from 'react-icons/md';
 import { GiCancel } from 'react-icons/gi';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Nav.module.css';
 import Image from 'next/image';
 
 const NavBar = () => {
@@ -37,13 +37,13 @@ const NavBar = () => {
               <Link href="/Ab">ABOUT US</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="/#services">SERVICES</Link>
+              <Link href="/Services">SERVICES</Link>
             </li>
             {/* <li onClick={() => setOpen(false)}>TESTIMONIALS</li> */}
             <li onClick={() => setOpen(false)}>
-              <Link href="#contact">CONTACT</Link>
+              <Link href="/Contact">CONTACT</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="https://api.whatsapp.com/send?phone=256772844459">
                 <a>
                   <IoLogoWhatsapp
@@ -52,7 +52,7 @@ const NavBar = () => {
                   +256772844459
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className={styles.nav__cancel}>

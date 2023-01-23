@@ -10,12 +10,12 @@ const Ban = () => {
         lineHeight: '28px',
         margin: '15px 0',
         paddingBottom: '3rem',
-        color: 'rgb(28, 28, 143)'
+        color: 'rgb(27, 27, 29)'
         // fontSize: '17px'
       }}
     >
       <p style={{ fontSize: '17px' }}>
-        <span style={{ color: 'rgb(28, 28, 143)' }}>
+        <span style={{ color: 'rgb(28, 28, 143)', fontSize: '20px'}}>
           <b>Hitex consortium Limited</b>
         </span>{' '}
         is a company limited by shares and legally registered by URSB and URA.

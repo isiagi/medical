@@ -1,19 +1,40 @@
 import React from 'react';
-import { BsFacebook } from 'react-icons/bs';
-import { AiFillTwitterCircle } from 'react-icons/ai';
-import { BsInstagram } from 'react-icons/bs';
 // import { Link } from 'react-router-dom';
 
-import styles from '../../styles/Home.module.css';
+import styles from '../../styles/Footer.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import { CgHeadset } from 'react-icons/cg';
+import { HiOutlineMail } from 'react-icons/hi';
+import { GoLocation } from 'react-icons/go';
 
 const Footer = () => {
   return (
     <div className={styles.footer__container}>
       <div className={styles.footer__contain}>
         <div className={styles.footer__wrapper}>
-          <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div
+              style={{
+                background: 'white',
+                width: '70px',
+                height: '60px',
+                borderRadius: '50%',
+              }}
+            >
+              <Image
+                src={'/assets/logo.png'}
+                alt="logo"
+                width="75"
+                height="65"
+              />
+            </div>
+            <h3
+              style={{
+                fontSize: '18px',
+                marginBottom: '10px',
+              }}
+            >
               Hitex consortium Limited
             </h3>
           </div>
@@ -24,28 +45,18 @@ const Footer = () => {
             environmental health, as well as Monitoring Evaluation and Learning
             (MEL).
           </div>
-          <div>
-            <BsFacebook style={{ fontSize: '1.5rem', color: 'whitesmoke' }} />
-            <BsInstagram
-              style={{
-                fontSize: '1.5rem',
-                marginLeft: '1rem',
-                color: 'whitesmoke',
-              }}
-            />
-            <AiFillTwitterCircle
-              style={{
-                fontSize: '1.5rem',
-                marginLeft: '1rem',
-                color: 'whitesmoke',
-              }}
-            />
-          </div>
         </div>
 
         <div className={styles.footer__as}>
           <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>Core Services</h3>
+            <h3
+              style={{
+                fontSize: '18px',
+                marginBottom: '10px',
+              }}
+            >
+              Core Services
+            </h3>
           </div>
           <div>
             <ul>
@@ -77,7 +88,14 @@ const Footer = () => {
 
         <div className={styles.footer__links}>
           <div>
-            <h3 style={{ color: 'rgb(236, 75, 54)', fontSize: '20px',marginBottom: '10px' }}>Quick Link</h3>
+            <h3
+              style={{
+                fontSize: '18px',
+                marginBottom: '10px',
+              }}
+            >
+              Quick Link
+            </h3>
           </div>
           <div>
             <ul>
@@ -94,6 +112,49 @@ const Footer = () => {
                 <Link href="#contact">Contact</Link>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h3
+              style={{
+                fontSize: '18px',
+                marginBottom: '10px',
+              }}
+            >
+              Contact Us
+            </h3>
+          </div>
+          <div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                fontSize: '1.2rem',
+                color: '#E9542D',
+              }}
+            >
+              <CgHeadset fontSize={20} />
+              <p>+256772844459</p>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                fontSize: '1.2rem',
+                color: '#E9542D',
+              }}
+            >
+              <HiOutlineMail fontSize={20} />
+              <p>hitexconsortium@gmail.com</p>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <GoLocation fontSize={20} />
+              <p>Namboole-Kampala, Uganda</p>
+            </div>
           </div>
         </div>
       </div>

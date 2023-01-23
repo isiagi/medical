@@ -1,0 +1,28 @@
+.hero1__fader {
+  width: 60%;
+}
+
+.hero1__content {
+  max-width: 400px;
+  width: 35%;
+  line-height: 25px;
+  background-color: whitesmoke;
+  color: black;
+  padding: 0.2rem;
+  border-radius: 10px;
+  padding-left: 1rem;
+  margin-right: 40px;
+  margin-top: 80px;
+  color: rgb(27, 27, 29);
+}
+
+@media screen and (max-width: 991px) {
+
+    .hero1__fader {
+      width: 100%;
+    }
+  
+    .hero1__content {
+      width: 100%;
+    }
+  }

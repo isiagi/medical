@@ -1,0 +1,28 @@
+.banner__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 124);
+    min-height: 5vh;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .banner__column {
+    display: flex;
+    gap: 20px;
+    margin-left: 2rem;
+  }
+  
+  .banner__column div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  .banner__icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 2rem;
+  }

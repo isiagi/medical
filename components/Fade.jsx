@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Fade.module.css';
 
 const fadeImages = [
   {
@@ -23,7 +23,8 @@ const fadeImages = [
   },
   {
     url: '/assets/gf.jpg',
-    caption: 'Establishment of Waste management systems & supply/repair of incinerators ',
+    caption:
+      'Establishment of Waste management systems & supply/repair of incinerators ',
     href: '/Waste',
   },
   {
@@ -40,6 +41,7 @@ const Fader = () => {
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
             <div className={styles.image__container}>
+              <div className={styles.image__overlay} >hello</div>
               <Image src={fadeImage.url} layout="fill" objectFit="cover" />
             </div>
             <div className={styles.ahh}>
@@ -52,14 +54,14 @@ const Fader = () => {
                   borderRadius: '10px',
                   position: 'absolute',
                   top: '170px',
-                  right: '0'
+                  right: '0',
                 }}
               >
                 <p
                   style={{
-                    color: 'rgb(28, 28, 143)',
+                    color: 'blue',
                     textTransform: 'uppercase',
-                    fontSize: '20px'
+                    fontSize: '20px',
                   }}
                 >
                   {fadeImage.caption}
@@ -68,10 +70,10 @@ const Fader = () => {
                   style={{
                     padding: '12px',
                     color: 'whitesmoke',
-                    background: 'rgb(28, 28, 143)',
+                    background: '#9121FD',
                     borderRadius: '20px',
                     border: 'none',
-                    fontSize: '13px',
+                    fontSize: '15px',
                     marginBlock: '.6rem',
                     width: '70%',
                     margin: '0 auto',

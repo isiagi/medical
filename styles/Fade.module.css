@@ -1,0 +1,52 @@
+.each__fade {
+    width: 100%;
+    position: relative;
+  }
+  
+  .each__fade > .image__container {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .each__fade > .image__container > .image__overlay {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+  }
+  
+  /* .each__fade > .image__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  
+  .each__fade > .ahh {
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 650px) {
+    .each__fade > .image__container {
+      min-height: 24vh;
+    }
+  
+    .each__fade > .image__container img {
+      height: 25vh;
+    }
+  
+    .each__fade > h2 {
+      top: 78px;
+      left: 30%;
+      right: 50%;
+      width: 100%;
+    }
+  }

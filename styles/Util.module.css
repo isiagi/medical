@@ -26,6 +26,7 @@
 .util__flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -53,9 +54,10 @@
 }
 
 .service__item__icon {
-    font-size: 6rem;
+    font-size: 3rem;
     color: #0067DA;
    margin: 0 auto;
+   /* -webkit-text-stroke: 3rem #0067DA; */
 }
 
 .util__wrapper {

@@ -1,6 +1,7 @@
 import Servicestyles from '../styles/Contact.module.css';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import Services from '../components/Services';
 
 const services = () => {
   return (
@@ -14,22 +15,7 @@ const services = () => {
           </p>
         </div>
       </div>
-      <div>
-        <div className={Servicestyles.service__wrapper}>
-          <div className={Servicestyles.service__img}>
-            <Image src={'/assets/nn.jpg'} alt="" width={500} height={500}/>
-          </div>
-          <div>
-            <div>
-              <p>
-                Our philosophy is to deliver high quality services to our
-                customers at all times irrespective of the circumstances.{' '}
-              </p>
-            </div>
-            <button>Read More</button>
-          </div>
-        </div>
-      </div>
+      <Services />
     </div>
   );
 };

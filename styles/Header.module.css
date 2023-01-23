@@ -1,6 +1,6 @@
 .header__wrapper {
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .header__paragraph {
@@ -12,4 +12,8 @@
 .header__wrapper > h2 {
     padding: 10px 0;
     color: #1A357E;
+}
+
+.header__container {
+    padding: 48px 0;
 }

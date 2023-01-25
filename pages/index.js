@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Banner1 from '../components/Ban';
-import Faq from '../components/Faq';
 import Hero1 from '../components/Hero1';
 import Services from '../components/Services';
 import Top from '../components/Top';
 import Utility from '../components/Utility';
 import styles from '../styles/Home.module.css';
+import He from '../components/He';
+import Who from '../components/Who';
 
 export default function Home() {
   return (
@@ -27,10 +28,11 @@ export default function Home() {
       <main className={styles.main}>
         <Top />
         <Hero1 />
-        <Banner1 />
+        <Who />
+        {/* <Banner1 /> */}
         <Utility />
         <Services />
-        <Faq />
+        <He />
       </main>
     </div>
   );

@@ -57,11 +57,19 @@
   margin: 1rem;
 }
 
+.service__item:hover .service__icon {
+  background-color: rgb(236, 75, 54);
+}
+
 .service__icon::before {
   content: '';
   height: 100px;
   width: 100px;
-  border: 5px dashed #0067DA;
+  border: 4px dashed #0067DA;
   position: absolute;
   border-radius: 50%;
+}
+
+.service__item:hover .service__icon::before{
+  border: 4px dashed rgb(236, 75, 54);
 }

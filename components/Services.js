@@ -23,7 +23,7 @@ const Services = () => {
         <div className={styles.service__flex}>
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
+              <Image src={'/assets/gif.jpg'} alt={'picture'} layout="fill" />
             </div>
             <div className={styles.service__detail}>
               <div className={styles.service__icon}>
@@ -55,7 +55,7 @@ const Services = () => {
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
+              <Image src={'/assets/image.png'} alt={'picture'} layout="fill" />
             </div>
             <div className={styles.service__detail}>
               <div className={styles.service__icon}>
@@ -90,7 +90,7 @@ const Services = () => {
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
+              <Image src={'/assets/total.jpg'} alt={'picture'} layout="fill" />
             </div>
             <div className={styles.service__detail}>
               <div className={styles.service__icon}>

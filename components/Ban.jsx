@@ -6,10 +6,10 @@ const Ban = () => {
     <div
       style={{
         // display: 'flex',
-        padding: '0 2rem',
+        // padding: '0 2rem',
         lineHeight: '28px',
-        margin: '15px 0',
-        paddingBottom: '3rem',
+        // margin: '15px 0',
+        // paddingBottom: '3rem',
         color: 'rgb(27, 27, 29)'
         // fontSize: '17px'
       }}
@@ -39,37 +39,7 @@ const Ban = () => {
         that interact with microorganisms specifically those flagged ‘high
         importance’.
       </p>
-      {/* <div
-        style={{
-          borderTop: '3px solid rgb(18, 18, 124)',
-          backgroundColor: 'whitesmoke',
-        }}
-      >
-        {' '}
-        <p>
-          We work with government and non-government agencies, industry, legally
-          registered companies, highly skilled individual consultants and
-          academic institutions to accomplish our missions in the following
-          strategic areas
-        </p>
-        <ul>
-          <li
-            style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-          >
-            <Link href="/Bio">Biorisk management (Biosafety Biosecurity)</Link>
-          </li>
-          <li
-            style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-          >
-            <Link href="/BioRisk">Biological Risk Assessments </Link>
-          </li>
-          <li
-            style={{ color: 'rgb(18, 18, 124)', textDecoration: 'underline' }}
-          >
-            <Link href="/Total">Total Quality management (TQM)</Link>
-          </li>
-        </ul>
-      </div> */}
+     
     </div>
   );
 };

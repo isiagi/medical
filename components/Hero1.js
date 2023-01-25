@@ -7,18 +7,18 @@ import styles from '../styles/Hero.module.css';
 const Hero1 = () => {
   return (
     <div
-      style={{
-        display: 'flex',
-        width: '100%',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-      }}
+      // style={{
+      //   display: 'flex',
+      //   width: '100%',
+      //   justifyContent: 'space-between',
+      //   alignItems: 'center',
+      //   flexWrap: 'wrap',
+      // }}
     >
       <div className={styles.hero1__fader}>
         <Fader />
       </div>
-      <div className={styles.hero1__content}>
+      {/* <div className={styles.hero1__content}>
         {' '}
         <p>
           We work with government and non-government agencies, industry, legally
@@ -61,7 +61,7 @@ const Hero1 = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

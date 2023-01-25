@@ -1,12 +1,11 @@
-
-.bio{
+.bio {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/assets/gif.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/gif.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .bi {
@@ -24,19 +23,29 @@
   overflow: hidden;
 }
 
+.faq__over {
+ display: flex;
+ align-items: center;
+ justify-items: center;
+ align-items: center;
+ width: 100%;
+}
 
 .faq__container {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  align-items: center;
   min-height: 70vh;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ gap: 2rem;
+ border: 1px solid red;
+ width: 100%;
 }
 
 .faq__item {
   background: whitesmoke;
   padding: 10px;
   max-width: 600px;
+  justify-items: center;
+  text-align: center;
 }
 
 .faq__para {
@@ -46,6 +55,14 @@
 .faq__para1 {
   display: block;
 }
+
+.faq__img {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+
 
 .top {
   position: relative;
@@ -61,3 +78,36 @@
   position: fixed;
   cursor: pointer;
 }
+
+.he__container {
+  background-color: #F6FAFE;
+  min-height: 100vh;
+}
+
+.he__img {
+  position: relative;
+}
+
+.he__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.he__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-auto-rows: 350px; */
+  gap: 2rem;
+  position: relative;
+}
+
+.he__tags {
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  z-index: 20;
+}
+

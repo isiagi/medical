@@ -1,0 +1,36 @@
+.contact__container {
+  max-width: 600px;
+  line-height: 30px;
+}
+
+.contact__container input {
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.contact__container input:first-child {
+  width: 100%;
+}
+
+.contact__container textarea {
+  resize: none;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.contact__container button {
+  padding: 0.5rem;
+  border-radius: 40px;
+  width: 10rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: rgb(28, 28, 143);
+  margin-top: 0.5rem;
+}

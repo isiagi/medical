@@ -55,17 +55,17 @@
   flex-wrap: wrap;
   font-weight: 500;
   padding: 0.7rem;
+  color: rgb(17, 25, 67);
 }
 
-.nav__items ul li:hover {
-  background-color: whitesmoke;
-  /* color: black; */
-  border-radius: 10px;
+.nav__items ul li:hover:not(.linkactive) {
+  border-bottom: 4px solid rgb(236, 75, 54);
+  color: rgb(236, 75, 54) !important;
 }
 
 .linkactive {
-  background-color: whitesmoke;
-  border-radius: 10px;
+  border-bottom: 4px solid rgb(236, 75, 54);
+  color: rgb(236, 75, 54) !important;
 }
 
 .nav__cancel {
@@ -81,8 +81,9 @@
     display: block;
     position: absolute;
     top: calc(100% + 0vh);
-    left: -100%;
+    left: -150%;
     width: 100%;
+    transition: all 0.4s ease;
   }
 
   .nav__items.active {

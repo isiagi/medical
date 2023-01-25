@@ -7,6 +7,8 @@ import { GiCancel } from 'react-icons/gi';
 import styles from '../styles/Nav.module.css';
 import Image from 'next/image';
 
+import { useRouter } from 'next/router';
+
 const NavBar = () => {
   const [offSet, setOffset] = React.useState(0);
   const [open, setOpen] = React.useState(false);
@@ -16,6 +18,8 @@ const NavBar = () => {
       setOffset(window.pageYOffset);
     };
   }, []);
+
+  const router = useRouter();
 
   return (
     <div className={styles.nav__wrapper}>
@@ -30,17 +34,29 @@ const NavBar = () => {
 
         <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
           <ul>
-            <li onClick={() => setOpen(false)}>
+            <li
+              className={router.pathname == '/' ? `${styles.linkactive}` : ''}
+              onClick={() => setOpen(false)}
+            >
               <Link href="/">HOME</Link>
             </li>
-            <li onClick={() => setOpen(false)}>
+            <li
+              className={router.pathname == '/Ab' ? `${styles.linkactive}` : ''}
+              onClick={() => setOpen(false)}
+            >
               <Link href="/Ab">ABOUT US</Link>
             </li>
-            <li onClick={() => setOpen(false)}>
+            <li
+              className={router.pathname == '/Services' ? `${styles.linkactive}` : ''}
+              onClick={() => setOpen(false)}
+            >
               <Link href="/Services">SERVICES</Link>
             </li>
             {/* <li onClick={() => setOpen(false)}>TESTIMONIALS</li> */}
-            <li onClick={() => setOpen(false)}>
+            <li
+              className={router.pathname == '/Contact' ? `${styles.linkactive}` : ''}
+              onClick={() => setOpen(false)}
+            >
               <Link href="/Contact">CONTACT</Link>
             </li>
             {/* <li>

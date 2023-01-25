@@ -7,6 +7,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import styles from '../styles/About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Mini from '../components/Mini';
 
 const data = [
   {
@@ -42,7 +43,7 @@ const data = [
 const Ab = () => {
   return (
     <div className={styles.about__wrapper} id="about">
-      <div className={styles.about__head}>
+      {/* <div className={styles.about__head}>
         <h4 style={{ fontSize: '1.7rem' }}>About Us</h4>
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
@@ -50,7 +51,8 @@ const Ab = () => {
             at all times irrespective of the circumstances.{' '}
           </p>
         </div>
-      </div>
+      </div> */}
+      <Mini head={"About Us"} sub="About Us" />
       <div className={styles.about__container}>
         
         <div style={{ marginBottom: '4rem' }}>

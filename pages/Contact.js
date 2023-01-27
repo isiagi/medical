@@ -5,7 +5,7 @@ import { GoLocation } from 'react-icons/go';
 import emailjs from '@emailjs/browser';
 // import styles from '../styles/Home.module.css';
 
-import styles from '/home/geofrey/Desktop/clinic/styles/Contact.module.css';
+import styles from '../styles/Contact.module.css';
 import Mini from '../components/Mini';
 import InputSection from '../components/InputSection';
 

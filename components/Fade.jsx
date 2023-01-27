@@ -40,11 +40,29 @@ const Fader = () => {
       <Fade arrows={false} duration={4000}>
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
-            <div className={styles.image__container}>
-              <div className={styles.image__overlay} >hello</div>
-              <Image src={fadeImage.url} layout="fill" objectFit="cover" />
+            <div
+              className={styles.image__container}
+              style={{
+                background: `linear-gradient(90deg, rgba(0,212,255,0.2007177871148459) 100%, rgba(9,9,121,0.15029761904761907) 100%, rgba(0,212,255,1) 100%),url(${fadeImage.url})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className={styles.image__overlayout}>
+                <h1 className={styles.image__heading}>
+                  WE WORK WITH BOTH THE PUBLIC SECTOR AND PRIVATE SECTOR WITH
+                </h1>
+
+                <Link href={fadeImage.href}>
+                  <h2 className={styles.image__heading1}>
+                    {fadeImage.caption}
+                  </h2>
+                </Link>
+              </div>
+              {/* <Image src={fadeImage.url} layout="fill" objectFit="cover" /> */}
             </div>
-            <div className={styles.ahh}>
+            {/* <div className={styles.ahh}>
               <div
                 style={{
                   background: 'rgba(255, 255, 255, 0.9)',
@@ -84,7 +102,7 @@ const Fader = () => {
                   </Link>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </Fade>

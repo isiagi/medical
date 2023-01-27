@@ -41,7 +41,8 @@
 }
 
 .faq__item {
-  background: whitesmoke;
+  background: #0067DA;
+  color: #fff;
   padding: 10px;
   max-width: 600px;
   justify-items: center;
@@ -50,10 +51,12 @@
 
 .faq__para {
   display: none;
+  color: rgb(130, 129, 129);
 }
 
 .faq__para1 {
   display: block;
+  color: rgb(130, 129, 129);
 }
 
 .faq__img {
@@ -82,6 +85,13 @@
 .he__container {
   background-color: #F6FAFE;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.he__heading {
+ text-align: center;
+ padding-bottom: 4rem;
 }
 
 .he__img {

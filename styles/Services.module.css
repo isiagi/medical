@@ -23,6 +23,7 @@
 
 .services__wrapper {
   margin: 0 1rem;
+  padding-bottom: 3.5rem;
 }
 
 .service__item > .service__detail > h3 {

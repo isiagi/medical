@@ -10,12 +10,12 @@ const Ban = () => {
         lineHeight: '28px',
         // margin: '15px 0',
         // paddingBottom: '3rem',
-        color: 'rgb(27, 27, 29)'
+       color: 'rgb(130, 129, 129)',
         // fontSize: '17px'
       }}
     >
-      <p style={{ fontSize: '17px' }}>
-        <span style={{ color: 'rgb(28, 28, 143)', fontSize: '20px'}}>
+      <p style={{ fontSize: '17px'}}>
+        <span style={{fontSize: '20px'}}>
           <b>Hitex consortium Limited</b>
         </span>{' '}
         is a company limited by shares and legally registered by URSB and URA.
@@ -31,7 +31,7 @@ const Ban = () => {
         management systems respectively.
       </p>
 
-      <p style={{ fontSize: '17px', paddingTop: '5px' }}>
+      <p style={{ fontSize: '17px', paddingTop: '5px', color: 'color: rgb(130, 129, 129)' }}>
         Through our highly skilled experts, we aim at building strong Biorisk
         management systems (Biosafety Biosecurity) across all organizations
         (Health Facilities-Laboratories, research institutions, animal holding

@@ -1,5 +1,5 @@
 import React,{ useRef } from 'react'
-import styles from '/home/geofrey/Desktop/clinic/styles/Form.module.css';
+import styles from '../styles/Form.module.css';
 
 import emailjs from '@emailjs/browser';
 
@@ -30,11 +30,11 @@ function InputSection(params) {
   
     return (
       <div className={styles.contact__container}>
-        <h3 style={{ fontSize: '2rem', color: 'white' }}>
+        <h3 style={{ fontSize: '2rem', color: '#0067DA' }}>
           Looking for a{' '}
           <span style={{ color: 'rgb(28, 28, 143)' }}>Certified Experts?</span>
         </h3>
-        <p style={{ color: '#fff' }}>
+        <p style={{ color: 'rgb(130, 129, 129)' }}>
           We believe in providing the best possible Biosafety and Biosecurity
           quality management systems for our customers.
         </p>

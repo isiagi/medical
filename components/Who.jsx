@@ -9,7 +9,15 @@ function Who() {
       <div className={styles.who__wrapper}>
         <div className={styles.who__section}>
           <div>
-            <h2>Who We Are</h2>
+            <h2
+              style={{
+                textAlign: 'center',
+                color: '#0067DA',
+                marginBottom: '1rem',
+              }}
+            >
+              Who We Are
+            </h2>
             <Ban />
           </div>
           <div className={styles.who__img}>

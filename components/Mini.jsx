@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '/home/geofrey/Desktop/clinic/styles/Contact.module.css';
+import styles from '../styles/Contact.module.css';
 
 function Mini({ head, sub }) {
   return (

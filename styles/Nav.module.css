@@ -59,12 +59,12 @@
 }
 
 .nav__items ul li:hover:not(.linkactive) {
-  border-bottom: 4px solid rgb(236, 75, 54);
+  border-bottom: 3px solid rgb(236, 75, 54);
   color: rgb(236, 75, 54) !important;
 }
 
 .linkactive {
-  border-bottom: 4px solid rgb(236, 75, 54);
+  border-bottom: 3px solid rgb(236, 75, 54);
   color: rgb(236, 75, 54) !important;
 }
 

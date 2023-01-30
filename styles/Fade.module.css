@@ -35,9 +35,13 @@
   .image__heading{
     color: #fff;
     max-width: 700px;
-    font-size: 2.4em;
+    font-size: 2.2em;
     text-align: center;
     margin-top: -35px;
+    background-color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    border-radius: 10px;
   }
   
   .each__fade > .ahh {
@@ -59,6 +63,7 @@
     color: rgb(17, 25, 67);
     cursor: pointer;
     margin-top: 20px;
+    font-weight: 400;
   }
 
   .image__heading1:hover {

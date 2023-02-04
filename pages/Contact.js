@@ -30,16 +30,16 @@ const Contact = () => {
               alignItems: 'center',
               gap: '1rem',
               padding: '16px 32px',
-              border: '1px solid rgb(28, 28, 143)',
+              border: '1px solid #fff',
               width: '100%',
             }}
           >
             <div>
-              <GoLocation style={{ fontSize: '30px', color: '#9121FD' }} />
+              <GoLocation style={{ fontSize: '30px', color: '#fff' }} />
             </div>
             <div>
-              <h2>Our Office</h2>
-              <p style={{ color: 'rgb(65, 65, 70)' }}>Namboole, Uganda</p>
+              <h2 style={{color: 'rgb(28, 28, 143)'}}>Our Office</h2>
+              <p style={{ color: '#fff' }}>Namboole, Uganda</p>
             </div>
           </div>
           <div
@@ -48,16 +48,16 @@ const Contact = () => {
               alignItems: 'center',
               gap: '1rem',
               padding: '16px 32px',
-              border: '1px solid rgb(28, 28, 143)',
+              border: '1px solid #fff',
               width: '100%',
             }}
           >
             <div>
-              <HiOutlineMail style={{ fontSize: '30px', color: '#9121FD' }} />
+              <HiOutlineMail style={{ fontSize: '30px', color: '#fff' }} />
             </div>
             <div>
-              <h2>Email Us</h2>
-              <p style={{ color: 'rgb(65, 65, 70)' }}>
+              <h2 style={{color: 'rgb(28, 28, 143)'}}>Email Us</h2>
+              <p style={{color: '#fff'}}>
                 hitexconsortium@gmail.com
               </p>
             </div>
@@ -68,20 +68,20 @@ const Contact = () => {
               alignItems: 'center',
               gap: '1rem',
               padding: '16px 32px',
-              border: '1px solid rgb(28, 28, 143)',
+              border: '1px solid #fff',
               width: '100%',
             }}
           >
             <div>
-              <CgHeadset style={{ fontSize: '30px', color: '#9121FD' }} />
+              <CgHeadset style={{ fontSize: '30px', color: '#fff' }} />
             </div>
             <div>
-              <h2>Call Us</h2>
-              <p style={{ color: 'rgb(65, 65, 70)' }}>+256772844459</p>
+              <h2 style={{color: 'rgb(28, 28, 143)'}}>Call Us</h2>
+              <p style={{color: '#fff'}}>+256772844459</p>
             </div>
           </div>
         </div>
-        <InputSection />
+        <InputSection color1={'rgb(28, 28, 143)'} color2={'rgb(28, 28, 143)'} color3={'#fff'} color4={'rgb(28, 28, 143)'}/>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import styles from '../styles/Form.module.css';
 
 import emailjs from '@emailjs/browser';
 
-function InputSection(params) {
+function InputSection({color1, color2, color3, color4}) {
     const form = useRef();
   
     const handleSubmit = (event) => {
@@ -27,17 +27,22 @@ function InputSection(params) {
   
       event.value = '';
     };
+
+    // #0067DA
+    // rgb(28, 28, 143)
+    // rgb(130, 129, 129)
   
     return (
       <div className={styles.contact__container}>
-        <h3 style={{ fontSize: '2rem', color: '#0067DA' }}>
+        <h3 style={{ fontSize: '2rem', color: color1 }}>
           Looking for a{' '}
-          <span style={{ color: 'rgb(28, 28, 143)' }}>Certified Experts?</span>
+          <span style={{ color: color2 }}>Certified Experts?</span>
         </h3>
-        <p style={{ color: 'rgb(130, 129, 129)' }}>
+        <p style={{ color: color3 }}>
           We believe in providing the best possible Biosafety and Biosecurity
-          quality management systems for our customers.
+          quality management systems for our customers. <span><em>Let's Talk</em></span>
         </p>
+        
         <br />
         <form ref={form} onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Name" />
@@ -65,7 +70,7 @@ function InputSection(params) {
             placeholder="Your message"
           />
           <br />
-          <button type="submit">send request</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );

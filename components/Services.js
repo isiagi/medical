@@ -8,6 +8,7 @@ import { ImEqualizer2 } from 'react-icons/im';
 import { GiNuclearWaste } from 'react-icons/gi';
 import { MdOutlineHourglassTop } from 'react-icons/md';
 import { AiOutlineSafetyCertificate } from 'react-icons/ai';
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -25,83 +26,93 @@ const Services = () => {
             <div className={styles.service__img}>
               <Image src={'/assets/gif.jpg'} alt={'picture'} layout="fill" />
             </div>
-            <div className={styles.service__detail}>
-              <div className={styles.service__icon}>
-                <GiBiohazard />
+            <Link href="/Bio">
+              <div className={styles.service__detail}>
+                <div className={styles.service__icon}>
+                  <GiBiohazard />
+                </div>
+                <h3>Biosafety Biosecurity (Biorisk management) Consultancy</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                </p>
               </div>
-              <h3>Biosafety Biosecurity (Biorisk management) Consultancy</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
-              </p>
-            </div>
+            </Link>
           </div>
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
               <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
             </div>
-            <div className={styles.service__detail}>
-              <div className={styles.service__icon}>
-                <MdOutlineHourglassTop />
+            <Link href="/BioRisk">
+              <div className={styles.service__detail}>
+                <div className={styles.service__icon}>
+                  <MdOutlineHourglassTop />
+                </div>
+                <h3>Biological Risk Assessments / Management Consultancy</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                </p>
               </div>
-              <h3>Biological Risk Assessments / Management Consultancy</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
-              </p>
-            </div>
+            </Link>
           </div>
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
               <Image src={'/assets/image.png'} alt={'picture'} layout="fill" />
             </div>
-            <div className={styles.service__detail}>
-              <div className={styles.service__icon}>
-                <GiNuclearWaste />
+            <Link href="/Waste">
+              <div className={styles.service__detail}>
+                <div className={styles.service__icon}>
+                  <GiNuclearWaste />
+                </div>
+                <h3>
+                  Establishment of Waste management systems & supply/repair of
+                  incinerators
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                </p>
               </div>
-              <h3>
-                Establishment of Waste management systems & supply/repair of
-                incinerators
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
-              </p>
-            </div>
+            </Link>
           </div>
 
-          <div className={styles.service__item}>
+          {/* <div className={styles.service__item}>
             <div className={styles.service__img}>
               <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
             </div>
-            <div className={styles.service__detail}>
-              <div className={styles.service__icon}>
-                <AiOutlineSafetyCertificate />
+            <Link href="/Total">
+              <div className={styles.service__detail}>
+                <div className={styles.service__icon}>
+                  <AiOutlineSafetyCertificate />
+                </div>
+                <h3>Biosafety Cabinet Certification</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                </p>
               </div>
-              <h3>Biosafety Cabinet Certification</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
-              </p>
-            </div>
-          </div>
+            </Link>
+          </div> */}
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
               <Image src={'/assets/total.jpg'} alt={'picture'} layout="fill" />
             </div>
-            <div className={styles.service__detail}>
-              <div className={styles.service__icon}>
-                <ImEqualizer2 />
+            <Link href="/Total">
+              <div className={styles.service__detail}>
+                <div className={styles.service__icon}>
+                  <ImEqualizer2 />
+                </div>
+                <h3>Total Quality management (TQM)</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                </p>
               </div>
-              <h3>Total Quality management (TQM)</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
-              </p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

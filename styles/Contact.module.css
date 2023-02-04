@@ -15,7 +15,7 @@
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('/assets/contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,5 +69,6 @@
 
 .about__item > p{
   max-width: 500px;
-  margin: 0 auto;
+  margin: 2rem auto;
+
 }

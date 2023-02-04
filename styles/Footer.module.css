@@ -1,5 +1,5 @@
 .footer__container {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -19,6 +19,7 @@
   max-width: 400px;
   margin-bottom: 1rem;
   color: #fff;
+  font-weight: 500;
 }
 
 .footer__contain {
@@ -31,7 +32,7 @@
 .lastFooter__wrapper {
   display: flex;
   justify-content: space-between;
-  min-height: 7vh;
+  min-height: 14vh;
   align-items: center;
   border-top: 1px solid whitesmoke;
   background: rgb(17, 25, 67);
@@ -48,6 +49,7 @@
 
 .footer__links div > ul li {
   color: whitesmoke;
+  font-weight: 600;
 }
 
 .footer__links div > ul li:hover {

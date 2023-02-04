@@ -9,10 +9,18 @@
   border: none;
   outline: none;
   width: 100%;
+  font-size: 1em;
 }
 
 .contact__container input:first-child {
   width: 100%;
+}
+.contact__container input::placeholder {
+  color: rgb(236, 75, 54);
+}
+
+.contact__container textarea::placeholder {
+  color: rgb(236, 75, 54);
 }
 
 .contact__container textarea {
@@ -21,16 +29,22 @@
   border: none;
   outline: none;
   width: 100%;
+  font-size: 1em;
 }
 
 .contact__container button {
   padding: 0.5rem;
   border-radius: 40px;
-  width: 10rem;
+  width: 6rem;
   outline: none;
   border: none;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background-color: rgb(28, 28, 143);
   margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.contact__container button:hover {
+  background-color: rgb(236, 75, 54);
 }

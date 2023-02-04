@@ -34,31 +34,45 @@ const NavBar = () => {
 
         <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
           <ul>
-            <li
-              className={router.pathname == '/' ? `${styles.linkactive}` : ''}
-              onClick={() => setOpen(false)}
-            >
-              <Link href="/">HOME</Link>
-            </li>
-            <li
-              className={router.pathname == '/Ab' ? `${styles.linkactive}` : ''}
-              onClick={() => setOpen(false)}
-            >
-              <Link href="/Ab">ABOUT US</Link>
-            </li>
-            <li
-              className={router.pathname == '/Services' ? `${styles.linkactive}` : ''}
-              onClick={() => setOpen(false)}
-            >
-              <Link href="/Services">SERVICES</Link>
-            </li>
+            <Link href="/">
+              <li
+                className={router.pathname == '/' ? `${styles.linkactive}` : ''}
+                onClick={() => setOpen(false)}
+              >
+                HOME
+              </li>
+            </Link>
+            <Link href="/Ab">
+              <li
+                className={
+                  router.pathname == '/Ab' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                ABOUT US
+              </li>
+            </Link>
+            <Link href="/Services">
+              <li
+                className={
+                  router.pathname == '/Services' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                SERVICES
+              </li>
+            </Link>
             {/* <li onClick={() => setOpen(false)}>TESTIMONIALS</li> */}
-            <li
-              className={router.pathname == '/Contact' ? `${styles.linkactive}` : ''}
-              onClick={() => setOpen(false)}
-            >
-              <Link href="/Contact">CONTACT</Link>
-            </li>
+            <Link href="/Contact">
+              <li
+                className={
+                  router.pathname == '/Contact' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                CONTACT
+              </li>
+            </Link>
             {/* <li>
               <Link href="https://api.whatsapp.com/send?phone=256772844459">
                 <a>

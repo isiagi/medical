@@ -8,6 +8,7 @@ import styles from '../styles/About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Mini from '../components/Mini';
+import Who from '../components/Who';
 
 const data = [
   {
@@ -52,29 +53,29 @@ const Ab = () => {
           </p>
         </div>
       </div> */}
-      <Mini head={"About Us"} sub="About Us" />
+      <Mini head={'About Us'} sub="About Us" />
+      <Who />
       <div className={styles.about__container}>
-        
         <div style={{ marginBottom: '4rem' }}>
           <div className={styles.about__item1}>
             <h3
               style={{
                 textAlign: 'center',
-                fontSize: '1.5em',
+                fontSize: '1.9em',
                 margin: '1rem 0',
               }}
             >
-              Mission /{' '}
-              <span style={{ color: 'rgb(236, 75, 54)' }}>Vision</span>
+              Vision /{' '}
+              <span>Mission</span>
             </h3>
             <Tabs style={{ fontSize: '18px' }}>
               <TabList>
-                <Tab>Our Vision</Tab>
+                <Tab>Vision</Tab>
                 <Tab>MISSION</Tab>
               </TabList>
 
               <TabPanel>
-                <p>
+                <p style={{color: 'rgb(130, 129, 129)',}}>
                   To provide high quality life impacting services to the
                   customers we serve and earn a reputation of the most
                   appreciated, valued, referred and respected Consultancy
@@ -82,7 +83,7 @@ const Ab = () => {
                 </p>
               </TabPanel>
               <TabPanel>
-                <p>
+                <p style={{color: 'rgb(130, 129, 129)',}}>
                   To be a competitive and reliable partner helping people feel
                   confident & delivering on their success aspirations by
                   rendering excellent services with honesty, ethics and
@@ -91,18 +92,20 @@ const Ab = () => {
               </TabPanel>
             </Tabs>
           </div>
-          <div style={{background: '#fff', padding: '16px 32px', width: '100%'}}>
-          <h3
-            style={{
-              textAlign: 'center',
-              fontSize: '1.5em',
-              margin: '1rem 0',
-              paddingBlock: '2rem',
-            }}
+          <div
+            style={{ background: '#fff', padding: '16px 32px', width: '100%' }}
           >
-            Our Values
-          </h3>
-          {/* <div className={styles.about__wra}>
+            <h3
+              style={{
+                textAlign: 'center',
+                fontSize: '1.9em',
+                margin: '1rem 0',
+                paddingBlock: '2rem',
+              }}
+            >
+              Our Values
+            </h3>
+            {/* <div className={styles.about__wra}>
             {data.map((item) => (
               <div
                 className={styles.about__wrap}
@@ -120,38 +123,38 @@ const Ab = () => {
               </div>
             ))}
           </div> */}
-          <Splide
-            options={{
-              rewind: true,
-              width: '100%',
-              perPage: 3,
-              focus: 'center',
-              arrows: true,
-              gap: '1rem',
-              autoplay: true,
-              breakpoints: {
-                640: {
-                  destroy: true,
+            <Splide
+              options={{
+                rewind: true,
+                width: '100%',
+                perPage: 3,
+                focus: 'center',
+                arrows: true,
+                gap: '1rem',
+                autoplay: true,
+                breakpoints: {
+                  640: {
+                    destroy: true,
+                  },
                 },
-              },
-            }}
-          >
-            {data.map((item) => (
-              <SplideSlide key={item.id}>
-                <div className={styles.helo} data-splide-interval="1000">
-                  <Image src={item.img} alt="" width="400px" height="200" />
-                  <h3 style={{ color: 'rgb(236, 75, 54)' }}>{item.title}</h3>
-                  <p>{item.content}</p>
-                </div>
-              </SplideSlide>
-            ))}
-          </Splide>
+              }}
+            >
+              {data.map((item) => (
+                <SplideSlide key={item.id}>
+                  <div className={styles.helo} data-splide-interval="1000">
+                    <Image src={item.img} alt="" width="400px" height="200" />
+                    <h3 style={{ color: 'rgb(236, 75, 54)' }}>{item.title}</h3>
+                    <p>{item.content}</p>
+                  </div>
+                </SplideSlide>
+              ))}
+            </Splide>
           </div>
           <div>
             <h3
               style={{
                 textAlign: 'center',
-                fontSize: '1.5em',
+                fontSize: '1.9em',
                 margin: '1rem 0',
                 paddingBlock: '2rem',
               }}

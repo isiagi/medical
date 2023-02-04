@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
             <h3
               style={{
-                fontSize: '18px',
+                fontSize: '22px',
                 marginBottom: '10px',
               }}
             >
@@ -51,7 +51,7 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '18px',
+                fontSize: '22px',
                 marginBottom: '10px',
               }}
             >
@@ -60,26 +60,26 @@ const Footer = () => {
           </div>
           <div>
             <ul>
-              <li>
+              <li style={{fontWeight: 'bold'}}>
                 <Link href="/Bio">
                   Biosafety Biosecurity (Biorisk management) Consultancy
                 </Link>
               </li>
-              <li>
+              <li style={{fontWeight: 'bold'}}>
                 <Link href="/BioRisk">
                   Biological Risk Assessments & Management Consultancy
                 </Link>
               </li>
-              <li>
+              <li style={{fontWeight: 'bold'}}>
                 <Link href="/Waste">
                   Establishment of Waste management systems & supply/repair of
                   incinerators
                 </Link>
               </li>
-              <li>
+              {/* <li style={{fontWeight: 'bold'}}>
                 <Link href="/Total">Biosafety Cabinet Certification</Link>
-              </li>
-              <li>
+              </li> */}
+              <li style={{fontWeight: 'bold'}}>
                 <Link href="/Total">Total Quality management (TQM)</Link>
               </li>
             </ul>
@@ -90,7 +90,7 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '18px',
+                fontSize: '22px',
                 marginBottom: '10px',
               }}
             >
@@ -106,10 +106,10 @@ const Footer = () => {
                 <Link href="/Ab">About Us</Link>
               </li>
               <li>
-                <Link href="/#services">Services</Link>
+                <Link href="/Services">Services</Link>
               </li>
               <li>
-                <Link href="#contact">Contact</Link>
+                <Link href="/Contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -119,7 +119,7 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '18px',
+                fontSize: '22px',
                 marginBottom: '10px',
               }}
             >
@@ -151,7 +151,7 @@ const Footer = () => {
               <HiOutlineMail fontSize={20} />
               <p>hitexconsortium@gmail.com</p>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',color: '#E9542D', fontSize: '1.2rem',}}>
               <GoLocation fontSize={20} />
               <p>Namboole-Kampala, Uganda</p>
             </div>

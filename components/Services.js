@@ -109,9 +109,9 @@ const Services = () => {
                 </div>
                 <h3>Total Quality management (TQM)</h3>
                 <p>
-                  There are enormous biosafety and biosecurity risks resulting
-                  from poor Healthcare waste Management (HCWM) across healthcare
-                  facilities and the final disposal sites.
+                  We utilize these principles to support our customers improve
+                  their systems. Our experts have worked closely with the health
+                  systems
                 </p>
               </div>
             </Link>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 
@@ -6,33 +7,22 @@ const Faq = () => {
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(false);
   return (
-    <>
-      <h3
-        style={{
-          textAlign: 'center',
-          color: 'rgb(28, 28, 143)',
-          fontSize: '2em',
-          marginTop: '2rem',
-        }}
-      >
-        Frequently Asked Questions
-      </h3>
-      <div className={styles.faq__container}>
-        <div style={{ maxWidth: '500px' }}>
-          <ol>
-            <li>
-              <div className={styles.faq__item} onClick={() => setShow(!show)}>
-                How do i make an appointment?
-              </div>
-              <p className={show ? styles.faq__para : styles.faq__para1}>
-                If you would like to make an appointment with one of our
-                practitioners, please contact our reception staff. Alternatively
-                you may book your appointments online. Every effort will be made
-                to accommodate your preferred time and choice of practitioner.
-              </p>
-            </li>
+    <div>
+      <div>
+        <ol>
+          <li>
+            <div className={styles.faq__item} onClick={() => setShow(!show)}>
+              How do i make an appointment?
+            </div>
+            <p className={show ? styles.faq__para : styles.faq__para1}>
+              If you would like to make an appointment with one of our
+              practitioners, please contact our reception staff. Alternatively
+              you may book your appointments online. Every effort will be made
+              to accommodate your preferred time and choice of practitioner.
+            </p>
+          </li>
 
-            {/* <li>
+          {/* <li>
               <div
                 className={styles.faq__item}
                 onClick={() => setShow1(!show1)}
@@ -48,7 +38,7 @@ const Faq = () => {
               </p>
             </li> */}
 
-            {/* <li>
+          {/* <li>
               <div
                 className={styles.faq__item}
                 onClick={() => setShow2(!show1)}
@@ -62,11 +52,10 @@ const Faq = () => {
                 to accommodate your preferred time and choice of practitioner.
               </p>
             </li> */}
-          </ol>
-        </div>
-        <div></div>
+        </ol>
       </div>
-    </>
+      <div></div>
+    </div>
   );
 };
 

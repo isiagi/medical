@@ -2,7 +2,7 @@ import { BiFirstAid } from 'react-icons/bi';
 import { ImLab } from 'react-icons/im';
 import { GiNurseMale } from 'react-icons/gi';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Banner1.module.css';
 
 const Banner1 = () => {
   return (

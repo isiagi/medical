@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Fade.module.css';
 
 const fadeImages = [
   {
@@ -23,7 +23,8 @@ const fadeImages = [
   },
   {
     url: '/assets/gf.jpg',
-    caption: 'Establishment of Waste management systems & supply/repair of incinerators ',
+    caption:
+      'Establishment of Waste management systems & supply/repair of incinerators ',
     href: '/Waste',
   },
   {
@@ -39,10 +40,29 @@ const Fader = () => {
       <Fade arrows={false} duration={4000}>
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
-            <div className={styles.image__container}>
-              <Image src={fadeImage.url} layout="fill" objectFit="cover" />
+            <div
+              className={styles.image__container}
+              style={{
+                background: `linear-gradient(90deg, rgba(0,212,255,0.2007177871148459) 100%, rgba(9,9,121,0.15029761904761907) 100%, rgba(0,212,255,1) 100%),url(${fadeImage.url})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className={styles.image__overlayout}>
+                <h1 className={styles.image__heading}>
+                  WE WORK WITH BOTH THE PUBLIC SECTOR AND PRIVATE SECTOR WITH
+                </h1>
+
+                <Link href={fadeImage.href}>
+                  <h2 className={styles.image__heading1}>
+                    {fadeImage.caption}
+                  </h2>
+                </Link>
+              </div>
+              {/* <Image src={fadeImage.url} layout="fill" objectFit="cover" /> */}
             </div>
-            <div className={styles.ahh}>
+            {/* <div className={styles.ahh}>
               <div
                 style={{
                   background: 'rgba(255, 255, 255, 0.9)',
@@ -52,14 +72,14 @@ const Fader = () => {
                   borderRadius: '10px',
                   position: 'absolute',
                   top: '170px',
-                  right: '0'
+                  right: '0',
                 }}
               >
                 <p
                   style={{
-                    color: 'rgb(28, 28, 143)',
+                    color: 'blue',
                     textTransform: 'uppercase',
-                    fontSize: '20px'
+                    fontSize: '20px',
                   }}
                 >
                   {fadeImage.caption}
@@ -68,10 +88,10 @@ const Fader = () => {
                   style={{
                     padding: '12px',
                     color: 'whitesmoke',
-                    background: 'rgb(28, 28, 143)',
+                    background: '#9121FD',
                     borderRadius: '20px',
                     border: 'none',
-                    fontSize: '13px',
+                    fontSize: '15px',
                     marginBlock: '.6rem',
                     width: '70%',
                     margin: '0 auto',
@@ -82,7 +102,7 @@ const Fader = () => {
                   </Link>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </Fade>

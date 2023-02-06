@@ -4,8 +4,10 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdTableRows } from 'react-icons/md';
 import { GiCancel } from 'react-icons/gi';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Nav.module.css';
 import Image from 'next/image';
+
+import { useRouter } from 'next/router';
 
 const NavBar = () => {
   const [offSet, setOffset] = React.useState(0);
@@ -16,6 +18,8 @@ const NavBar = () => {
       setOffset(window.pageYOffset);
     };
   }, []);
+
+  const router = useRouter();
 
   return (
     <div className={styles.nav__wrapper}>
@@ -30,20 +34,46 @@ const NavBar = () => {
 
         <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
           <ul>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/">HOME</Link>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/Ab">ABOUT US</Link>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/#services">SERVICES</Link>
-            </li>
+            <Link href="/">
+              <li
+                className={router.pathname == '/' ? `${styles.linkactive}` : ''}
+                onClick={() => setOpen(false)}
+              >
+                HOME
+              </li>
+            </Link>
+            <Link href="/Ab">
+              <li
+                className={
+                  router.pathname == '/Ab' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                ABOUT US
+              </li>
+            </Link>
+            <Link href="/Services">
+              <li
+                className={
+                  router.pathname == '/Services' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                SERVICES
+              </li>
+            </Link>
             {/* <li onClick={() => setOpen(false)}>TESTIMONIALS</li> */}
-            <li onClick={() => setOpen(false)}>
-              <Link href="#contact">CONTACT</Link>
-            </li>
-            <li>
+            <Link href="/Contact">
+              <li
+                className={
+                  router.pathname == '/Contact' ? `${styles.linkactive}` : ''
+                }
+                onClick={() => setOpen(false)}
+              >
+                CONTACT
+              </li>
+            </Link>
+            {/* <li>
               <Link href="https://api.whatsapp.com/send?phone=256772844459">
                 <a>
                   <IoLogoWhatsapp
@@ -52,7 +82,7 @@ const NavBar = () => {
                   +256772844459
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className={styles.nav__cancel}>

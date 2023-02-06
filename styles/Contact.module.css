@@ -1,0 +1,74 @@
+.service__wrapper {
+  border: 1px solid red;
+}
+
+.service__img {
+  border: 1px solid yellow;
+}
+
+.service__img > image {
+  width: 100%;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/assets/contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+.contact__wrapper .contact__container {
+  max-width: 600px;
+  line-height: 30px;
+}
+
+.contact__wrapper .contact__container input {
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+.contact__wrapper .contact__container input:first-child {
+  width: 34rem;
+}
+
+.contact__wrapper .contact__container textarea {
+  resize: none;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+.contact__wrapper .contact__container button {
+  padding: 0.5rem;
+  border-radius: 40px;
+  width: 10rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: rgb(28, 28, 143);
+  margin-top: 0.5rem;
+}
+
+.about__head {
+  min-height: 60vh;
+  background-color: rgb(28, 28, 143);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__item > p{
+  max-width: 500px;
+  margin: 2rem auto;
+
+}

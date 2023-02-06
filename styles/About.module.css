@@ -1,0 +1,79 @@
+.about__wrapper {
+    min-height: 100vh;
+    width: 100%;
+    line-height: 35px;
+    /* background-color: whitesmoke; */
+  }
+  
+  .about__wra {
+    display: grid;
+    /* max-width: 70rem; */
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1rem; */
+    column-gap: 0px;
+    row-gap: 10px;
+    /* background-color: rgba(3, 17, 144, 0.9) */
+  }
+  
+  .about__wrap {
+    height: 350px;
+    max-width: 490px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .about__head {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../public/assets/total.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  
+  .about__wrapper h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  .about__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about__container h3 {
+    color: rgb(28, 28, 143);
+  }
+  
+  .about__item {
+    max-width: 100%;
+    color: #fff;
+  }
+  
+  .about__item1 h3 {
+    color: rgb(28, 28, 143);
+  }
+  
+  .about__item1 {
+    margin: auto;
+    max-width: 50%;
+    padding: 64px 0px;
+  }

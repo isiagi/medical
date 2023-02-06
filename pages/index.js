@@ -1,16 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import About from './Ab';
 import Banner1 from '../components/Ban';
-import Contact from '../components/Contact';
-import Depart from '../components/Depart';
-import Faq from '../components/Faq';
-import Footer from '../components/Footer';
 import Hero1 from '../components/Hero1';
-import NavBar from '../components/Nav';
 import Services from '../components/Services';
 import Top from '../components/Top';
+import Utility from '../components/Utility';
 import styles from '../styles/Home.module.css';
+import He from '../components/He';
+import Who from '../components/Who';
 
 export default function Home() {
   return (
@@ -32,12 +28,11 @@ export default function Home() {
       <main className={styles.main}>
         <Top />
         <Hero1 />
-        <Banner1 />
-        {/* <About /> */}
-        {/* <Depart /> */}
+        <Who />
+        {/* <Banner1 /> */}
+        <Utility />
         <Services />
-        <Contact />
-        <Faq />
+        <He />
       </main>
     </div>
   );

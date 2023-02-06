@@ -37,7 +37,7 @@ const fadeImages = [
 const Fader = () => {
   return (
     <div>
-      <Fade arrows={false} duration={4000}>
+      <Fade arrows={true} duration={4000} pauseOnHover={false}>
         {fadeImages.map((fadeImage, index) => (
           <div className={styles.each__fade} key={index}>
             <div

@@ -40,7 +40,7 @@ function InputSection({color1, color2, color3, color4}) {
         </h3>
         <p style={{ color: color3 }}>
           We believe in providing the best possible Biosafety and Biosecurity
-          quality management systems for our customers. <span><em>Let's Talk</em></span>
+          quality management systems for our customers. <span><em>Let&apos;s Talk</em></span>
         </p>
         
         <br />

@@ -48,20 +48,22 @@ function InputSection({color1, color2, color3, color4}) {
           <input type="text" name="name" placeholder="Your Name" />
           <br />
           <br />
+          <div className={styles.contact__flex}>
+
           <input
             type="text"
             placeholder="Your Phone"
             name="number"
-            style={{ width: '255px', marginRight: '.5em' }}
+            // style={{ width: '255px', marginRight: '.5em' }}
           />
   
           <input
             type="text"
             placeholder="Your Email"
             name="email"
-            style={{ width: '280px' }}
+            // style={{ width: '280px' }}
           />
-          <br />
+          </div>
           <br />
           <textarea
             rows="6"

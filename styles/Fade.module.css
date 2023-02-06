@@ -31,6 +31,9 @@
     height: 100%;
     object-fit: cover;
   } */
+  .image__container {
+    padding: 0 2rem;
+  }
 
   .image__heading{
     color: #fff;
@@ -64,6 +67,7 @@
     cursor: pointer;
     margin-top: 20px;
     font-weight: 400;
+    text-align: center;
   }
 
   .image__heading1:hover {

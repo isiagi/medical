@@ -28,6 +28,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    padding: 2rem 0;
 }
 
 .util__item {

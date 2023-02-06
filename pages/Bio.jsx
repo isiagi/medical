@@ -4,6 +4,9 @@ import Utility from '../components/Utility';
 
 import styles from '../styles/Home.module.css';
 
+import safety from '../public/assets/safety.jpg'
+import gift from '../public/assets/gif.jpg'
+
 const Bio = () => {
   return (
     <div>
@@ -18,15 +21,17 @@ const Bio = () => {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
             gap: '2rem',
-            marginBottom: '4rem'
+            marginBottom: '4rem',
+            // gridAutoRows: '550px',
           }}
         >
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative',height:'530px'}}>
             <Image
-              src={'/assets/safety.jpg'}
+              src={safety}
               alt="bio"
               layout="fill"
               objectFit="cover"
+              className={styles.biok}
             />
           </div>
           <div>
@@ -60,6 +65,7 @@ const Bio = () => {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
             gap: '2rem',
+            // gridAutoRows: '450px',
           }}
         >
           <div>
@@ -85,9 +91,9 @@ const Bio = () => {
               setting up systems to detect and deter any biosecurity threats.
             </p>
           </div>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative',height:'530px' }}>
             <Image
-              src={'/assets/gif.jpg'}
+              src={gift}
               alt="bio"
               layout="fill"
               objectFit="cover"

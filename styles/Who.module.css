@@ -21,6 +21,7 @@
 
 .who__img1 {
   border-radius: 20px;
+  display: block;
 }
 
 .who__section {
@@ -28,6 +29,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* grid-auto-rows: 600px; */
   gap: 2rem;
+  padding: 2rem 0;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {

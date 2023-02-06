@@ -33,8 +33,8 @@ const Services = () => {
                 </div>
                 <h3>Biosafety Biosecurity (Biorisk management) Consultancy</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                  In the wake of global emerging and re-emerging diseases like
+                  Ebola, Marburg, and more recently SARS-CoV-2 among others
                 </p>
               </div>
             </Link>
@@ -51,8 +51,9 @@ const Services = () => {
                 </div>
                 <h3>Biological Risk Assessments / Management Consultancy</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                  As much as biological agents and their toxins can be used in
+                  research for the advancement of science, there is a great
+                  potential for their mis-use
                 </p>
               </div>
             </Link>
@@ -72,8 +73,8 @@ const Services = () => {
                   incinerators
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                  There are enormous biosafety and biosecurity risks resulting
+                  from poor Healthcare waste Management (HCWM).
                 </p>
               </div>
             </Link>
@@ -108,8 +109,9 @@ const Services = () => {
                 </div>
                 <h3>Total Quality management (TQM)</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum
+                  There are enormous biosafety and biosecurity risks resulting
+                  from poor Healthcare waste Management (HCWM) across healthcare
+                  facilities and the final disposal sites.
                 </p>
               </div>
             </Link>

@@ -48,3 +48,14 @@
 .contact__container button:hover {
   background-color: rgb(236, 75, 54);
 }
+
+.contact__flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .contact__flex {
+    flex-wrap: wrap;
+  }
+}

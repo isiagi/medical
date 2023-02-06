@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Mini from '../components/Mini';
 import Utility from '../components/Utility';
 
+import nn from '../public/assets/nn.jpg'
+
 const BioRisk = () => {
   return (
     <div style={{}}>
@@ -20,7 +22,7 @@ const BioRisk = () => {
         >
           <div style={{ position: 'relative' }}>
             <Image
-              src={'/assets/nn.jpg'}
+              src={nn}
               alt="bio"
               layout="fill"
               objectFit="cover"

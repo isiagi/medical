@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import Mini from '../components/Mini';
 
+import wast from "../public/assets/image.png"
+import p from '../public/assets/p.jpg'
+import lo from '../public/assets/lo.jpg'
+
 const Total = () => {
   return (
     <div>
@@ -19,10 +23,10 @@ const Total = () => {
         >
           <div style={{ position: 'relative' }}>
             <Image
-              src={'/assets/image.png'}
+              src={wast}
               alt="bio"
-              layout="fill"
-              objectFit="cover"
+              // layout="fill"
+              // objectFit="cover"
             />
           </div>
           <div style={{ marginBottom: '1rem' }}>
@@ -52,9 +56,9 @@ const Total = () => {
           </div>
         </div>
         <div style={{ display: 'flex', gap: '20px', paddingBlock: '50px' }}>
-          <Image src={'/assets/p.jpg'} alt="bio" width="500px" height="400px" />
+          <Image src={p} alt="bio" width="500px" height="400px" />
           <Image
-            src={'/assets/lo.jpg'}
+            src={lo}
             alt="bio"
             width="500px"
             height="400px"

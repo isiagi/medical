@@ -84,14 +84,15 @@
 
 .he__container {
   background-color: #F6FAFE;
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   justify-content: center;
 }
 
 .he__heading {
  text-align: center;
- padding-bottom: 4rem;
+ padding-block: 4rem;
+ line-height: 50px;
 }
 
 .he__img {
@@ -121,3 +122,9 @@
   z-index: 20;
 }
 
+/* .biok {
+  display: block;
+  height: 100% !important;
+  object-fit: cover;
+  border: 5px dotted purple;
+} */

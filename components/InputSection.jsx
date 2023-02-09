@@ -11,7 +11,7 @@ function InputSection({color1, color2, color3, color4}) {
   
       emailjs
         .sendForm(
-          'service_wtxka0r',
+          'service_6fnatqa',
           'template_qgi7ekr',
           form.current,
           'pjiNHTJo84E9K5tuy',

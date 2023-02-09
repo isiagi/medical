@@ -22,7 +22,7 @@ const fadeImages = [
     href: '/Total',
   },
   {
-    url: '/assets/gf.jpg',
+    url: '/assets/hello.jpg',
     caption:
       'Establishment of Waste management systems & supply/repair of incinerators ',
     href: '/Waste',

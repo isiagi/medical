@@ -4,18 +4,22 @@ import Utility from '../components/Utility';
 
 import styles from '../styles/Home.module.css';
 
-import safety from '../public/assets/safety.jpg'
-import gift from '../public/assets/gif.jpg'
+import safety from '../public/assets/safety.jpg';
+import gift from '../public/assets/gif.jpg';
+import Head from 'next/head';
 
 const Bio = () => {
   return (
     <div>
+      <Head>
+        <title>Biorisk management (Biosafety Biosecurity) Consultancy</title>
+      </Head>
       <Mini
         head={'Biorisk management (Biosafety Biosecurity) Consultancy'}
         sub="Biorisk management"
       />
 
-      <div style={{padding: '8rem 2rem'}}>
+      <div style={{ padding: '8rem 2rem' }}>
         <div
           style={{
             display: 'grid',
@@ -25,7 +29,7 @@ const Bio = () => {
             // gridAutoRows: '550px',
           }}
         >
-          <div style={{ position: 'relative',height:'530px'}}>
+          <div style={{ position: 'relative', height: '530px' }}>
             <Image
               src={safety}
               alt="bio"
@@ -91,13 +95,8 @@ const Bio = () => {
               setting up systems to detect and deter any biosecurity threats.
             </p>
           </div>
-          <div style={{ position: 'relative',height:'530px' }}>
-            <Image
-              src={gift}
-              alt="bio"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div style={{ position: 'relative', height: '530px' }}>
+            <Image src={gift} alt="bio" layout="fill" objectFit="cover" />
           </div>
         </div>
       </div>

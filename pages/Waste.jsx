@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import Mini from '../components/Mini';
 
-import wast from "../public/assets/image.png"
-import p from '../public/assets/p.jpg'
-import lo from '../public/assets/lo.jpg'
+import wast from '../public/assets/image.png';
+import p from '../public/assets/p.jpg';
+import lo from '../public/assets/lo.jpg';
+import Head from 'next/head';
 
 const Total = () => {
   return (
     <div>
+    <Head>
+      <title>Waste Management, Waste Transportation & Supply Of Incinerators</title>
+    </Head>
       <Mini
-        head={'Waste Management & Supply Of Incinerators'}
+        head={'Waste Management, Waste Transportation & Supply Of Incinerators'}
         sub="Waste management & supply of incinerators"
       />
       <div style={{ padding: '8rem 2rem' }}>
@@ -53,16 +57,15 @@ const Total = () => {
               training curriculum. We also supply incinerators and provide after
               installation services to our customers based on their need
             </p>
+            <p>
+              At Hitex we offer Waste transportation services for both private
+              and public entities
+            </p>
           </div>
         </div>
         <div style={{ display: 'flex', gap: '20px', paddingBlock: '50px' }}>
           <Image src={p} alt="bio" width="500px" height="400px" />
-          <Image
-            src={lo}
-            alt="bio"
-            width="500px"
-            height="400px"
-          />
+          <Image src={lo} alt="bio" width="500px" height="400px" />
         </div>
       </div>
       <br />

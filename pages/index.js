@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Hitex Consortium" />
         <meta
           name="keyword"
-          content="Hitex Consortium, Bio Safety, Bio Waste Management, Bio Security, Hitex, Consortium, Bio Consultancy,Biosafety Cabinet Certification, Total Quality management"
+          content="Hitex Consortium, Biosafety, Bio Waste Management, Biosecurity, Hitex, Consortium, Bio Consultancy,Biosafety Cabinet Certification, Total Quality management"
         />
         <meta
           name="google-site-verification"

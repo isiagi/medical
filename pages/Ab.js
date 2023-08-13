@@ -10,6 +10,12 @@ import Link from 'next/link';
 import Mini from '../components/Mini';
 import Who from '../components/Who';
 
+import Head from 'next/head';
+
+// const zoom = mediumZoom('[data-zoomable]')
+
+// import img1 from '../public/assets/'
+
 const data = [
   {
     id: 1,
@@ -43,8 +49,12 @@ const data = [
 
 const Ab = () => {
   return (
-    <div className={styles.about__wrapper} id="about">
-      {/* <div className={styles.about__head}>
+    <>
+      <Head>
+        <title>About Hitex Consortium</title>
+      </Head>
+      <div className={styles.about__wrapper} id="about">
+        {/* <div className={styles.about__head}>
         <h4 style={{ fontSize: '1.7rem' }}>About Us</h4>
         <div className={styles.about__item}>
           <p style={{ fontSize: '18px' }}>
@@ -53,59 +63,62 @@ const Ab = () => {
           </p>
         </div>
       </div> */}
-      <Mini head={'About Us'} sub="About Us" />
-      <Who />
-      <div className={styles.about__container}>
-        <div style={{ marginBottom: '4rem' }}>
-          <div className={styles.about__item1}>
-            <h3
-              style={{
-                textAlign: 'center',
-                fontSize: '1.9em',
-                margin: '1rem 0',
-              }}
-            >
-              Vision /{' '}
-              <span>Mission</span>
-            </h3>
-            <Tabs style={{ fontSize: '18px' }}>
-              <TabList>
-                <Tab>Vision</Tab>
-                <Tab>MISSION</Tab>
-              </TabList>
+        <Mini head={'About Us'} sub="About Us" />
+        <Who />
+        <div className={styles.about__container}>
+          <div style={{ marginBottom: '4rem' }}>
+            <div className={styles.about__item1}>
+              <h3
+                style={{
+                  textAlign: 'center',
+                  fontSize: '1.9em',
+                  margin: '1rem 0',
+                }}
+              >
+                Vision / <span>Mission</span>
+              </h3>
+              <Tabs style={{ fontSize: '18px' }}>
+                <TabList>
+                  <Tab>Vision</Tab>
+                  <Tab>MISSION</Tab>
+                </TabList>
 
-              <TabPanel>
-                <p style={{color: 'rgb(130, 129, 129)',}}>
-                  To provide high quality life impacting services to the
-                  customers we serve and earn a reputation of the most
-                  appreciated, valued, referred and respected Consultancy
-                  Company.
-                </p>
-              </TabPanel>
-              <TabPanel>
-                <p style={{color: 'rgb(130, 129, 129)',}}>
-                  To be a competitive and reliable partner helping people feel
-                  confident & delivering on their success aspirations by
-                  rendering excellent services with honesty, ethics and
-                  unparalleled quality.
-                </p>
-              </TabPanel>
-            </Tabs>
-          </div>
-          <div
-            style={{ background: '#fff', padding: '16px 32px', width: '100%' }}
-          >
-            <h3
+                <TabPanel>
+                  <p style={{ color: 'rgb(130, 129, 129)' }}>
+                    To provide high quality life impacting services to the
+                    customers we serve and earn a reputation of the most
+                    appreciated, valued, referred and respected Consultancy
+                    Company.
+                  </p>
+                </TabPanel>
+                <TabPanel>
+                  <p style={{ color: 'rgb(130, 129, 129)' }}>
+                    To be a competitive and reliable partner helping people feel
+                    confident & delivering on their success aspirations by
+                    rendering excellent services with honesty, ethics and
+                    unparalleled quality.
+                  </p>
+                </TabPanel>
+              </Tabs>
+            </div>
+            <div
               style={{
-                textAlign: 'center',
-                fontSize: '1.9em',
-                margin: '1rem 0',
-                paddingBlock: '2rem',
+                background: '#fff',
+                padding: '16px 32px',
+                width: '100%',
               }}
             >
-              Our Values
-            </h3>
-            {/* <div className={styles.about__wra}>
+              <h3
+                style={{
+                  textAlign: 'center',
+                  fontSize: '1.9em',
+                  margin: '1rem 0',
+                  paddingBlock: '2rem',
+                }}
+              >
+                Our Values
+              </h3>
+              {/* <div className={styles.about__wra}>
             {data.map((item) => (
               <div
                 className={styles.about__wrap}
@@ -123,60 +136,92 @@ const Ab = () => {
               </div>
             ))}
           </div> */}
-            <Splide
-              options={{
-                rewind: true,
-                width: '100%',
-                perPage: 3,
-                focus: 'center',
-                arrows: true,
-                gap: '1rem',
-                autoplay: true,
-                breakpoints: {
-                  640: {
-                    destroy: true,
+              <Splide
+                options={{
+                  rewind: true,
+                  width: '100%',
+                  perPage: 3,
+                  focus: 'center',
+                  arrows: true,
+                  gap: '1rem',
+                  autoplay: true,
+                  breakpoints: {
+                    640: {
+                      destroy: true,
+                    },
                   },
-                },
-              }}
-            >
-              {data.map((item) => (
-                <SplideSlide key={item.id}>
-                  <div className={styles.helo} data-splide-interval="1000">
-                    <Image src={item.img} alt="" width="400px" height="200" />
-                    <h3 style={{ color: 'rgb(236, 75, 54)' }}>{item.title}</h3>
-                    <p>{item.content}</p>
-                  </div>
-                </SplideSlide>
-              ))}
-            </Splide>
-          </div>
-          <div>
-            <h3
-              style={{
-                textAlign: 'center',
-                fontSize: '1.9em',
-                margin: '1rem 0',
-                paddingBlock: '2rem',
-              }}
-            >
-              Certifications
-            </h3>
-            <div
-              style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}
-            >
-              <Image
-                src={'/assets/lov.jpg'}
-                alt=""
-                width="600px"
-                height="400"
-                style={{ objectFit: 'cover', overflow: 'hidden' }}
-              />
-              <Image src={'/assets/ho.jpg'} alt="" width="600px" height="600" />
+                }}
+              >
+                {data.map((item) => (
+                  <SplideSlide key={item.id}>
+                    <div className={styles.helo} data-splide-interval="1000">
+                      <Image src={item.img} alt="" width="400px" height="200" />
+                      <h3 style={{ color: 'rgb(236, 75, 54)' }}>
+                        {item.title}
+                      </h3>
+                      <p>{item.content}</p>
+                    </div>
+                  </SplideSlide>
+                ))}
+              </Splide>
+            </div>
+            <div>
+              <h3
+                style={{
+                  textAlign: 'center',
+                  fontSize: '1.9em',
+                  margin: '1rem 0',
+                  paddingBlock: '2rem',
+                }}
+              >
+                Certifications
+              </h3>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                  gap: '1rem',
+                }}
+              >
+                <Image
+                  src={'/assets/lov.jpg'}
+                  alt=""
+                  width="600px"
+                  height="400"
+                  style={{ objectFit: 'cover', overflow: 'hidden' }}
+                />
+                <Image
+                  src={'/assets/ho.jpg'}
+                  alt=""
+                  width="600px"
+                  height="600"
+                />
+                <Image
+                  src={
+                    '/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png'
+                  }
+                  alt=""
+                  width="600px"
+                  height="600"
+                />
+                <Image
+                  src={'/assets/AfRSME Cert-1new.png'}
+                  alt=""
+                  width="600px"
+                  height="600"
+                />
+                <Image
+                  src={'/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png'}
+                  alt=""
+                  width="600px"
+                  height="600"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

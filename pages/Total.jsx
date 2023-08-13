@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Mini from '../components/Mini';
 import Services from '../components/Services';
+import Head from 'next/head';
 
 import total from '../public/assets/total.jpg'
 
@@ -9,6 +10,9 @@ const Total = () => {
   // Stud3ntp@55
   return (
     <div>
+    <Head>
+      <title>Total Quality Management</title>
+    </Head>
       <Mini
         head={'Total Quality Management (TQM)'}
         sub="Total Quality Management"

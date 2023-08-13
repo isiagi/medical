@@ -19,6 +19,7 @@ function InputSection({color1, color2, color3, color4}) {
         .then(
           (result) => {
             console.log('sent', result.text);
+            alert('Email Sent')
             form.current.reset();
           },
           (error) => {

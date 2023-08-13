@@ -2,11 +2,16 @@ import Image from 'next/image';
 import Mini from '../components/Mini';
 import Utility from '../components/Utility';
 
+import Head from 'next/head';
+
 import nn from '../public/assets/nn.jpg'
 
 const BioRisk = () => {
   return (
     <div style={{}}>
+    <Head>
+      <title>Biological Risk Assessments</title>
+    </Head>
       <Mini
         head="Biological Risk Assessments"
         sub="Biological Risk Assessments"

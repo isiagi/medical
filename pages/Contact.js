@@ -8,11 +8,15 @@ import emailjs from '@emailjs/browser';
 import styles from '../styles/Contact.module.css';
 import Mini from '../components/Mini';
 import InputSection from '../components/InputSection';
+import Head from 'next/head';
 
 const Contact = () => {
  
   return (
     <div>
+    <Head>
+      <title>Contact Hitex</title>
+    </Head>
       <Mini head={'Contact Us'} sub="Contact" />
       <div className={styles.contact__wrapper} id="contact">
         <div

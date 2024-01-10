@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Mini from '../components/Mini';
-import Utility from '../components/Utility';
+import Image from "next/image";
+import Mini from "../components/Mini";
+import Utility from "../components/Utility";
 
-import styles from '../styles/Home.module.css';
+import styles from "../styles/Home.module.css";
 
-import safety from '../public/assets/safety.jpg';
-import gift from '../public/assets/gif.jpg';
-import Head from 'next/head';
+import safety from "../public/assets/new.jpg";
+import gift from "../public/assets/gif.jpg";
+import Head from "next/head";
 
 const Bio = () => {
   return (
@@ -15,21 +15,21 @@ const Bio = () => {
         <title>Biorisk management (Biosafety Biosecurity) Consultancy</title>
       </Head>
       <Mini
-        head={'Biorisk management (Biosafety Biosecurity) Consultancy'}
+        head={"Biorisk management (Biosafety Biosecurity) Consultancy"}
         sub="Biorisk management"
       />
 
-      <div style={{ padding: '8rem 2rem' }}>
+      <div style={{ padding: "8rem 2rem" }}>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '2rem',
-            marginBottom: '4rem',
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "2rem",
+            marginBottom: "4rem",
             // gridAutoRows: '550px',
           }}
         >
-          <div style={{ position: 'relative', height: '530px' }}>
+          <div style={{ position: "relative", height: "530px" }}>
             <Image
               src={safety}
               alt="bio"
@@ -39,7 +39,7 @@ const Bio = () => {
             />
           </div>
           <div>
-            <p style={{ lineHeight: '2rem' }}>
+            <p style={{ lineHeight: "2rem" }}>
               Biosafety Biosecurity is our niche; Through our highly skilled
               experts, we provide high quality Biorisk management consultancy
               services to individuals and institutions on the best approaches to
@@ -60,20 +60,20 @@ const Bio = () => {
               health training curriculum, developed the national BRM mentorship
               and assessment framework and tools, national policy and guidelines
               for healthcare waste management and currently working on the
-              national framework for BRM certification among others.{' '}
+              national framework for BRM certification among others.{" "}
             </p>
           </div>
         </div>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '2rem',
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "2rem",
             // gridAutoRows: '450px',
           }}
         >
           <div>
-            <p style={{ lineHeight: '2rem' }}>
+            <p style={{ lineHeight: "2rem" }}>
               As much as biological agents and their toxins can be used in
               research for the advancement of science, there is a great
               potential for their mis-use as well to pose a threat to public
@@ -95,7 +95,7 @@ const Bio = () => {
               setting up systems to detect and deter any biosecurity threats.
             </p>
           </div>
-          <div style={{ position: 'relative', height: '530px' }}>
+          <div style={{ position: "relative", height: "530px" }}>
             <Image src={gift} alt="bio" layout="fill" objectFit="cover" />
           </div>
         </div>

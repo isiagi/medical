@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import styles from '../styles/Services.module.css';
-import Header from './Header';
-import { GiBiohazard } from 'react-icons/gi';
-import { ImEqualizer2 } from 'react-icons/im';
-import { GiNuclearWaste } from 'react-icons/gi';
-import { MdOutlineHourglassTop } from 'react-icons/md';
-import { AiOutlineSafetyCertificate } from 'react-icons/ai';
-import Link from 'next/link';
+import styles from "../styles/Services.module.css";
+import Header from "./Header";
+import { GiBiohazard } from "react-icons/gi";
+import { ImEqualizer2 } from "react-icons/im";
+import { GiNuclearWaste } from "react-icons/gi";
+import { MdOutlineHourglassTop } from "react-icons/md";
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -24,7 +24,7 @@ const Services = () => {
         <div className={styles.service__flex}>
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/gif.jpg'} alt={'picture'} layout="fill" />
+              <Image src={"/assets/new.jpg"} alt={"picture"} layout="fill" />
             </div>
             <Link href="/Bio">
               <div className={styles.service__detail}>
@@ -42,7 +42,7 @@ const Services = () => {
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/nn.jpg'} alt={'picture'} layout="fill" />
+              <Image src={"/assets/nn.jpg"} alt={"picture"} layout="fill" />
             </div>
             <Link href="/BioRisk">
               <div className={styles.service__detail}>
@@ -61,7 +61,7 @@ const Services = () => {
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/image.png'} alt={'picture'} layout="fill" />
+              <Image src={"/assets/image.png"} alt={"picture"} layout="fill" />
             </div>
             <Link href="/Waste">
               <div className={styles.service__detail}>
@@ -100,7 +100,7 @@ const Services = () => {
 
           <div className={styles.service__item}>
             <div className={styles.service__img}>
-              <Image src={'/assets/total.jpg'} alt={'picture'} layout="fill" />
+              <Image src={"/assets/total.jpg"} alt={"picture"} layout="fill" />
             </div>
             <Link href="/Total">
               <div className={styles.service__detail}>

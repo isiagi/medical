@@ -1,99 +1,103 @@
-import React, { useRef } from 'react';
-import { CgHeadset } from 'react-icons/cg';
-import { HiOutlineMail } from 'react-icons/hi';
-import { GoLocation } from 'react-icons/go';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import { CgHeadset } from "react-icons/cg";
+import { HiOutlineMail } from "react-icons/hi";
+import { GoLocation } from "react-icons/go";
+import emailjs from "@emailjs/browser";
 // import styles from '../styles/Home.module.css';
 
-import styles from '../styles/Contact.module.css';
-import Mini from '../components/Mini';
-import InputSection from '../components/InputSection';
-import Head from 'next/head';
+import styles from "../styles/Contact.module.css";
+import Mini from "../components/Mini";
+import InputSection from "../components/InputSection";
+import Head from "next/head";
 
 const Contact = () => {
- 
   return (
     <div>
-    <Head>
-      <title>Contact Hitex</title>
-    </Head>
-      <Mini head={'Contact Us'} sub="Contact" />
+      <Head>
+        <title>Contact Hitex</title>
+        <meta
+          name="keywords"
+          content="Contact Hitex, Hitex Contact Information, Contact Us, Hitex Support, Customer Service, Hitex Location"
+        />
+      </Head>
+      <Mini head={"Contact Us"} sub="Contact" />
       <div className={styles.contact__wrapper} id="contact">
         <div
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '2rem',
-            padding: '16px 32px',
-            flexDirection: 'column',
+            display: "flex",
+            alignItems: "center",
+            gap: "2rem",
+            padding: "16px 32px",
+            flexDirection: "column",
           }}
         >
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              padding: '16px 32px',
-              border: '1px solid #fff',
-              width: '100%',
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "16px 32px",
+              border: "1px solid #fff",
+              width: "100%",
             }}
           >
             <div>
-              <GoLocation style={{ fontSize: '30px', color: '#fff' }} />
+              <GoLocation style={{ fontSize: "30px", color: "#fff" }} />
             </div>
             <div>
-              <h2 style={{color: 'rgb(28, 28, 143)'}}>Our Office</h2>
-              <p style={{ color: '#fff' }}>Namboole, Uganda</p>
+              <h2 style={{ color: "rgb(28, 28, 143)" }}>Our Office</h2>
+              <p style={{ color: "#fff" }}>Namboole, Uganda</p>
             </div>
           </div>
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              padding: '16px 32px',
-              border: '1px solid #fff',
-              width: '100%',
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "16px 32px",
+              border: "1px solid #fff",
+              width: "100%",
             }}
           >
             <div>
-              <HiOutlineMail style={{ fontSize: '30px', color: '#fff' }} />
+              <HiOutlineMail style={{ fontSize: "30px", color: "#fff" }} />
             </div>
             <div>
-              <h2 style={{color: 'rgb(28, 28, 143)'}}>Email Us</h2>
-              <p style={{color: '#fff'}}>
-                hitexconsortium@gmail.com
-              </p>
+              <h2 style={{ color: "rgb(28, 28, 143)" }}>Email Us</h2>
+              <p style={{ color: "#fff" }}>hitexconsortium@gmail.com</p>
             </div>
           </div>
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              padding: '16px 32px',
-              border: '1px solid #fff',
-              width: '100%',
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "16px 32px",
+              border: "1px solid #fff",
+              width: "100%",
             }}
           >
             <div>
-              <CgHeadset style={{ fontSize: '30px', color: '#fff' }} />
+              <CgHeadset style={{ fontSize: "30px", color: "#fff" }} />
             </div>
             <div>
-              <h2 style={{color: 'rgb(28, 28, 143)'}}>Call Us</h2>
-              <p style={{color: '#fff'}}>+256772844459</p>
+              <h2 style={{ color: "rgb(28, 28, 143)" }}>Call Us</h2>
+              <p style={{ color: "#fff" }}>+256772844459</p>
             </div>
           </div>
         </div>
-        <InputSection color1={'rgb(28, 28, 143)'} color2={'rgb(28, 28, 143)'} color3={'#fff'} color4={'rgb(28, 28, 143)'}/>
+        <InputSection
+          color1={"rgb(28, 28, 143)"}
+          color2={"rgb(28, 28, 143)"}
+          color3={"#fff"}
+          color4={"rgb(28, 28, 143)"}
+        />
       </div>
     </div>
   );
 };
 
-export {
-  InputSection
-}
+export { InputSection };
 
 export default Contact;
 

@@ -1,31 +1,37 @@
-import Image from 'next/image';
-import Mini from '../components/Mini';
+import Image from "next/image";
+import Mini from "../components/Mini";
 
-import wast from '../public/assets/image.png';
-import p from '../public/assets/p.jpg';
-import lo from '../public/assets/lo.jpg';
-import Head from 'next/head';
+import wast from "../public/assets/image.png";
+import p from "../public/assets/p.jpg";
+import lo from "../public/assets/lo.jpg";
+import Head from "next/head";
 
 const Total = () => {
   return (
     <div>
-    <Head>
-      <title>Waste Management, Waste Transportation & Supply Of Incinerators</title>
-    </Head>
+      <Head>
+        <title>
+          Waste Management, Waste Transportation & Supply Of Incinerators
+        </title>
+        <meta
+          name="keywords"
+          content="Waste Management, Waste Transportation, Incinerators, Waste Disposal, Environmental Solutions"
+        />
+      </Head>
       <Mini
-        head={'Waste Management, Waste Transportation & Supply Of Incinerators'}
+        head={"Waste Management, Waste Transportation & Supply Of Incinerators"}
         sub="Waste management & supply of incinerators"
       />
-      <div style={{ padding: '8rem 2rem' }}>
+      <div style={{ padding: "8rem 2rem" }}>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
             // gridAutoRows: '450px',
-            gap: '2rem',
+            gap: "2rem",
           }}
         >
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: "relative" }}>
             <Image
               src={wast}
               alt="bio"
@@ -33,8 +39,8 @@ const Total = () => {
               // objectFit="cover"
             />
           </div>
-          <div style={{ marginBottom: '1rem' }}>
-            <p style={{ lineHeight: '2rem' }}>
+          <div style={{ marginBottom: "1rem" }}>
+            <p style={{ lineHeight: "2rem" }}>
               There are enormous biosafety and biosecurity risks resulting from
               poor Healthcare waste Management (HCWM) across healthcare
               facilities and the final disposal sites. The situation has further
@@ -63,7 +69,7 @@ const Total = () => {
             </p>
           </div>
         </div>
-        <div style={{ display: 'flex', gap: '20px', paddingBlock: '50px' }}>
+        <div style={{ display: "flex", gap: "20px", paddingBlock: "50px" }}>
           <Image src={p} alt="bio" width="500px" height="400px" />
           <Image src={lo} alt="bio" width="500px" height="400px" />
         </div>

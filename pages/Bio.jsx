@@ -13,6 +13,10 @@ const Bio = () => {
     <div>
       <Head>
         <title>Biorisk management (Biosafety Biosecurity) Consultancy</title>
+        <meta
+          name="keywords"
+          content="Biorisk Management, Biosafety, Biosecurity, Consultancy Services, Biological Risk Assessment, Biorisk Mitigation"
+        />
       </Head>
       <Mini
         head={"Biorisk management (Biosafety Biosecurity) Consultancy"}

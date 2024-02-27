@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Banner1 from '../components/Ban';
-import Hero1 from '../components/Hero1';
-import Services from '../components/Services';
-import Top from '../components/Top';
-import Utility from '../components/Utility';
-import styles from '../styles/Home.module.css';
-import He from '../components/He';
-import Who from '../components/Who';
+import Head from "next/head";
+import Banner1 from "../components/Ban";
+import Hero1 from "../components/Hero1";
+import Services from "../components/Services";
+import Top from "../components/Top";
+import Utility from "../components/Utility";
+import styles from "../styles/Home.module.css";
+import He from "../components/He";
+import Who from "../components/Who";
 
 export default function Home() {
   return (
@@ -15,9 +15,13 @@ export default function Home() {
         <title>Hitex Diagnostic Limited</title>
         <meta name="description" content="Hitex Consortium" />
         <meta
-          name="keyword"
-          content="Hitex Consortium, Biosafety, Bio Waste Management, Biosecurity, Hitex, Consortium, Bio Consultancy,Biosafety Cabinet Certification, Total Quality management"
+          name="keywords"
+          content="Total Quality Management, TQM, Quality Assurance, Continuous Improvement, Customer Satisfaction, Quality Control, Quality Management Systems,
+Biological Risk Assessments, Biohazard Assessment, Biological Hazard Evaluation, Risk Management, Biosafety Protocols,
+Biorisk Management, Biosafety, Biosecurity, Consultancy Services, Biological Risk Assessment, Biorisk Mitigation,
+Contact Hitex, Hitex Contact Information, Contact Us, Hitex Support, Customer Service, Hitex Location"
         />
+
         <meta
           name="google-site-verification"
           content="NZOf3dXTf97AlYUpgr_SRvp5_IkWZrroB9oYGmBlPuo"

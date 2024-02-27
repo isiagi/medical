@@ -1,40 +1,39 @@
-import Image from 'next/image';
-import Mini from '../components/Mini';
-import Utility from '../components/Utility';
+import Image from "next/image";
+import Mini from "../components/Mini";
+import Utility from "../components/Utility";
 
-import Head from 'next/head';
+import Head from "next/head";
 
-import nn from '../public/assets/nn.jpg'
+import nn from "../public/assets/nn.jpg";
 
 const BioRisk = () => {
   return (
     <div style={{}}>
-    <Head>
-      <title>Biological Risk Assessments</title>
-    </Head>
+      <Head>
+        <title>Biological Risk Assessments</title>
+        <meta
+          name="keywords"
+          content="Biological Risk Assessments, Biohazard Assessment, Biological Hazard Evaluation, Risk Management, Biosafety Protocols"
+        />
+      </Head>
       <Mini
         head="Biological Risk Assessments"
         sub="Biological Risk Assessments"
       />
-      <div style={{padding: "8rem 2rem"}}>
+      <div style={{ padding: "8rem 2rem" }}>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gridAutoRows: '450px',
-            gap: '2rem',
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridAutoRows: "450px",
+            gap: "2rem",
           }}
         >
-          <div style={{ position: 'relative' }}>
-            <Image
-              src={nn}
-              alt="bio"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div style={{ position: "relative" }}>
+            <Image src={nn} alt="bio" layout="fill" objectFit="cover" />
           </div>
-          <div style={{marginBottom: '1rem'}}>
-            <p style={{ lineHeight: '2rem' }}>
+          <div style={{ marginBottom: "1rem" }}>
+            <p style={{ lineHeight: "2rem" }}>
               In the wake of global emerging and re-emerging diseases like
               Ebola, Marburg, and more recently SARS-CoV-2 among others, it’s
               imperative to set up systems which are able to detect and avert
@@ -46,7 +45,7 @@ const BioRisk = () => {
               through the WHO Biosafety manual 4th edition and the OIE. We
               utilize guidelines from ISO 31010:2019- Risk Assessment techniques
               and ISO 31000:2018- Risk Management guidelines to conduct our
-              assessments and set up effective mitigation measures.{' '}
+              assessments and set up effective mitigation measures.{" "}
             </p>
           </div>
         </div>

@@ -19,7 +19,7 @@ const Bio = () => {
         />
       </Head>
       <Mini
-        head={"Biorisk management (Biosafety Biosecurity) Consultancy"}
+        head={"Biorisk management (Biosafety Biosecurity) Consultant"}
         sub="Biorisk management"
       />
 

@@ -12,7 +12,7 @@ const Bio = () => {
   return (
     <div>
       <Head>
-        <title>Biorisk management (Biosafety Biosecurity) Consultancy</title>
+        <title>Biorisk management (Biosafety Biosecurity) Consultant</title>
         <meta
           name="keywords"
           content="Biorisk Management, Biosafety, Biosecurity, Consultancy Services, Biological Risk Assessment, Biorisk Mitigation"

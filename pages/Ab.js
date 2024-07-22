@@ -1,16 +1,16 @@
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 
-import styles from '../styles/About.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-import Mini from '../components/Mini';
-import Who from '../components/Who';
+import styles from "../styles/About.module.css";
+import Image from "next/image";
+import Link from "next/link";
+import Mini from "../components/Mini";
+import Who from "../components/Who";
 
-import Head from 'next/head';
+import Head from "next/head";
 
 // const zoom = mediumZoom('[data-zoomable]')
 
@@ -19,31 +19,31 @@ import Head from 'next/head';
 const data = [
   {
     id: 1,
-    img: '/assets/account.jpg',
-    title: 'Accountability',
+    img: "/assets/account.jpg",
+    title: "Accountability",
     content:
-      'As a company and as individuals, we accept full responsibility for our performance and acknowledge our accountability for the ultimate outcome of all that we do. We strive for continuous improvement, believing that competence, reliability, and rigorous adherence to process discipline are the keys to excellence.',
+      "As a company and as individuals, we accept full responsibility for our performance and acknowledge our accountability for the ultimate outcome of all that we do. We strive for continuous improvement, believing that competence, reliability, and rigorous adherence to process discipline are the keys to excellence.",
   },
   {
     id: 2,
-    img: '/assets/inte.jpg',
-    title: 'Intergrity',
+    img: "/assets/inte.jpg",
+    title: "Intergrity",
     content:
-      'Credibility is the key to our success; therefore, all of our processes, decisions and actions ultimately are driven by integrity. We are honest and forthright in all our dealings with our customers. We strictly comply with the laws and regulations governing our business, not only as a legal obligation and as a competitive necessity, but because it is the right thing to do.',
+      "Credibility is the key to our success; therefore, all of our processes, decisions and actions ultimately are driven by integrity. We are honest and forthright in all our dealings with our customers. We strictly comply with the laws and regulations governing our business, not only as a legal obligation and as a competitive necessity, but because it is the right thing to do.",
   },
   {
     id: 3,
-    img: '/assets/qua.jpg',
-    title: 'Quality',
+    img: "/assets/qua.jpg",
+    title: "Quality",
     content:
-      'The client/patient comes first in everything we do. Our company came into existence for serving and satisfying our valued customers and we ensure that we make a positive difference in the success and future of our clients.',
+      "The client/patient comes first in everything we do. Our company came into existence for serving and satisfying our valued customers and we ensure that we make a positive difference in the success and future of our clients.",
   },
   {
     id: 4,
-    img: '/assets/col.jpeg',
-    title: 'Colaboration',
+    img: "/assets/col.jpeg",
+    title: "Colaboration",
     content:
-      'We believe in teamwork and value meaningful partnerships with other organizations and individuals that share and will enable us to deliver our mission and vision. We achieve excellence by putting collective goals ahead of personal interests. ',
+      "We believe in teamwork and value meaningful partnerships with other organizations and individuals that share and will enable us to deliver our mission and vision. We achieve excellence by putting collective goals ahead of personal interests. ",
   },
 ];
 
@@ -63,28 +63,28 @@ const Ab = () => {
           </p>
         </div>
       </div> */}
-        <Mini head={'About Us'} sub="About Us" />
+        <Mini head={"About Us"} sub="About Us" />
         <Who />
         <div className={styles.about__container}>
-          <div style={{ marginBottom: '4rem' }}>
+          <div style={{ marginBottom: "4rem" }}>
             <div className={styles.about__item1}>
               <h3
                 style={{
-                  textAlign: 'center',
-                  fontSize: '1.9em',
-                  margin: '1rem 0',
+                  textAlign: "center",
+                  fontSize: "1.9em",
+                  margin: "1rem 0",
                 }}
               >
                 Vision / <span>Mission</span>
               </h3>
-              <Tabs style={{ fontSize: '18px' }}>
+              <Tabs style={{ fontSize: "18px" }}>
                 <TabList>
                   <Tab>Vision</Tab>
                   <Tab>MISSION</Tab>
                 </TabList>
 
                 <TabPanel>
-                  <p style={{ color: 'rgb(130, 129, 129)' }}>
+                  <p style={{ color: "rgb(130, 129, 129)" }}>
                     To provide high quality life impacting services to the
                     customers we serve and earn a reputation of the most
                     appreciated, valued, referred and respected Consultancy
@@ -92,7 +92,7 @@ const Ab = () => {
                   </p>
                 </TabPanel>
                 <TabPanel>
-                  <p style={{ color: 'rgb(130, 129, 129)' }}>
+                  <p style={{ color: "rgb(130, 129, 129)" }}>
                     To be a competitive and reliable partner helping people feel
                     confident & delivering on their success aspirations by
                     rendering excellent services with honesty, ethics and
@@ -103,17 +103,17 @@ const Ab = () => {
             </div>
             <div
               style={{
-                background: '#fff',
-                padding: '16px 32px',
-                width: '100%',
+                background: "#fff",
+                padding: "16px 32px",
+                width: "100%",
               }}
             >
               <h3
                 style={{
-                  textAlign: 'center',
-                  fontSize: '1.9em',
-                  margin: '1rem 0',
-                  paddingBlock: '2rem',
+                  textAlign: "center",
+                  fontSize: "1.9em",
+                  margin: "1rem 0",
+                  paddingBlock: "2rem",
                 }}
               >
                 Our Values
@@ -139,11 +139,11 @@ const Ab = () => {
               <Splide
                 options={{
                   rewind: true,
-                  width: '100%',
+                  width: "100%",
                   perPage: 3,
-                  focus: 'center',
+                  focus: "center",
                   arrows: true,
-                  gap: '1rem',
+                  gap: "1rem",
                   autoplay: true,
                   breakpoints: {
                     640: {
@@ -156,7 +156,7 @@ const Ab = () => {
                   <SplideSlide key={item.id}>
                     <div className={styles.helo} data-splide-interval="1000">
                       <Image src={item.img} alt="" width="400px" height="200" />
-                      <h3 style={{ color: 'rgb(236, 75, 54)' }}>
+                      <h3 style={{ color: "rgb(236, 75, 54)" }}>
                         {item.title}
                       </h3>
                       <p>{item.content}</p>
@@ -168,50 +168,56 @@ const Ab = () => {
             <div>
               <h3
                 style={{
-                  textAlign: 'center',
-                  fontSize: '1.9em',
-                  margin: '1rem 0',
-                  paddingBlock: '2rem',
+                  textAlign: "center",
+                  fontSize: "1.9em",
+                  margin: "1rem 0",
+                  paddingBlock: "2rem",
                 }}
               >
                 Certifications
               </h3>
               <div
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                  gap: '1rem',
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+                  gap: "1rem",
                 }}
               >
                 <Image
-                  src={'/assets/lov.jpg'}
+                  src={"/assets/lov.jpg"}
                   alt=""
                   width="600px"
                   height="400"
-                  style={{ objectFit: 'cover', overflow: 'hidden' }}
+                  style={{ objectFit: "cover", overflow: "hidden" }}
                 />
                 <Image
-                  src={'/assets/ho.jpg'}
+                  src={"/assets/ho.jpg"}
                   alt=""
                   width="600px"
                   height="600"
                 />
                 <Image
                   src={
-                    '/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png'
+                    "/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png"
                   }
                   alt=""
                   width="600px"
                   height="600"
                 />
                 <Image
-                  src={'/assets/AfRSME Cert-1new.png'}
+                  src={"/assets/AfRSME Cert-1new.png"}
                   alt=""
                   width="600px"
                   height="600"
                 />
                 <Image
-                  src={'/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png'}
+                  src={"/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png"}
+                  alt=""
+                  width="600px"
+                  height="600"
+                />
+                <Image
+                  src={"/assets/paul1.png"}
                   alt=""
                   width="600px"
                   height="600"

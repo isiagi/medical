@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import styles from '../styles/Home.module.css';
+import Image from "next/image";
+import { useState } from "react";
+import styles from "../styles/Home.module.css";
 
 const Faq = () => {
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(false);
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <div>
         <ol>
           <li>

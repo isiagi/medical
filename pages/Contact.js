@@ -9,10 +9,16 @@ import styles from "../styles/Contact.module.css";
 import Mini from "../components/Mini";
 import InputSection from "../components/InputSection";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+    >
       <Head>
         <title>Contact Hitex</title>
         <meta
@@ -20,7 +26,7 @@ const Contact = () => {
           content="Contact Hitex, Hitex Contact Information, Contact Us, Hitex Support, Customer Service, Hitex Location"
         />
       </Head>
-      <Mini head={"Contact Us"} sub="Contact" />
+      <Mini head={"Contact Us"} sub="Contact" image={"/assets/contact.jpg"} />
       <div className={styles.contact__wrapper} id="contact">
         <div
           style={{
@@ -93,7 +99,7 @@ const Contact = () => {
           color4={"rgb(28, 28, 143)"}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

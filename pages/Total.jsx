@@ -4,11 +4,17 @@ import Services from "../components/Services";
 import Head from "next/head";
 
 import total from "../public/assets/total.jpg";
+import { motion } from "framer-motion";
 
 const Total = () => {
   // Stud3ntp@55
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+    >
       <Head>
         <title>Total Quality Management</title>
         <meta
@@ -19,6 +25,7 @@ const Total = () => {
       <Mini
         head={"Total Quality Management (TQM)"}
         sub="Total Quality Management"
+        image={"/assets/qua.jpg"}
       />
       {/* <div style={{ padding: '8rem 2rem' }}>
         <div
@@ -75,10 +82,17 @@ const Total = () => {
           }}
         >
           <div style={{ position: "relative", height: "450px" }}>
-            <Image src={total} alt="bio" layout="fill" objectFit="cover" />
+            <Image
+              src={total}
+              alt="bio"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </div>
           <div style={{ marginBottom: "1rem" }}>
-            <p style={{ lineHeight: "2rem" }}>
+            <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
               <span style={{ color: "rgb(28, 28, 143)" }}>
                 <b>Hitex consortium Limited</b>
               </span>{" "}
@@ -92,7 +106,7 @@ const Total = () => {
               approach, Continual improvement, Fact-based decision making and
               effective Communications strategies.{" "}
             </p>
-            <p style={{ lineHeight: "2rem" }}>
+            <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
               We utilize these principles to support our customers improve their
               systems. Our experts have worked closely with the health systems
               in Uganda to support laboratory quality management systems{" "}
@@ -105,7 +119,7 @@ const Total = () => {
         </div>
       </div>
       <br />
-    </div>
+    </motion.div>
   );
 };
 

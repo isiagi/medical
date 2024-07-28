@@ -12,20 +12,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.4.0",
-    "@splidejs/react-splide": "^0.6.20",
+    "@emailjs/browser": "^4.4.1",
+    "@splidejs/react-splide": "^0.7.12",
     "emailjs-com": "^3.2.0",
-    "medium-zoom": "^1.0.8",
-    "next": "12.1.0",
+    "framer-motion": "^11.3.17",
+    "lightgallery": "^2.7.2",
+    "medium-zoom": "^1.1.0",
+    "next": "14.2.5",
     "nprogress": "^0.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-slideshow-image": "^3.7.0",
-    "react-tabs": "^4.0.1"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-grid-gallery": "^1.0.1",
+    "react-icons": "^5.2.1",
+    "react-slideshow-image": "^4.3.1",
+    "react-tabs": "^6.0.2"
   },
   "devDependencies": {
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint": "8.0.0",
+    "eslint-config-next": "14.2.5"
   }
 }

@@ -3,6 +3,7 @@ import Mini from "../components/Mini";
 import Utility from "../components/Utility";
 
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 import safety from "../public/assets/new.jpg";
 import gift from "../public/assets/gif.jpg";
@@ -10,7 +11,12 @@ import Head from "next/head";
 
 const Bio = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+    >
       <Head>
         <title>Biorisk management (Biosafety Biosecurity) Consultant</title>
         <meta
@@ -21,6 +27,7 @@ const Bio = () => {
       <Mini
         head={"Biorisk management (Biosafety Biosecurity) Consultant"}
         sub="Biorisk management"
+        image={"/assets/new.jpg"}
       />
 
       <div style={{ padding: "8rem 2rem" }}>
@@ -37,13 +44,14 @@ const Bio = () => {
             <Image
               src={safety}
               alt="bio"
-              layout="fill"
-              objectFit="cover"
-              className={styles.biok}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           <div>
-            <p style={{ lineHeight: "2rem" }}>
+            <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
               Biosafety Biosecurity is our niche; Through our highly skilled
               experts, we provide high quality Biorisk management consultancy
               services to individuals and institutions on the best approaches to
@@ -77,7 +85,7 @@ const Bio = () => {
           }}
         >
           <div>
-            <p style={{ lineHeight: "2rem" }}>
+            <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
               As much as biological agents and their toxins can be used in
               research for the advancement of science, there is a great
               potential for their mis-use as well to pose a threat to public
@@ -100,12 +108,19 @@ const Bio = () => {
             </p>
           </div>
           <div style={{ position: "relative", height: "530px" }}>
-            <Image src={gift} alt="bio" layout="fill" objectFit="cover" />
+            <Image
+              src={gift}
+              alt="bio"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
       <Utility />
-    </div>
+    </motion.div>
   );
 };
 

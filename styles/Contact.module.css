@@ -15,10 +15,11 @@
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/assets/contact.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/contact.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #eee;
   flex-wrap: wrap;
 }
 .contact__wrapper .contact__container {
@@ -58,7 +59,7 @@
 
 .about__head {
   min-height: 60vh;
-  background-color: rgb(28, 28, 143);
+
   text-align: center;
   color: #fff;
   display: flex;
@@ -67,8 +68,13 @@
   justify-content: center;
 }
 
-.about__item > p{
+.about__item > p {
   max-width: 500px;
   margin: 2rem auto;
+}
 
+@media screen and (max-width: 991px) {
+  .about__head {
+    min-height: 50vh;
+  }
 }

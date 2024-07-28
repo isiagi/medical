@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 import styles from "../styles/Services.module.css";
 import Header from "./Header";
@@ -9,10 +9,56 @@ import { GiNuclearWaste } from "react-icons/gi";
 import { MdOutlineHourglassTop } from "react-icons/md";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+import { useInView } from "framer-motion";
+
+const service = [
+  {
+    id: 1,
+    image: "/assets/new.jpg",
+    icon: <GiBiohazard />,
+    link: "/Bio",
+    service: "Biosafety Biosecurity (Biorisk management) Consultancy",
+    detail:
+      "In the wake of global emerging and re-emerging diseases like Ebola, Marburg, and more recently SARS-CoV-2 among others",
+  },
+  {
+    id: 2,
+    image: "/assets/nn.jpg",
+    link: "/BioRisk",
+    icon: <MdOutlineHourglassTop />,
+    service: "Biological Risk Assessments & Management Consultancy ",
+    detail:
+      "As much as biological agents and their toxins can be used in research for the advancement of science, there is a great potential for their mis-use",
+  },
+  {
+    id: 3,
+    image: "/assets/total.jpg",
+    icon: <ImEqualizer2 />,
+    link: "/Total",
+    service: "Total Quality management (TQM)",
+    detail:
+      "We utilize these principles to support our customers improve their systems. Our experts have worked closely with the health  systems",
+  },
+  {
+    id: 4,
+    image: "/assets/image.png",
+    icon: <GiNuclearWaste />,
+    link: "/Waste",
+    service:
+      "Establishment of Waste management systems & supply/repair of incinerators ",
+    detail:
+      "There are enormous biosafety and biosecurity risks resulting from poor Healthcare waste Management (HCWM).",
+  },
+];
 
 const Services = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
-    <div className={styles.services__container}>
+    <div ref={ref}>
       <Header
         first="Awesome Services"
         middle="Our Core Services"
@@ -22,63 +68,37 @@ const Services = () => {
       />
       <div className={styles.services__wrapper}>
         <div className={styles.service__flex}>
-          <div className={styles.service__item}>
-            <div className={styles.service__img}>
-              <Image src={"/assets/new.jpg"} alt={"picture"} layout="fill" />
-            </div>
-            <Link href="/Bio">
-              <div className={styles.service__detail}>
-                <div className={styles.service__icon}>
-                  <GiBiohazard />
-                </div>
-                <h3>Biosafety Biosecurity (Biorisk management) Consultancy</h3>
-                <p>
-                  In the wake of global emerging and re-emerging diseases like
-                  Ebola, Marburg, and more recently SARS-CoV-2 among others
-                </p>
+          {service.map(({ id, image, icon, link, service, detail }) => (
+            <div
+              style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+              className={styles.service__item}
+              key={id}
+            >
+              <div className={styles.service__img}>
+                <Image src={image} alt={"picture"} layout="fill" />
               </div>
-            </Link>
-          </div>
-
-          <div className={styles.service__item}>
-            <div className={styles.service__img}>
-              <Image src={"/assets/nn.jpg"} alt={"picture"} layout="fill" />
-            </div>
-            <Link href="/BioRisk">
-              <div className={styles.service__detail}>
-                <div className={styles.service__icon}>
-                  <MdOutlineHourglassTop />
+              <Link href={link}>
+                <div className={styles.service__detail}>
+                  <div className={styles.service__icon}>{icon}</div>
+                  <h3 style={{ marginBottom: "1rem", color: "#1A357E" }}>
+                    {service}
+                  </h3>
+                  <p
+                    style={{
+                      lineHeight: "1.5rem",
+                      color: "rgb(130, 129, 129)",
+                    }}
+                  >
+                    {detail}
+                  </p>
                 </div>
-                <h3>Biological Risk Assessments / Management Consultancy</h3>
-                <p>
-                  As much as biological agents and their toxins can be used in
-                  research for the advancement of science, there is a great
-                  potential for their mis-use
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          <div className={styles.service__item}>
-            <div className={styles.service__img}>
-              <Image src={"/assets/image.png"} alt={"picture"} layout="fill" />
+              </Link>
             </div>
-            <Link href="/Waste">
-              <div className={styles.service__detail}>
-                <div className={styles.service__icon}>
-                  <GiNuclearWaste />
-                </div>
-                <h3>
-                  Establishment of Waste management systems & supply/repair of
-                  incinerators
-                </h3>
-                <p>
-                  There are enormous biosafety and biosecurity risks resulting
-                  from poor Healthcare waste Management (HCWM).
-                </p>
-              </div>
-            </Link>
-          </div>
+          ))}
 
           {/* <div className={styles.service__item}>
             <div className={styles.service__img}>
@@ -97,25 +117,6 @@ const Services = () => {
               </div>
             </Link>
           </div> */}
-
-          <div className={styles.service__item}>
-            <div className={styles.service__img}>
-              <Image src={"/assets/total.jpg"} alt={"picture"} layout="fill" />
-            </div>
-            <Link href="/Total">
-              <div className={styles.service__detail}>
-                <div className={styles.service__icon}>
-                  <ImEqualizer2 />
-                </div>
-                <h3>Total Quality management (TQM)</h3>
-                <p>
-                  We utilize these principles to support our customers improve
-                  their systems. Our experts have worked closely with the health
-                  systems
-                </p>
-              </div>
-            </Link>
-          </div>
         </div>
       </div>
     </div>

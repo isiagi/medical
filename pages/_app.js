@@ -1,25 +1,25 @@
-import Head from 'next/head';
-import Router from 'next/router';
-import NProgress from 'nprogress';
-import Layout from '../components/Layout';
+import Head from "next/head";
+import Router from "next/router";
+import NProgress from "nprogress";
+import Layout from "../components/Layout";
+import { AnimatePresence } from "framer-motion";
 
-import '../styles/globals.css';
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  
-  NProgress.configure({showSpinner: false})
-  
-  Router.events.on('routeChangeStart', () => {
-    NProgress.start()
-  })
+  NProgress.configure({ showSpinner: false });
 
-  Router.events.on('routeChangeComplete', () => {
-    NProgress.done()
-  })
+  Router.events.on("routeChangeStart", () => {
+    NProgress.start();
+  });
+
+  Router.events.on("routeChangeComplete", () => {
+    NProgress.done();
+  });
 
   return (
     <div>
-    <Head>
+      <Head>
         <meta charset="UTF-8" />
         <meta
           name="keyword"
@@ -28,8 +28,11 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Paul" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+
       <Layout>
-        <Component {...pageProps} />
+        <AnimatePresence>
+          <Component {...pageProps} />
+        </AnimatePresence>
       </Layout>
     </div>
   );

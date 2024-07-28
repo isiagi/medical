@@ -9,12 +9,23 @@ import Image from "next/image";
 import Link from "next/link";
 import Mini from "../components/Mini";
 import Who from "../components/Who";
+import { motion } from "framer-motion";
 
 import Head from "next/head";
 
 // const zoom = mediumZoom('[data-zoomable]')
 
-// import img1 from '../public/assets/'
+// import img1 from '../public/assets/
+import LightGallery from "lightgallery/react";
+
+// import styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+// import plugins if you need
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 const data = [
   {
@@ -49,7 +60,12 @@ const data = [
 
 const Ab = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+    >
       <Head>
         <title>About Hitex Consortium</title>
       </Head>
@@ -63,7 +79,7 @@ const Ab = () => {
           </p>
         </div>
       </div> */}
-        <Mini head={"About Us"} sub="About Us" />
+        <Mini head={"About Us"} sub="About Us" image={"/assets/gf.jpg"} />
         <Who />
         <div className={styles.about__container}>
           <div style={{ marginBottom: "4rem" }}>
@@ -155,11 +171,27 @@ const Ab = () => {
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
                     <div className={styles.helo} data-splide-interval="1000">
-                      <Image src={item.img} alt="" width="400px" height="200" />
-                      <h3 style={{ color: "rgb(236, 75, 54)" }}>
+                      <Image
+                        src={item.img}
+                        alt=""
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "250px" }}
+                      />
+                      <h3
+                        style={{
+                          color: "rgb(236, 75, 54)",
+                          textAlign: "center",
+                          fontSize: "1.4rem",
+                          paddingTop: "1rem",
+                        }}
+                      >
                         {item.title}
                       </h3>
-                      <p>{item.content}</p>
+                      <p style={{ color: "rgb(130, 129, 129)" }}>
+                        {item.content}
+                      </p>
                     </div>
                   </SplideSlide>
                 ))}
@@ -176,59 +208,64 @@ const Ab = () => {
               >
                 Certifications
               </h3>
+
               <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-                  gap: "1rem",
-                }}
+                style={{ padding: "0 2rem" }}
+                className={styles.gallery__flex}
               >
-                <Image
-                  src={"/assets/lov.jpg"}
-                  alt=""
-                  width="600px"
-                  height="400"
-                  style={{ objectFit: "cover", overflow: "hidden" }}
-                />
-                <Image
-                  src={"/assets/ho.jpg"}
-                  alt=""
-                  width="600px"
-                  height="600"
-                />
-                <Image
-                  src={
-                    "/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png"
-                  }
-                  alt=""
-                  width="600px"
-                  height="600"
-                />
-                <Image
-                  src={"/assets/AfRSME Cert-1new.png"}
-                  alt=""
-                  width="600px"
-                  height="600"
-                />
-                <Image
-                  src={"/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png"}
-                  alt=""
-                  width="600px"
-                  height="600"
-                />
-                <Image
-                  src={"/assets/paul1.png"}
-                  alt=""
-                  width="600px"
-                  height="600"
-                />
+                <LightGallery
+                  // onInit={onInit}
+                  speed={500}
+                  plugins={[lgThumbnail, lgZoom]}
+                  elementClassNames={styles.gallery__flex}
+                >
+                  {im.map(({ id, img }) => (
+                    <a href={img} key={id}>
+                      <Image
+                        alt="img1"
+                        src={img}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </a>
+                  ))}
+                </LightGallery>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
 export default Ab;
+
+const im = [
+  {
+    id: 1,
+    img: "/assets/lov.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/ho.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png",
+  },
+  {
+    id: 4,
+    img: "/assets/AfRSME Cert-1new.png",
+  },
+  {
+    id: 5,
+    img: "/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png",
+  },
+  {
+    id: 6,
+    img: "/assets/paul1.png",
+  },
+];

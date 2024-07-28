@@ -1,29 +1,29 @@
-import React from 'react';
+import React from "react";
 // import { Link } from 'react-router-dom';
 
-import styles from '../../styles/Footer.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
-import { CgHeadset } from 'react-icons/cg';
-import { HiOutlineMail } from 'react-icons/hi';
-import { GoLocation } from 'react-icons/go';
+import styles from "../../styles/Footer.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import { CgHeadset } from "react-icons/cg";
+import { HiOutlineMail } from "react-icons/hi";
+import { GoLocation } from "react-icons/go";
 
 const Footer = () => {
   return (
     <div className={styles.footer__container}>
       <div className={styles.footer__contain}>
         <div className={styles.footer__wrapper}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <div
               style={{
-                background: 'white',
-                width: '70px',
-                height: '60px',
-                borderRadius: '50%',
+                background: "white",
+                width: "70px",
+                height: "60px",
+                borderRadius: "50%",
               }}
             >
               <Image
-                src={'/assets/logo.png'}
+                src={"/assets/logo.png"}
                 alt="logo"
                 width="75"
                 height="65"
@@ -31,8 +31,8 @@ const Footer = () => {
             </div>
             <h3
               style={{
-                fontSize: '22px',
-                marginBottom: '10px',
+                fontSize: "22px",
+                marginBottom: "10px",
               }}
             >
               Hitex consortium Limited
@@ -51,8 +51,8 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '22px',
-                marginBottom: '10px',
+                fontSize: "22px",
+                marginBottom: "10px",
               }}
             >
               Core Services
@@ -60,26 +60,25 @@ const Footer = () => {
           </div>
           <div>
             <ul>
-              <li style={{fontWeight: 'bold'}}>
+              <li>
                 <Link href="/Bio">
                   Biosafety Biosecurity (Biorisk management) Consultancy
                 </Link>
               </li>
-              <li style={{fontWeight: 'bold'}}>
+              <li>
                 <Link href="/BioRisk">
                   Biological Risk Assessments & Management Consultancy
                 </Link>
               </li>
-              <li style={{fontWeight: 'bold'}}>
+              <li>
                 <Link href="/Waste">
-                  Establishment of Waste management systems & supply/repair of
-                  incinerators
+                  Establishment of Waste management systems
                 </Link>
               </li>
               {/* <li style={{fontWeight: 'bold'}}>
                 <Link href="/Total">Biosafety Cabinet Certification</Link>
               </li> */}
-              <li style={{fontWeight: 'bold'}}>
+              <li>
                 <Link href="/Total">Total Quality management (TQM)</Link>
               </li>
             </ul>
@@ -90,8 +89,8 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '22px',
-                marginBottom: '10px',
+                fontSize: "22px",
+                marginBottom: "10px",
               }}
             >
               Quick Link
@@ -119,8 +118,8 @@ const Footer = () => {
           <div>
             <h3
               style={{
-                fontSize: '22px',
-                marginBottom: '10px',
+                fontSize: "22px",
+                marginBottom: "10px",
               }}
             >
               Contact Us
@@ -129,11 +128,11 @@ const Footer = () => {
           <div>
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                fontSize: '1.2rem',
-                color: '#E9542D',
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                fontSize: "1.2rem",
+                color: "#E9542D",
               }}
             >
               <CgHeadset fontSize={20} />
@@ -141,17 +140,25 @@ const Footer = () => {
             </div>
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                fontSize: '1.2rem',
-                color: '#E9542D',
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                fontSize: "1.2rem",
+                color: "#E9542D",
               }}
             >
               <HiOutlineMail fontSize={20} />
               <p>hitexconsortium@gmail.com</p>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',color: '#E9542D', fontSize: '1.2rem',}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#E9542D",
+                fontSize: "1.2rem",
+              }}
+            >
               <GoLocation fontSize={20} />
               <p>Namboole-Kampala, Uganda</p>
             </div>

@@ -1,15 +1,18 @@
-import React from 'react';
-import { BsArrowRepeat } from 'react-icons/bs';
-import { AiOutlineAudit } from 'react-icons/ai';
-import { FiUsers } from 'react-icons/fi';
-import { HiOutlineClipboardList } from 'react-icons/hi';
+import React, { useRef } from "react";
+import { BsArrowRepeat } from "react-icons/bs";
+import { AiOutlineAudit } from "react-icons/ai";
+import { FiUsers } from "react-icons/fi";
+import { HiOutlineClipboardList } from "react-icons/hi";
 
-import styles from '../styles/Util.module.css';
-import Header from './Header';
+import styles from "../styles/Util.module.css";
+import Header from "./Header";
+import { useInView } from "framer-motion";
 
 function Utility() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
-    <div className={styles.util__container}>
+    <div ref={ref} className={styles.util__container}>
       <Header
         first="Awesome Features"
         middle="Our Core Features"
@@ -17,7 +20,14 @@ function Utility() {
           training, mentorship and audit approaches to improve our programming
           as described below."
       />
-      <div className={styles.util__wrapper}>
+      <div
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
+        }}
+        className={styles.util__wrapper}
+      >
         <div className={styles.util__flex}>
           <div className={styles.util__item}>
             <BsArrowRepeat className={styles.service__item__icon} />

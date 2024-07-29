@@ -22,6 +22,7 @@
 .who__img1 {
   border-radius: 20px;
   display: block;
+  width: "100%";
 }
 
 .who__section {
@@ -40,12 +41,10 @@
   .who__section {
     grid-auto-rows: 450px;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .who__container {
     min-height: 80vh;
   }
-
 }

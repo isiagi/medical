@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import React from 'react';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { MdTableRows } from 'react-icons/md';
-import { GiCancel } from 'react-icons/gi';
+import Link from "next/link";
+import React from "react";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdTableRows } from "react-icons/md";
+import { GiCancel } from "react-icons/gi";
 
-import styles from '../styles/Nav.module.css';
-import Image from 'next/image';
+import styles from "../styles/Nav.module.css";
+import Image from "next/image";
 
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const NavBar = () => {
   const [offSet, setOffset] = React.useState(0);
@@ -25,18 +25,22 @@ const NavBar = () => {
     <div className={styles.nav__wrapper}>
       <nav className={offSet > 40 ? styles.nav1 : styles.nav}>
         <div className={styles.nav__logo}>
-          <Image src={'/assets/logo.png'} alt="logo" width="75" height="65" />
-          <h3>
-            <span style={{ color: 'rgb(28, 28, 143)' }}>HITEX</span>{' '}
-            <span style={{ color: 'rgb(236, 75, 54)' }}>CONSORTIUM LTD</span>
+          <Image src={"/assets/logo.png"} alt="logo" width="75" height="65" />
+          <h3 className={styles.nav__h3}>
+            <span style={{ color: "rgb(28, 28, 143)", fontWeight: "500" }}>
+              HITEX
+            </span>{" "}
+            <span style={{ color: "rgb(236, 75, 54)", fontWeight: "500" }}>
+              CONSORTIUM LTD
+            </span>
           </h3>
         </div>
 
-        <div className={`${styles.nav__items} ${open ? styles.active : ''}`}>
+        <div className={`${styles.nav__items} ${open ? styles.active : ""}`}>
           <ul>
             <Link href="/">
               <li
-                className={router.pathname == '/' ? `${styles.linkactive}` : ''}
+                className={router.pathname == "/" ? `${styles.linkactive}` : ""}
                 onClick={() => setOpen(false)}
               >
                 HOME
@@ -45,7 +49,7 @@ const NavBar = () => {
             <Link href="/Ab">
               <li
                 className={
-                  router.pathname == '/Ab' ? `${styles.linkactive}` : ''
+                  router.pathname == "/Ab" ? `${styles.linkactive}` : ""
                 }
                 onClick={() => setOpen(false)}
               >
@@ -55,7 +59,7 @@ const NavBar = () => {
             <Link href="/Services">
               <li
                 className={
-                  router.pathname == '/Services' ? `${styles.linkactive}` : ''
+                  router.pathname == "/Services" ? `${styles.linkactive}` : ""
                 }
                 onClick={() => setOpen(false)}
               >
@@ -63,10 +67,20 @@ const NavBar = () => {
               </li>
             </Link>
             {/* <li onClick={() => setOpen(false)}>TESTIMONIALS</li> */}
+            <Link href="/Gallery">
+              <li
+                className={
+                  router.pathname == "/Gallery" ? `${styles.linkactive}` : ""
+                }
+                onClick={() => setOpen(false)}
+              >
+                GALLERY
+              </li>
+            </Link>
             <Link href="/Contact">
               <li
                 className={
-                  router.pathname == '/Contact' ? `${styles.linkactive}` : ''
+                  router.pathname == "/Contact" ? `${styles.linkactive}` : ""
                 }
                 onClick={() => setOpen(false)}
               >
@@ -88,11 +102,13 @@ const NavBar = () => {
         <div className={styles.nav__cancel}>
           {open ? (
             <GiCancel
+              style={{ fontSize: "1.8rem" }}
               className={styles.nav__cancel__icon}
               onClick={() => setOpen(false)}
             />
           ) : (
             <MdTableRows
+              style={{ fontSize: "1.8rem" }}
               className={styles.nav__cancel__icon}
               onClick={() => setOpen(true)}
             />

@@ -47,24 +47,24 @@
   justify-content: space-around;
   flex-wrap: wrap;
   cursor: pointer;
-  width: 500px;
+  /* width: 500px; */
   color: rgb(65, 65, 70);
 }
 
 .nav__items ul li {
   flex-wrap: wrap;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.7rem;
   color: rgb(17, 25, 67);
 }
 
 .nav__items ul li:hover:not(.linkactive) {
-  border-bottom: 3px solid rgb(236, 75, 54);
+  /* border-bottom: 1px solid rgb(236, 75, 54); */
   color: rgb(236, 75, 54) !important;
 }
 
 .linkactive {
-  border-bottom: 3px solid rgb(236, 75, 54);
+  border-bottom: 1px solid rgb(236, 75, 54);
   color: rgb(236, 75, 54) !important;
 }
 
@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .nav__h3 {
+    display: none;
+  }
+
   .nav__cancel {
     display: block;
   }

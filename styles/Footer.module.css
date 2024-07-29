@@ -7,7 +7,7 @@
   align-items: center;
   line-height: 2.2rem;
   background: linear-gradient(rgba(17, 25, 67, 0.9), rgb(17, 25, 67, 0.9)),
-    url('../public/assets/pattern.png');
+    url("../public/assets/pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 2rem;
@@ -49,7 +49,7 @@
 
 .footer__links div > ul li {
   color: whitesmoke;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .footer__links div > ul li:hover {

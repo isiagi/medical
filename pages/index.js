@@ -7,10 +7,18 @@ import Utility from "../components/Utility";
 import styles from "../styles/Home.module.css";
 import He from "../components/He";
 import Who from "../components/Who";
+import { motion } from "framer-motion";
+import HomeContact from "../components/HomeContact";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+      className={styles.container}
+    >
       <Head>
         <title>Hitex Diagnostic Limited</title>
         <meta name="description" content="Hitex Consortium" />
@@ -37,8 +45,9 @@ Contact Hitex, Hitex Contact Information, Contact Us, Hitex Support, Customer Se
         <Utility />
         <Services />
         <He />
+        <HomeContact />
       </main>
-    </div>
+    </motion.div>
   );
 }
 

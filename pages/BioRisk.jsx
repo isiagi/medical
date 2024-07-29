@@ -5,10 +5,19 @@ import Utility from "../components/Utility";
 import Head from "next/head";
 
 import nn from "../public/assets/nn.jpg";
+import { motion } from "framer-motion";
+import Header from "../components/Header";
+import Mission from "../components/Mission";
 
 const BioRisk = () => {
   return (
-    <div style={{}}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+      style={{}}
+    >
       <Head>
         <title>Biological Risk Assessments</title>
         <meta
@@ -19,8 +28,14 @@ const BioRisk = () => {
       <Mini
         head="Biological Risk Assessments"
         sub="Biological Risk Assessments"
+        image={"/assets/gif.jpg"}
       />
-      <div style={{ padding: "8rem 2rem" }}>
+      <Header
+        first="Bio Risk"
+        middle="Biological Risk Assessments"
+        last="Ensuring Safety and Compliance"
+      />
+      <div style={{ padding: "0rem 2rem", paddingBottom: "2rem" }}>
         <div
           style={{
             display: "grid",
@@ -33,7 +48,7 @@ const BioRisk = () => {
             <Image src={nn} alt="bio" layout="fill" objectFit="cover" />
           </div>
           <div style={{ marginBottom: "1rem" }}>
-            <p style={{ lineHeight: "2rem" }}>
+            <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
               In the wake of global emerging and re-emerging diseases like
               Ebola, Marburg, and more recently SARS-CoV-2 among others, it’s
               imperative to set up systems which are able to detect and avert
@@ -51,8 +66,11 @@ const BioRisk = () => {
         </div>
       </div>
       <br />
+      <div style={{ padding: "0rem 2rem", paddingBottom: "4rem" }}>
+        <Mission />
+      </div>
       <Utility />
-    </div>
+    </motion.div>
   );
 };
 

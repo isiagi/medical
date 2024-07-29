@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import safety from "../public/assets/new.jpg";
 import gift from "../public/assets/gif.jpg";
 import Head from "next/head";
+import Header from "../components/Header";
+import HomeContact from "../components/HomeContact";
 
 const Bio = () => {
   return (
@@ -29,8 +31,13 @@ const Bio = () => {
         sub="Biorisk management"
         image={"/assets/new.jpg"}
       />
+      <Header
+        first="Biorisk Management"
+        middle="Biosafety & Biosecurity Consulting"
+        last="Expert Guidance for Secure Practices"
+      />
 
-      <div style={{ padding: "8rem 2rem" }}>
+      <div style={{ padding: "0rem 2rem", paddingBottom: "2rem" }}>
         <div
           style={{
             display: "grid",
@@ -120,6 +127,7 @@ const Bio = () => {
         </div>
       </div>
       <Utility />
+      <HomeContact />
     </motion.div>
   );
 };

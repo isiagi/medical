@@ -5,6 +5,8 @@ import Head from "next/head";
 
 import total from "../public/assets/total.jpg";
 import { motion } from "framer-motion";
+import Header from "../components/Header";
+import HomeContact from "../components/HomeContact";
 
 const Total = () => {
   // Stud3ntp@55
@@ -26,6 +28,11 @@ const Total = () => {
         head={"Total Quality Management (TQM)"}
         sub="Total Quality Management"
         image={"/assets/qua.jpg"}
+      />
+      <Header
+        first="Quality Excellence"
+        middle="Total Quality Management"
+        last="Commitment to Superior Standards"
       />
       {/* <div style={{ padding: '8rem 2rem' }}>
         <div
@@ -72,7 +79,7 @@ const Total = () => {
           </div>
         </div>
       </div> */}
-      <div style={{ padding: "8rem 2rem" }}>
+      <div style={{ padding: "0rem 2rem" }}>
         <div
           style={{
             display: "grid",
@@ -93,9 +100,6 @@ const Total = () => {
           </div>
           <div style={{ marginBottom: "1rem" }}>
             <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
-              <span style={{ color: "rgb(28, 28, 143)" }}>
-                <b>Hitex consortium Limited</b>
-              </span>{" "}
               we focus on the customer to nurture organizational growth and
               improve systems. Our approach involves working with all members of
               an organization to participate in improving processes, products,
@@ -119,6 +123,8 @@ const Total = () => {
         </div>
       </div>
       <br />
+      <HomeContact />
+      <Services />
     </motion.div>
   );
 };

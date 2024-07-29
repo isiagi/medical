@@ -18,19 +18,19 @@ function Who() {
       <div className={styles.who__wrapper}>
         <div className={styles.who__section}>
           <div>
+            {/* about us  */}
             <h1
               style={{
-                textAlign: "center",
                 color: "rgb(28, 28, 143)",
                 marginBottom: "1rem",
-                fontWeight: "bold",
+                fontWeight: "400",
               }}
             >
-              Who We Are
+              About Our Company
             </h1>
             <Ban />
           </div>
-          <div style={{ backgroundColor: "red" }}>
+          <div>
             <Image
               src={imgh}
               alt={"hf"}
@@ -39,7 +39,7 @@ function Who() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "100%", height: "100%", borderRadius: "20px" }}
             />
           </div>
         </div>

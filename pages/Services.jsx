@@ -6,6 +6,7 @@ import Mini from "../components/Mini";
 import Faq from "../components/He";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Values from "../components/Values";
 
 const services = () => {
   return (
@@ -20,6 +21,9 @@ const services = () => {
       </Head>
       <Mini head={"Our Services"} sub="Services" image={"/assets/qua.jpg"} />
       <Services />
+      <div style={{ marginBottom: "5rem" }}>
+        <Values />
+      </div>
       <Faq />
     </motion.div>
   );

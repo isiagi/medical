@@ -19,6 +19,26 @@ import Image from "next/image";
 
 import styles from "../styles/Gallery.module.css";
 
+const imgs = [
+  "/assets/gallery.jpeg",
+  "/assets/gallery1.jpeg",
+  "/assets/gallery2.jpeg",
+  "/assets/total.jpg",
+  // "/assets/safety.jpg",
+  "/assets/nn.jpg",
+  "/assets/new.jpg",
+  // "/assets/qua.jpg",
+  "/assets/gf.jpg",
+  "/assets/AfRSME Cert-1new.png",
+  "/assets/IFBA-BWM CERTIFICATE - Paul Okwalinga-1.png",
+  "/assets/paul1.png",
+  "/assets/lov.jpg",
+  "/assets/image.png",
+  "/assets/new.png",
+  "/assets/ho.jpg",
+  "/assets/BWM Certification - Chair Letter to Paul Okwalinga-1.png",
+];
+
 function GallerySection() {
   const onInit = () => {
     console.log("lightGallery has been initialized");
@@ -28,46 +48,28 @@ function GallerySection() {
       <Mini head="Gallery" sub="Our Gallery" image={"/assets/col.jpeg"} />
       <Header
         first="Our Gallery"
-        middle="Our Photos"
-        last="We have some of our photos from our Gallery."
+        middle="Visual Highlights"
+        last="Snapshots of Our Journey"
       />
       <div style={{ padding: "0 2rem" }} className={styles.gallery__flex}>
         <LightGallery
-          onInit={onInit}
+          // onInit={onInit}
           speed={500}
           plugins={[lgThumbnail, lgZoom]}
           elementClassNames={styles.gallery__flex}
         >
-          <a href="https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg">
-            <Image
-              alt="img1"
-              src="https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
-            />
-          </a>
-          <a href="https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg">
-            <Image
-              alt="img2"
-              src="https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
-            />
-          </a>
-          <a href="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg">
-            <Image
-              alt="img3"
-              src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
-            />
-          </a>
+          {imgs.map((img, i) => (
+            <a href={img} key={i}>
+              <Image
+                alt="img1"
+                src={img}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
+            </a>
+          ))}
         </LightGallery>
       </div>
     </div>

@@ -6,6 +6,8 @@ import Head from "next/head";
 
 import nn from "../public/assets/nn.jpg";
 import { motion } from "framer-motion";
+import Header from "../components/Header";
+import Mission from "../components/Mission";
 
 const BioRisk = () => {
   return (
@@ -28,7 +30,12 @@ const BioRisk = () => {
         sub="Biological Risk Assessments"
         image={"/assets/gif.jpg"}
       />
-      <div style={{ padding: "8rem 2rem" }}>
+      <Header
+        first="Bio Risk"
+        middle="Biological Risk Assessments"
+        last="Ensuring Safety and Compliance"
+      />
+      <div style={{ padding: "0rem 2rem", paddingBottom: "2rem" }}>
         <div
           style={{
             display: "grid",
@@ -59,6 +66,9 @@ const BioRisk = () => {
         </div>
       </div>
       <br />
+      <div style={{ padding: "0rem 2rem", paddingBottom: "4rem" }}>
+        <Mission />
+      </div>
       <Utility />
     </motion.div>
   );

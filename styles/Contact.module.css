@@ -19,7 +19,6 @@
     url("/assets/contact.jpg");
   background-size: cover;
   background-repeat: no-repeat; */
-  background-color: #eee;
   flex-wrap: wrap;
 }
 .contact__wrapper .contact__container {
@@ -32,6 +31,7 @@
   border-radius: 7px;
   border: none;
   outline: none;
+  background-color: red;
 }
 
 .contact__wrapper .contact__container input:first-child {

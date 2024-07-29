@@ -6,6 +6,8 @@ import p from "../public/assets/p.jpg";
 import lo from "../public/assets/lo.jpg";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Header from "../components/Header";
+import Utility from "../components/Utility";
 
 const Total = () => {
   return (
@@ -27,8 +29,14 @@ const Total = () => {
       <Mini
         head={"Waste Management, Waste Transportation & Supply Of Incinerators"}
         sub="Waste management & supply of incinerators"
+        image={"/assets/was.jpg"}
       />
-      <div style={{ padding: "8rem 2rem" }}>
+      <Header
+        first="Waste Solutions"
+        middle="Management, Transportation & Incinerators"
+        last="Sustainable Practices for a Cleaner Future"
+      />
+      <div style={{ padding: "0rem 2rem", paddingBottom: "2rem" }}>
         <div
           style={{
             display: "grid",
@@ -104,6 +112,7 @@ const Total = () => {
         </div>
       </div>
       <br />
+      <Utility />
     </motion.div>
   );
 };

@@ -12,6 +12,7 @@ function Mini({ head, sub, image }) {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
       className={styles.about__head}
     >

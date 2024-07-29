@@ -10,6 +10,7 @@ import Mini from "../components/Mini";
 import InputSection from "../components/InputSection";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Header from "../components/Header";
 
 const Contact = () => {
   return (
@@ -27,13 +28,18 @@ const Contact = () => {
         />
       </Head>
       <Mini head={"Contact Us"} sub="Contact" image={"/assets/contact.jpg"} />
+      <Header
+        first="Talk To Us"
+        middle="Any Questions?"
+        last="We Are Here To Help."
+      />
       <div className={styles.contact__wrapper} id="contact">
         <div
           style={{
             display: "flex",
             alignItems: "center",
             gap: "2rem",
-            padding: "16px 32px",
+            // padding: "16px 32px",
             flexDirection: "column",
           }}
         >
@@ -43,16 +49,18 @@ const Contact = () => {
               alignItems: "center",
               gap: "1rem",
               padding: "16px 32px",
-              border: "1px solid #fff",
+              border: "1px solid rgb(130, 129, 129)",
               width: "100%",
             }}
           >
             <div>
-              <GoLocation style={{ fontSize: "30px", color: "#fff" }} />
+              <GoLocation style={{ fontSize: "30px", color: "#E95252" }} />
             </div>
             <div>
-              <h2 style={{ color: "rgb(28, 28, 143)" }}>Our Office</h2>
-              <p style={{ color: "#fff" }}>Namboole, Uganda</p>
+              <h2 style={{ color: "rgb(28, 28, 143)", fontWeight: "400" }}>
+                Our Office
+              </h2>
+              <p style={{ color: "rgb(130, 129, 129)" }}>Namboole, Uganda</p>
             </div>
           </div>
           <div
@@ -61,16 +69,20 @@ const Contact = () => {
               alignItems: "center",
               gap: "1rem",
               padding: "16px 32px",
-              border: "1px solid #fff",
+              border: "1px solid rgb(130, 129, 129)",
               width: "100%",
             }}
           >
             <div>
-              <HiOutlineMail style={{ fontSize: "30px", color: "#fff" }} />
+              <HiOutlineMail style={{ fontSize: "30px", color: "#E95252" }} />
             </div>
             <div>
-              <h2 style={{ color: "rgb(28, 28, 143)" }}>Email Us</h2>
-              <p style={{ color: "#fff" }}>hitexconsortium@gmail.com</p>
+              <h2 style={{ color: "rgb(28, 28, 143)", fontWeight: "400" }}>
+                Email Us
+              </h2>
+              <p style={{ color: "rgb(130, 129, 129)" }}>
+                hitexconsortium@gmail.com
+              </p>
             </div>
           </div>
           <div
@@ -79,23 +91,25 @@ const Contact = () => {
               alignItems: "center",
               gap: "1rem",
               padding: "16px 32px",
-              border: "1px solid #fff",
+              border: "1px solid rgb(130, 129, 129)",
               width: "100%",
             }}
           >
             <div>
-              <CgHeadset style={{ fontSize: "30px", color: "#fff" }} />
+              <CgHeadset style={{ fontSize: "30px", color: "#E95252" }} />
             </div>
             <div>
-              <h2 style={{ color: "rgb(28, 28, 143)" }}>Call Us</h2>
-              <p style={{ color: "#fff" }}>+256772844459</p>
+              <h2 style={{ color: "rgb(28, 28, 143)", fontWeight: "400" }}>
+                Call Us
+              </h2>
+              <p style={{ color: "rgb(130, 129, 129)" }}>+256772844459</p>
             </div>
           </div>
         </div>
         <InputSection
           color1={"rgb(28, 28, 143)"}
           color2={"rgb(28, 28, 143)"}
-          color3={"#fff"}
+          color3={"rgb(130, 129, 129)"}
           color4={"rgb(28, 28, 143)"}
         />
       </div>

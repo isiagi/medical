@@ -12,7 +12,7 @@ function Utility() {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <div className={styles.util__container}>
+    <div ref={ref} className={styles.util__container}>
       <Header
         first="Awesome Features"
         middle="Our Core Features"
@@ -20,15 +20,15 @@ function Utility() {
           training, mentorship and audit approaches to improve our programming
           as described below."
       />
-      <div ref={ref} className={styles.util__wrapper}>
-        <div
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
-          }}
-          className={styles.util__flex}
-        >
+      <div
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
+        }}
+        className={styles.util__wrapper}
+      >
+        <div className={styles.util__flex}>
           <div className={styles.util__item}>
             <BsArrowRepeat className={styles.service__item__icon} />
             <h2>Training</h2>

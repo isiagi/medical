@@ -5,17 +5,35 @@ import Layout from "../components/Layout";
 import { AnimatePresence } from "framer-motion";
 
 import "../styles/globals.css";
+import "nprogress/nprogress.css";
+import { useEffect } from "react";
+
+NProgress.configure({ showSpinner: false });
+
+const handleRouteChangeStart = () => {
+  NProgress.start();
+};
+
+const handleRouteChangeComplete = () => {
+  NProgress.done();
+};
+
+const handleRouteChangeError = () => {
+  NProgress.done();
+};
 
 function MyApp({ Component, pageProps }) {
-  NProgress.configure({ showSpinner: false });
+  useEffect(() => {
+    Router.events.on("routeChangeStart", handleRouteChangeStart);
+    Router.events.on("routeChangeComplete", handleRouteChangeComplete);
+    Router.events.on("routeChangeError", handleRouteChangeError);
 
-  Router.events.on("routeChangeStart", () => {
-    NProgress.start();
-  });
-
-  Router.events.on("routeChangeComplete", () => {
-    NProgress.done();
-  });
+    return () => {
+      Router.events.off("routeChangeStart", handleRouteChangeStart);
+      Router.events.off("routeChangeComplete", handleRouteChangeComplete);
+      Router.events.off("routeChangeError", handleRouteChangeError);
+    };
+  }, []);
 
   return (
     <div>

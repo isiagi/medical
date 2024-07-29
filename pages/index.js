@@ -8,6 +8,7 @@ import styles from "../styles/Home.module.css";
 import He from "../components/He";
 import Who from "../components/Who";
 import { motion } from "framer-motion";
+import HomeContact from "../components/HomeContact";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ Contact Hitex, Hitex Contact Information, Contact Us, Hitex Support, Customer Se
         <Utility />
         <Services />
         <He />
+        <HomeContact />
       </main>
     </motion.div>
   );

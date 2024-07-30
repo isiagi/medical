@@ -28,7 +28,7 @@ const BioRisk = () => {
       <Mini
         head="Biological Risk Assessments"
         sub="Biological Risk Assessments"
-        image={"/assets/gif.jpg"}
+        image={"/assets/gallery1.jpeg"}
       />
       <Header
         first="Bio Risk"

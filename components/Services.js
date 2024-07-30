@@ -25,7 +25,7 @@ const service = [
   },
   {
     id: 2,
-    image: "/assets/nn.jpg",
+    image: "/assets/gallery.jpeg",
     link: "/BioRisk",
     icon: <MdOutlineHourglassTop />,
     service: "Biological Risk Assessments & Management Consultancy ",

@@ -4,7 +4,7 @@ import Utility from "../components/Utility";
 
 import Head from "next/head";
 
-import nn from "../public/assets/nn.jpg";
+import nn from "../public/assets/gallery2.jpeg";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Mission from "../components/Mission";
@@ -46,6 +46,10 @@ const BioRisk = () => {
         >
           <div style={{ position: "relative" }}>
             <Image src={nn} alt="bio" layout="fill" objectFit="cover" />
+
+            <p style={{ position: "absolute", bottom: "1rem", right: "1rem" }}>
+              Risk assessment training, ECOWAS supported by WAHO
+            </p>
           </div>
           <div style={{ marginBottom: "1rem" }}>
             <p style={{ lineHeight: "2rem", color: "rgb(130, 129, 129)" }}>
